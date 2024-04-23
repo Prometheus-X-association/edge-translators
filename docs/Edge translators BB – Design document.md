@@ -1,9 +1,9 @@
+# Edge translators BB – Design Document
+
 
 [TOC]
 
 
-
-# ‘‘EDGE AI Translator BB’’ Design Document 
 
 The baseline of this building block is: “On Institutional Edges for AI Assisted Onto-Terminology Translators.”. 
 
