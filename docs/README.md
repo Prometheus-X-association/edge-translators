@@ -1,3 +1,3 @@
 # Edge translators BB
 
-[Design document](Edge translators BB – Design document.md)
+[Design document](Edge%20translators%20BB%20–%20Design%20document.md)
