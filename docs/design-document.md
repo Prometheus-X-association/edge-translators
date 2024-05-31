@@ -1,7 +1,7 @@
 # Edge translators BB – Design Document
 
 
-[TOC]
+[[TOC]]
 
 
 
@@ -34,7 +34,7 @@ This component will work in conjunction with others in order to provide best tra
 
 
 * **The Ontology Editor** helps the community to define and share a common data-model for data exchanges. It helps any actor with documentation and API to understand and manipulate the RDFS data-model.
-* **The Frameworks Repository** contains not only all the usual frameworks of the community but also the specifics ones. It provides to anyone the access to the technical definition of the used terms (Job, Skill,...).
+* **The Frameworks Repository** contains not only all the common frameworks of the community but also the specifics ones. It provides access to the technical definition of the used terms (Job, Skill,...) to anyone.
 * **The Onto-Terminology Mapping UI** is an application that allows data-provider to validate the mapping suggestions done by the AI or to create new ones.
 * **The Past Mappings validation UI** is an application that allows to view and validate the mappings done by the AI and then provide feedback for continuous training and improvement of the AI.
 
@@ -51,7 +51,7 @@ The rest of this document will focus on the Edge Translator component.
 ### Features/main functionalities
 
 * Includes PTX Connectors for data exchange
-* Translates data between different json input data to pivotal ontology and terminology
+* Translates data from different json input data to pivotal ontology and terminology
 * Provides an Edge Translator for data transformation
 * Complies with W3C, European, and HRopen standards. Provides Json-ld as output 
 * Exports and shares interoperable data  
@@ -203,9 +203,12 @@ The second case details the process when an internal, not broadly available fram
 
 
 ## Configuration and deployment settings
-The deployment of the translator will be done through docker containers. Even if the translator will work on CPU, the better for deployment will be to have GPU available. 
+**Deployment**: The deployment of the translator will be done through docker containers. Even if the translator will work on CPU, the better for deployment will be to have GPU available. 
 As a dependency, ElasticSearch will have to be deployed independently (on premise or cloud deployment available). 
 Translator’s companion apps can be deployed to any infrastructure through docker containers. 
+
+**Logging and Operations**: The Translator will logs operations, errors, and warnings to standard output and / or a cloud logging system. Logging includes details such as incoming & output requests, calls to main components, calls to external api, ontology and terminology transformation traces. Error scenarios, such as failed input request, error during structure or value transformation, failed queries to dependant components, …. are logged with appropriate error codes and descriptions to aid in troubleshooting and debugging.
+
 
 
 ## Third Party Components & Licenses
@@ -213,8 +216,587 @@ See [detailed documentation here](https://docs.google.com/spreadsheets/d/13Lf4Pf
 
 
 ## OpenAPI Specification
-
-__In the future: link your OpenAPI spec here.__
+* API specification version 0.1.0
+```
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "FastAPI",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/ontologies/get_mapping_rules": {
+      "get": {
+        "summary": "Ontologies.Get Mapping Rules",
+        "operationId": "ontologies_get_mapping_rules_ontologies_get_mapping_rules_get",
+        "parameters": [
+          {
+            "description": "Name of the data provider",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Provider Name",
+              "description": "Name of the data provider"
+            },
+            "name": "provider_name",
+            "in": "query"
+          },
+          {
+            "description": "the document type ",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "title": "Document Type",
+              "description": "the document type "
+            },
+            "name": "document_type",
+            "in": "query"
+          },
+          {
+            "description": "Version of the rules",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "title": "Version",
+              "description": "Version of the rules"
+            },
+            "name": "version",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response Ontologies Get Mapping Rules Ontologies Get Mapping Rules Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ontologies/get_jsonld_from_mapping_rules": {
+      "post": {
+        "summary": "Ontologies.Get Jsonld From Mapping Rules",
+        "operationId": "ontologies_get_jsonld_from_mapping_rules_ontologies_get_jsonld_from_mapping_rules_post",
+        "parameters": [
+          {
+            "required": false,
+            "schema": {
+              "type": "string",
+              "title": "Version"
+            },
+            "name": "version",
+            "in": "query"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_ontologies_get_jsonld_from_mapping_rules_ontologies_get_jsonld_from_mapping_rules_post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Ontologies Get Jsonld From Mapping Rules Ontologies Get Jsonld From Mapping Rules Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ontologies/get_jsonld_from_provider": {
+      "post": {
+        "summary": "Ontologies.Get Jsonld From Provider",
+        "operationId": "ontologies_get_jsonld_from_provider_ontologies_get_jsonld_from_provider_post",
+        "parameters": [
+          {
+            "description": "Name of the data provider",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Provider Name",
+              "description": "Name of the data provider"
+            },
+            "name": "provider_name",
+            "in": "query"
+          },
+          {
+            "description": "Version of the rules",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "title": "Version",
+              "description": "Version of the rules"
+            },
+            "name": "version",
+            "in": "query"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_ontologies_get_jsonld_from_provider_ontologies_get_jsonld_from_provider_post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Ontologies Get Jsonld From Provider Ontologies Get Jsonld From Provider Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ontologies/helloworld": {
+      "get": {
+        "summary": "Ontologies.Get Hello World",
+        "operationId": "ontologies_get_hello_world_ontologies_helloworld_get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Name"
+            },
+            "name": "name",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "title": "Response Ontologies Get Hello World Ontologies Helloworld Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/machine_learning/get_embedding_vectors_from_sentences_from_flask": {
+      "post": {
+        "summary": "Embeddings.Get Embedding Vector From Sentences From Flask",
+        "operationId": "embeddings_get_embedding_vector_from_sentences_from_flask_machine_learning_get_embedding_vectors_from_sentences_from_flask_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_embeddings_get_embedding_vector_from_sentences_from_flask_machine_learning_get_embedding_vectors_from_sentences_from_flask_post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Embeddings Get Embedding Vector From Sentences From Flask Machine Learning Get Embedding Vectors From Sentences From Flask Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/machine_learning/get_embedding_vectors_from_sentences": {
+      "post": {
+        "summary": "Embeddings.Get Embedding Vector From Sentences",
+        "operationId": "embeddings_get_embedding_vector_from_sentences_machine_learning_get_embedding_vectors_from_sentences_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_embeddings_get_embedding_vector_from_sentences_machine_learning_get_embedding_vectors_from_sentences_post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Embeddings Get Embedding Vector From Sentences Machine Learning Get Embedding Vectors From Sentences Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/machine_learning/get_knn_from_elasticsearch_for_embedding": {
+      "post": {
+        "summary": "Embeddings.Get Knn From Elasticsearch For Embedding",
+        "operationId": "embeddings_get_knn_from_elasticsearch_for_embedding_machine_learning_get_knn_from_elasticsearch_for_embedding_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_embeddings_get_knn_from_elasticsearch_for_embedding_machine_learning_get_knn_from_elasticsearch_for_embedding_post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Embeddings Get Knn From Elasticsearch For Embedding Machine Learning Get Knn From Elasticsearch For Embedding Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/machine_learning/get_knn_from_elasticsearch_for_vector": {
+      "post": {
+        "summary": "Embeddings.Get Knn From Elasticsearch For Vector",
+        "operationId": "embeddings_get_knn_from_elasticsearch_for_vector_machine_learning_get_knn_from_elasticsearch_for_vector_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_embeddings_get_knn_from_elasticsearch_for_vector_machine_learning_get_knn_from_elasticsearch_for_vector_post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Embeddings Get Knn From Elasticsearch For Vector Machine Learning Get Knn From Elasticsearch For Vector Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Body_embeddings_get_embedding_vector_from_sentences_from_flask_machine_learning_get_embedding_vectors_from_sentences_from_flask_post": {
+        "properties": {
+          "embedding": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/EmbeddingPayload"
+              }
+            ],
+            "title": "Embedding",
+            "description": "the text to transform"
+          }
+        },
+        "type": "object",
+        "required": [
+          "embedding"
+        ],
+        "title": "Body_embeddings_get_embedding_vector_from_sentences_from_flask_machine_learning_get_embedding_vectors_from_sentences_from_flask_post"
+      },
+      "Body_embeddings_get_embedding_vector_from_sentences_machine_learning_get_embedding_vectors_from_sentences_post": {
+        "properties": {
+          "embedding": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/EmbeddingPayload"
+              }
+            ],
+            "title": "Embedding",
+            "description": "the text to transform"
+          }
+        },
+        "type": "object",
+        "required": [
+          "embedding"
+        ],
+        "title": "Body_embeddings_get_embedding_vector_from_sentences_machine_learning_get_embedding_vectors_from_sentences_post"
+      },
+      "Body_embeddings_get_knn_from_elasticsearch_for_embedding_machine_learning_get_knn_from_elasticsearch_for_embedding_post": {
+        "properties": {
+          "embedding": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/EmbeddingPayload"
+              }
+            ],
+            "title": "Embedding",
+            "description": "the text to match"
+          }
+        },
+        "type": "object",
+        "required": [
+          "embedding"
+        ],
+        "title": "Body_embeddings_get_knn_from_elasticsearch_for_embedding_machine_learning_get_knn_from_elasticsearch_for_embedding_post"
+      },
+      "Body_embeddings_get_knn_from_elasticsearch_for_vector_machine_learning_get_knn_from_elasticsearch_for_vector_post": {
+        "properties": {
+          "embedding_vector": {
+            "type": "object",
+            "title": "Embedding Vector",
+            "description": "the vector to match"
+          }
+        },
+        "type": "object",
+        "required": [
+          "embedding_vector"
+        ],
+        "title": "Body_embeddings_get_knn_from_elasticsearch_for_vector_machine_learning_get_knn_from_elasticsearch_for_vector_post"
+      },
+      "Body_ontologies_get_jsonld_from_mapping_rules_ontologies_get_jsonld_from_mapping_rules_post": {
+        "properties": {
+          "mapping_rules": {
+            "type": "object",
+            "title": "Mapping Rules",
+            "description": "the mapping rules"
+          },
+          "document": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "type": "object"
+              }
+            ],
+            "title": "Document",
+            "description": "the document"
+          }
+        },
+        "type": "object",
+        "required": [
+          "mapping_rules",
+          "document"
+        ],
+        "title": "Body_ontologies_get_jsonld_from_mapping_rules_ontologies_get_jsonld_from_mapping_rules_post"
+      },
+      "Body_ontologies_get_jsonld_from_provider_ontologies_get_jsonld_from_provider_post": {
+        "properties": {
+          "document": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "type": "object"
+              }
+            ],
+            "title": "Document",
+            "description": "the document"
+          }
+        },
+        "type": "object",
+        "required": [
+          "document"
+        ],
+        "title": "Body_ontologies_get_jsonld_from_provider_ontologies_get_jsonld_from_provider_post"
+      },
+      "EmbeddingPayload": {
+        "properties": {
+          "sentences": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Sentences",
+            "description": "List of texts to embed",
+            "example": [
+              "Bonjour, comment ça va?"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "sentences"
+        ],
+        "title": "EmbeddingPayload",
+        "description": "Intended for use as a base class for externally-facing models.\n\nAny models that inherit from this class will:\n* accept fields using snake_case or camelCase keys\n* use camelCase keys in the generated OpenAPI spec\n* have orm_mode on by default\n    * Because of this, FastAPI will automatically attempt to parse returned orm instances into the model"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}
+```
 
 
 ## Test specification
@@ -345,3 +927,25 @@ Rejustify :
 * Provide test data 
 * Gather and aggregate some partners data
 
+## Usage in the dataspace
+Translator can be used in case of aggregation of different data-source, in order to get a uniform data-format and facilitate the processing of data from different sources. 
+
+![alt_text](images/image-ds-usage.png "image_tooltip")
+
+1. The raw data from a data source is pushed to the PDC in any format
+2. PDC requests the contract validation to transfer the data
+3. PDC requests the consent validation to transfer  the data
+4. Data intermediary sends terme of contract, consent, identity, ... of the Org. A and Individual B
+5. The data is pushed to the Service Provider C for DVA
+6. Attestation of Veracity (AoV) is requested
+7. Proof of Veracity (PoV) is prvided
+8. Raw data is transfered to Edge Translator BB's PDC
+9. Raw data (e.g. Json) is forwarded to the Translator BB to be processed
+10. Output data is generated (Json-ld) and forwarded to the PDC of the Translator BB
+11. Translated data (Json-ld in Pivot Ontlogy) is forwarded back to DVA's PDC for double verification
+12. Data is pushed to DVA requesting AoV
+13. PoV is provided
+14. DVA's PDC Transfers data to the Visualisation BB's PDS to proccess it
+15. Visualization BB's PDC pushes the data into the Visualization BB
+16. Already proccessed data returns to the PDC ready to be distributed
+17. Service provider's PDC forwards final data to the Individual B's device to be displayed
