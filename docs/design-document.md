@@ -1,8 +1,33 @@
 # Edge translators BB – Design Document
 
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
-[[TOC]]
+- [Edge translators BB – Design Document](#edge-translators-bb--design-document)
+   * [Technical usage scenarios & Features](#technical-usage-scenarios--features)
+      + [Features/main functionalities](#featuresmain-functionalities)
+      + [Technical usage scenarios](#technical-usage-scenarios)
+   * [Requirements](#requirements)
+   * [Integrations](#integrations)
+      + [Direct Integrations with Other BBs](#direct-integrations-with-other-bbs)
+      + [Integrations via Connector](#integrations-via-connector)
+      + [Integration into the Connector Flow ](#integration-into-the-connector-flow)
+   * [Relevant Standards](#relevant-standards)
+      + [Data Format Standards](#data-format-standards)
+      + [Mapping to Data Space Reference Architecture Models](#mapping-to-data-space-reference-architecture-models)
+      + [Input / Output Data](#input--output-data)
+   * [Architecture](#architecture)
+   * [Dynamic Behaviour](#dynamic-behaviour)
+   * [Configuration and deployment settings](#configuration-and-deployment-settings)
+   * [Third Party Components & Licenses](#third-party-components--licenses)
+   * [OpenAPI Specification](#openapi-specification)
+   * [Test specification](#test-specification)
+      + [Test plan](#test-plan)
+      + [Unit tests](#unit-tests)
+      + [Integration tests](#integration-tests)
+   * [Partners & roles](#partners--roles)
+   * [Usage in the dataspace](#usage-in-the-dataspace)
 
+<!-- TOC end -->
 
 
 The baseline of this building block is: “On Institutional Edges for AI Assisted Onto-Terminology Translators.”. 
@@ -217,7 +242,11 @@ See [detailed documentation here](https://docs.google.com/spreadsheets/d/13Lf4Pf
 
 ## OpenAPI Specification
 * API specification version 0.1.0
-```
+<details>
+
+<summary>Click to open the full spec</summary>
+
+```json
 {
   "openapi": "3.1.0",
   "info": {
@@ -797,6 +826,8 @@ See [detailed documentation here](https://docs.google.com/spreadsheets/d/13Lf4Pf
   }
 }
 ```
+
+</details>
 
 
 ## Test specification
