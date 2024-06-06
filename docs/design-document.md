@@ -966,17 +966,17 @@ Translator can be used in case of aggregation of different data-source, in order
 1. The raw data from a data source is pushed to the PDC in any format
 2. PDC requests the contract validation to transfer the data
 3. PDC requests the consent validation to transfer  the data
-4. Data intermediary sends terme of contract, consent, identity, ... of the Org. A and Individual B
+4. Data intermediary sends terms of contract, consent, identity, ... of the Org. A and Individual B
 5. The data is pushed to the Service Provider C for DVA
 6. Attestation of Veracity (AoV) is requested
-7. Proof of Veracity (PoV) is prvided
-8. Raw data is transfered to Edge Translator BB's PDC
+7. Proof of Veracity (PoV) is provided
+8. Raw data is transferred to Edge Translator BB's PDC
 9. Raw data (e.g. Json) is forwarded to the Translator BB to be processed
 10. Output data is generated (Json-ld) and forwarded to the PDC of the Translator BB
-11. Translated data (Json-ld in Pivot Ontlogy) is forwarded back to DVA's PDC for double verification
+11. Translated data (Json-ld in Pivot Ontology) is forwarded back to DVA's PDC for double verification
 12. Data is pushed to DVA requesting AoV
 13. PoV is provided
-14. DVA's PDC Transfers data to the Visualisation BB's PDS to proccess it
+14. DVA's PDC Transfers data to the Visualisation BB's PDS to process it
 15. Visualization BB's PDC pushes the data into the Visualization BB
-16. Already proccessed data returns to the PDC ready to be distributed
+16. Already processed data returns to the PDC ready to be distributed
 17. Service provider's PDC forwards final data to the Individual B's device to be displayed
