@@ -36,36 +36,31 @@ The **AI Translator** is a tool to help us achieve **Frictionless Interoperabili
 
 In the data world, like in the spoken language world, translation require 2 abilities : 
 
-* 1/ Ability to understand the “content” (or values) in the data. In language it’s called vocabulary, we call it **Terminology**.
-* 2/ Ability to understand the “structure” (or data-model). In language it’s called grammar, we call it **Ontology**.
+* 1. Ability to understand the “content” (or values) in the data. In language it’s called vocabulary, we call it **Terminology**.
+* 2. Ability to understand the “structure” (or data-model). In language it’s called grammar, we call it **Ontology**.
+The mixture of these 2 abilities is called **Onto-Terminology**, as the capacity to translate the structure (ontology) and the content (terminology) of a data input.
+
 
 To explain the spirit of this Building Block we will divide it into 3 sections : 
 
-
-
-* **Onto-Terminology Translators: ** computer services that translate the structure & the content of a data input to another format. This is the digital twin of a human that translates a text from one language to another. 
-* **AI Assisted:** full translation of data is a tough thing, and even if AI can make good automatic results, humans will always be here to control and fix some things. We will develop a concept of “Semantic Suggestions” to help communication between humans and translators. 
-* **On Institutional Edge:** our long term vision is that Translators should be installable to any institutional edge infrastructure to ensure full compliance and possibility. 
+* **Onto-Terminology Translators:** computer services that translate the structure & the content of a data input to another format output. This is the digital twin of a human that translates a text from one language to another. 
+* **AI Assisted:** ull translation of data is a tough task, and even if AI can deliver good automatic results, humans will always be here to control and fix if necessary. We will develop a concept of “Semantic Suggestions” to help communication between humans and translators pass smoothly.
+* **On Institutional Edge:** ur long term vision is that Translators should be installable to any institutional edge infrastructure to ensure full compliance and availability. 
 
 As a central part of the “common language”, the Ontology Editor will provide a community sourced and updated pivotal onto-terminology for all partners of the project.
 
 
 ## Technical usage scenarios & Features
 
-The Edge Translator is the core component for the process of translating input data format and value to a standard output one. 
-
+The Edge Translator is the core component for the process of translating input data format and value to a standard output. 
 This component will work in conjunction with others in order to provide best translations. These side-car components are the following 4 : 
 
+* **The Ontology Editor** helps the community to define and share a common data-model for data exchanges. It helps any actor with documentation and API to understand and manipulate the RDFS data-model. This editor will grant online access to the Pivotal Ontology.
+* **The Frameworks Repository** contains not only all the common frameworks of the community but also some specific ones. It provides access to the technical definition of the used terms (Job, Skill,...) to anyone.
+* **The Onto-Terminology Mapping UI** is an application that allows data-providers to initiate the mapping of their data.
+* **The Past Matching Validation UI** is an application that allows to view and validate the matchings done by the AI and then provide feedback for continuous training and improvement of the AI.
 
-
-* **The Ontology Editor** helps the community to define and share a common data-model for data exchanges. It helps any actor with documentation and API to understand and manipulate the RDFS data-model.
-* **The Frameworks Repository** contains not only all the common frameworks of the community but also the specifics ones. It provides access to the technical definition of the used terms (Job, Skill,...) to anyone.
-* **The Onto-Terminology Mapping UI** is an application that allows data-provider to validate the mapping suggestions done by the AI or to create new ones.
-* **The Past Mappings validation UI** is an application that allows to view and validate the mappings done by the AI and then provide feedback for continuous training and improvement of the AI.
-
-With the environment of PTX, the Edge Translator environment can be schematised as: 
-
-
+Within the PTX environment the Edge Translator can be schematised as: 
 
 ![alt_text](images/image1.png "image_tooltip")
 
@@ -75,19 +70,19 @@ The rest of this document will focus on the Edge Translator component.
 
 ### Features/main functionalities
 
-* Includes PTX Connectors for data exchange
+* Includes Prometheus-X Data Connector (PDC) for data exchange
 * Translates data from different json input data to pivotal ontology and terminology
-* Provides an Edge Translator for data transformation
-* Complies with W3C, European, and HRopen standards. Provides Json-ld as output 
+* Complies with W3C, European, and HRopen standards. 
+* Provides Json-ld as output 
 * Exports and shares interoperable data  
 * Is integrated with the Frameworks Repository to provide accessible terms definition to data-consumer
 * Is integrated with the Onto-Terminology UI for data mapping validation
-* Is integrated with the Past Mappings validation UI for AI training and improvement
+* Is integrated with the Past Matching validation UI for AI training and improvement
 
 
 ### Technical usage scenarios
 
-* Translation of data for interoperability between different systems and applications
+* Translation of data to ensure interoperability between different systems and applications
 * Facilitation of data exchange within the community by providing a common data model
 * Provision of documentation and APIs for understanding and manipulating RDFS data models
 * Allow data-consumer to implement one data-model integration and be able to connect to multiple data-sources.
@@ -96,13 +91,13 @@ The rest of this document will focus on the Edge Translator component.
 
 ## Requirements
 
+* Translator MUST translate input data structure to the pivotal one
 * Translator MUST transform skills & jobs related data in json to json-ld 
 * Translator MUST log the mappings done 
 * Translator MUST provide configuration option to select the output terminology & language, the activation of complementary services
-* Translator MUST interface with Dataspace Connector
+* Translator MUST interact with PDC
 * Translator SHOULD collect concepts that come from specific (not shared) terminologies
-* Translator SHOULD be able to to connect to external stock data to transform
-
+* Translator SHOULD be able to connect to external stock data to transform
 
 ## Integrations
 
@@ -111,20 +106,12 @@ See [01_BB Connections](https://docs.google.com/spreadsheets/d/1iNFLRofdwmrgNZ7E
 
 ### Direct Integrations with Other BBs
 
-BB 9b LOMCT & BB 7 Distributed data visualisation may have direct connection to the connector. 
+BB 9b LOMCT & BB 7 Distributed data visualization may have direct connection to the PDC. 
 
+### Integrations into the PDC Flow
 
-### Integrations via Connector
-
-Integrations with connectors may be done in the use-case of IMC, GEN or Schülerkarriere.
-
-
-### Integration into the Connector Flow 
-
-The translation service has a specific position into the actual flow of the Connector. The Translation service acts in the middle of an exchange between a data-provider and a data-consumer. 
-
-In order to take into account this specific situation an evolution of the Contract component has to be done.
-
+The translation service has a specific position inside the actual flow of the PDC. It acts as an intermediary for an exchange between a data-provider and a data-consumer. 
+In order to take into account this specific situation an evolution of the Contract component has to be conducted.
 
 ## Relevant Standards
 
@@ -148,14 +135,15 @@ In order to take into account this specific situation an evolution of the Contra
 
 ### Input / Output Data
 
-They are 3 categories of inputs for this building block : 
-* The data provider input. This input should be json. This input data can be any structure. Only one restriction apply on the keys of the json. Theses keys have to be “real keys” and not “data as key”. This mean that json structure where keys are used to provide dynamic data can’t be parsed; 
-* The ontology transformations rules. Theses rules are generated by the Onto-terminology Mapping UI and will respect the definition of the Rules Ontology and will contains acceptable values for the translator
-* The terms values and associated matchings from the Framework Repository. This data will be structured by the Skos and the Matching Ontologies as json-ld compliant format. 
+There are 3 categories of inputs for this building block: 
+* *The data provider input*. This input should be json. This input data can be any structure. Only one restriction applies on the keys of the json. These keys have to be “real keys” and not “data as key”. This mean that json structure where keys are used to provide dynamic data can’t be parsed; 
+* *The ontology transformations rules*. These rules are generated by the Onto-terminology Mapping UI and will respect the definition of the Rules Ontology and will contain acceptable values for the translator.
+* *The terms values and associated matchings from the Framework Repository*. This data will be structured by the Skos and the Matching Ontologies as json-ld compliant format. 
 
-As output, 2 main categories of data will be produced : 
-* The transformation result file. Provided to the data-consumer, this json-ld file will be structured as the Shared Ontology and will contain semantic data as well as the source data 
-* The Matching suggestions : in order to act as a logging system and be able to improve the AI & algorithm iteratively, the translator will store the matching suggestion into a standard format. Theses suggestions can then be reviewed and validated by humans or replayed to validate improvement of the translator’s transformations.   
+As output, 3 main categories of data will be produced: 
+* *The transformation result file*. Provided to the data-consumer, this json-ld file will be structured as the Shared Ontology and will contain semantic data as well as the source data.
+* *The Matching suggestions*: in order to act as a logging system and be able to improve the AI & algorithm iteratively, the translator will store the matching suggestion into a standard format. These suggestions can then be reviewed and validated by humans or replayed to validate improvement of the translator’s transformations.   
+* *The mappings logs*: These logs will track the mapped and unmapped data in the source file. This information will help to track the percentage of mapped properties (completeness) and to analyze the mappings done on a global overview and so to check the correctness, accuracy and consistency of mappings done by the parties.  
 
 
 ## Architecture
@@ -213,14 +201,15 @@ The detailed séquence diagram for theses components is :
 
 ## Dynamic Behaviour
 
-The following diagrams show 2 concrêtes examples for the Terminology (or Framework) transformation process. 
+The following diagrams show 2 concrete examples for the Terminology (or Framework) transformation process. 
 
-The first case details the process when a national framework is available and can be mapped before the connection of the data-source. 
+*The first case* details the process when a national framework is available and can be mapped before the connection of the data-source. 
 
 ![alt_text](images/image4.png "image_tooltip")
 
 
-The second case details the process when an internal, not broadly available framework is used to describe the source data. The mappings are then done lively and are available for later inspection 
+*The second case* details the process when an internal, not broadly available framework is used to describe the source data. The live mappings are then conducted and are available for later inspection.
+
 
 
 ![alt_text](images/image5.png "image_tooltip")
@@ -228,15 +217,21 @@ The second case details the process when an internal, not broadly available fram
 
 
 ## Configuration and deployment settings
-**Deployment**: The deployment of the translator will be done through docker containers. Even if the translator will work on CPU, the better for deployment will be to have GPU available. 
+**Deployment**: The deployment of the translator will be done through docker containers. Even if the translator will work on CPU, it would be better for deployment to have GPU available. 
 As a dependency, ElasticSearch will have to be deployed independently (on premise or cloud deployment available). 
 Translator’s companion apps can be deployed to any infrastructure through docker containers. 
 
-**Logging and Operations**: The Translator will logs operations, errors, and warnings to standard output and / or a cloud logging system. Logging includes details such as incoming & output requests, calls to main components, calls to external api, ontology and terminology transformation traces. Error scenarios, such as failed input request, error during structure or value transformation, failed queries to dependant components, …. are logged with appropriate error codes and descriptions to aid in troubleshooting and debugging.
-
+**Logging and Operations**:  The Translator will log operations, errors, and warnings to standard output and / or a cloud logging system. Logging includes details such as incoming & output requests, calls to main components, calls to external api, ontology and terminology transformation traces. Error scenarios, such as failed input request, error during structure or value transformation, failed queries to dependent components, …. are logged with appropriate error codes and descriptions to aid in troubleshooting and debugging.
 
 
 ## Third Party Components & Licenses
+
+The main Third Parties that will be used are: 
+* Elasticsearch : licenced as [Elastic License v2 & SSPL](https://github.com/elastic/elasticsearch/tree/main/licenses)
+* Esco : licenced as [Commission Decision of 12 December 2011](https://esco.ec.europa.eu/en/use-esco/download) on the reuse of Commission documents (2011/833/EU)
+* Rome: licenced under an [Open Data Licence](https://www.francetravail.org/files/live/sites/peorg/files/documents/Statistiques-et-analyses/Open-data/ROME/rome_licence_ouverte.pdf) 
+* Ariane related modules : licenced under MIT
+
 See [detailed documentation here](https://docs.google.com/spreadsheets/d/13Lf4PfVnA_lAk-7dMeIy0QRxHnarxMcsS8EaLjyOlBA/edit#gid=2045658592).
 
 
@@ -832,11 +827,14 @@ See [detailed documentation here](https://docs.google.com/spreadsheets/d/13Lf4Pf
 
 ## Test specification
 ### Test plan
-See specific document on test plan
+See [specific document](https://docs.google.com/document/d/1_kgb8CnV1rWnnxHC3EbGbp50ygiJExdIKGtRu-iZSxE/edit) on test plan
 
 ### Unit tests
-Unit tests will be set-up on a range of sample data to ensure non-regression during the development. These unit tests will take as input an example of a provider data and the output of the transformation will be checked against a static output file.
+Unit tests will be set-up on a range of sample data to ensure non-regression during the development. These unit tests will take as input an example of a data provider and the output of the transformation will be checked against a static output file.
+
 These tests will be executed with Pytest. 
+Extensive examples of data input and output are [available here](https://github.com/Prometheus-X-association/edge-translators/tree/main/docs/data-examples)
+
 Example of input data file (in json) 
 ```json 
 [
@@ -939,8 +937,8 @@ Example of output data file (in json-ld)
 ```
 
 ### Integration tests
-Integration tests will be done with the setup of “fake application” and the automated call of an exchange. This possibility will depend on the ability of PDC to provide a way to automate such exchanges (not possible as of today).
-These integration tests will be run by a python or javascript script. They may also be runned with Postman.
+Integration tests conducted with the setup of “fake application” and the automated call of an exchange. This possibility will depend on the ability of PDC to provide a way to automate such exchanges (not possible as of today).
+These integration tests will be run by a python or JavaScript script. They may also be runned with Postman.
 
 ## Partners & roles
 MindMatcher : 
@@ -951,7 +949,9 @@ MindMatcher :
 Headai : 
 * Participate in technical design
 * Provide mapping tables 
-* Develop connexion to his proprietary API
+* Provides Esco-focused translation between Esco languages. That is not just a word-to-word  translation, it understands simple morphological and semantic issues (lightweight LM)
+* Develop connection to their proprietary API
+
 
 Rejustify :
 * Participate in technical design
@@ -959,7 +959,7 @@ Rejustify :
 * Gather and aggregate some partners data
 
 ## Usage in the dataspace
-Translator can be used in case of aggregation of different data-source, in order to get a uniform data-format and facilitate the processing of data from different sources. 
+Translator can be used in case of aggregation of different data-sources, in order to get a uniform data-format and facilitate the processing of data from different sources.
 
 ![alt_text](images/image-ds-usage.png "image_tooltip")
 
