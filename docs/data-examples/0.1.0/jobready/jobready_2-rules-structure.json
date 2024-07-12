@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "todo": "define_the_rules_context"
+  },
+  "graph": [
+    {
+      "id": "mmr:rule-0",
+      "sourcePath": "fields.skill.name",
+      "targetClass": "soo:Skill",
+      "targetProperty": "skos:prefLabel",
+      "targetLang": "fr",
+      "targetFunction": "fno:asIs_WithLang",
+      "generateId": "true"
+    },
+    
+    {
+      "id": "mmr:rule-1",
+      "sourcePath": "fields.skill.description",
+      "targetClass": "soo:Skill",
+      "targetProperty": "soo:description",
+      "targetLang": "fr",
+      "targetFunction": "fno:asIs_WithLang"
+    }
+    
+  ]
+}

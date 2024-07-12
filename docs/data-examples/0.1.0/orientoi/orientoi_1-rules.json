@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "todo": "define_the_rules_context"
+  },
+  "graph": [
+    {
+      "id": "mmr:rule-0",
+      "sourcePath": "jobCards.id",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:sourceId",
+      "generateId": "true"
+    },
+
+    {
+      "id": "mmr:rule-1",
+      "sourcePath": "jobCards.id",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:experienceType",
+      "targetValue": "term:experience/type/professional"
+    },
+    {
+      "id": "mmr:rule-2",
+      "sourcePath": "jobCards.id",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:experienceStatus",
+      "targetValue": "term:experience/type/suggested"
+    },
+
+    {
+      "id": "mmr:rule-3",
+      "sourcePath": "jobCards.name",
+      "targetClass": "soo:Experience",
+      "targetProperty": "skos:prefLabel",
+      "targetFunction": "fno:asIs_WithLang",
+      "targetLang": "fr"
+    },
+    {
+      "id": "mmr:rule-4",
+      "sourcePath": "jobCards.description",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:description",
+      "targetFunction": "fno:asIs_WithLang",
+      "targetLang": "fr"
+    },
+
+    {
+      "id": "mmr:rule-5",
+      "sourcePath": "jobCards.name",
+      "targetClass": "soo:Experience",
+      "targetFunction": "fno:search-for-mapping-with-source",
+      "targetFunctionParam": "jobCards.description"
+    },
+
+    {
+      "id": "mmr:rule-6",
+      "sourcePath": "jobCards.positionnement",
+      "targetClass": "soo:Polarity",
+      "targetProperty": "soo:polarity",
+      "targetFunction": "fno:get-polarity-value",
+      "relationTo": "soo:Experience",
+      "relationName": "soo:experience",
+      "relationNameInverse": "soo:polarity"
+    },
+
+    {
+      "id": "mmr:rule-7",
+      "sourcePath": "jobCards.type",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:family",
+      "targetFunction": "fno:get-family-value"
+    }
+
+  ]
+}

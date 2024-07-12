@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "@TODO": "define the result context"
+
+  },
+  "graph": [
+    {
+      "id": "tr:__generated-id-1__",
+      "type": "soo:Skill",
+      "sourceValue": "tr:__source-value-1",
+      "mapping": "esco:adc6dc11-3376-467b-96c5-9b0a21edc869",
+      "suggestions": [ "tr:sugg/1", "tr:sugg/2"],
+      "description": {"@value": "Faculté de se diriger vers un collectif déjà constitué, d'y trouver une place et d'en devenir un membre légitime", "@language": "fr"}
+    },
+    {
+      "id": "tr:__generated-id-2__",
+      "type": "soo:Skill",
+      "sourceValue": "tr:__source-value-2",
+      "mapping": "esco:xxxxx",
+      "suggestions": [ "tr:sugg/3", "tr:sugg/4"],
+      "description": {"@value": "S'investir, orienter son action et nourrir une satisfaction et un enthousiasme vis-à-vis d'une organisation, d'un projet collectif ou d'un objectif personnel", "@language": "fr"}
+    },
+
+    
+    {
+      "id": "tr:__source-value-1",
+      "label": "Intégration au groupe"
+    },
+    {
+      "id": "esco:adc6dc11-3376-467b-96c5-9b0a21edc869",
+      "type": "esco:Skill",
+      "prefLabel": {"@value": "Intégration", "@language": "fr"}
+    },
+    {
+      "id":"tr:sugg/1",
+      "type": "mms:Suggestion",
+      "source": "mm-search",
+      "score": 35,
+      "mapping": "esco:adc6dc11-3376-467b-96c5-9b0a21edc869" 
+    },
+    {
+      "id":"tr:sugg/2",
+      "type": "mms:Suggestion",
+      "source": "mm-search",
+      "score": 10,
+      "mapping": "rome:1234" 
+    },
+
+
+    {
+      "id": "tr:__source-value-2",
+      "label": "Motivation et implication"
+    },
+    {
+      "id": "esco:xxxxxx",
+      "type": "esco:Skill",
+      "prefLabel": {"@value": "motivation", "@language": "fr"}
+    },
+    {
+      "id":"tr:sugg/3",
+      "type": "mms:Suggestion",
+      "source": "mm-search",
+      "score": 15,
+      "mapping": "esco:xxxxx" 
+    },
+    {
+      "id":"tr:sugg/5",
+      "type": "mms:Suggestion",
+      "source": "mm-search",
+      "score": 5,
+      "mapping": "esco:yyyyy" 
+    }
+    
+
+  ]
+}
