@@ -963,20 +963,23 @@ Translator can be used in case of aggregation of different data-sources, in orde
 
 ![alt_text](images/image-ds-usage.png "image_tooltip")
 
-1. The raw data from a data source is pushed to the PDC in any format
-2. PDC requests the contract validation to transfer the data
-3. PDC requests the consent validation to transfer  the data
-4. Data intermediary sends terms of contract, consent, identity, ... of the Org. A and Individual B
-5. The data is pushed to the Service Provider C for DVA
-6. Attestation of Veracity (AoV) is requested
-7. Proof of Veracity (PoV) is provided
-8. Raw data is transferred to Edge Translator BB's PDC
-9. Raw data (e.g. Json) is forwarded to the Translator BB to be processed
-10. Output data is generated (Json-ld) and forwarded to the PDC of the Translator BB
-11. Translated data (Json-ld in Pivot Ontology) is forwarded back to DVA's PDC for double verification
-12. Data is pushed to DVA requesting AoV
-13. PoV is provided
-14. DVA's PDC Transfers data to the Visualisation BB's PDS to process it
-15. Visualization BB's PDC pushes the data into the Visualization BB
-16. Already processed data returns to the PDC ready to be distributed
-17. Service provider's PDC forwards final data to the Individual B's device to be displayed
+In the given scenario Use Case Orchestrator has also the role of the Data Provider and Data Consumer.
+1. As Use Case Orchestrator the Org A selects the required services from the Catalog
+2. As Use Case Orchestrator the Org A signs the Contract
+3. The Data Processing Chain Protocol is defined together with the Org A
+4. After signing the contract the Org A will have a PDC and by acting as Data Provider will send the raw data to the first service provider's PDC (Org C PDC)
+5. Org C's PDC communicated the raw data with the service provider
+6. Org. C's PDC receives the anonymized data back
+7. As defined by Data Processing Chain Protocol first service provider (Org.C), after processing the data, checks the next recipient and pushes the processed data to the next service provider's PDC (Org D Data Vacity Assurance)
+8. Org D's PDC requests for the Attestation of Veracity (AoV)
+9. Proof of Veracity (PoV) is provided
+10. As defined by Data Processing Chain Protocol the data flow is double checked between the Service Provider and DPCP and pushed to the next service provider (Org E Edge Translator)
+11. Org E's PDC forwards the raw, anonymized data to Edge Translator BB
+12. Output data is generated (Json-ld) and forwarded to the PDC of the EdgeTranslator BB
+13. Translated data (Json-ld in Pivotal Ontology) is forwarded back to DVA's PDC for double verification
+14. Data is pushed to DVA requesting AoV
+15. PoV is provided
+16. DVA's PDC Transfers data to the Visualisation BB's PDS to process it
+17. Visualization BB's PDC pushes the data into the Visualization BB
+18. Already processed data returns to the PDC ready to be distributed
+19. Service provider's PDC (Org F) forwards final data to the Data Consumer's device, ready to be displayed
