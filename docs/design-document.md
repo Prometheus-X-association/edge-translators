@@ -64,6 +64,14 @@ Within the PTX environment the Edge Translator can be schematised as:
 
 ![alt_text](images/image1.png "image_tooltip")
 
+The more straightforward use-case for this Building Bloc is : 
+- Company_1 work with english ESCO and want to hire some Frenchies (what a strange idea)
+- Frenchie_1 made an online Skill Test. With PTX, Company_1 can retrieve the Test’s results. 
+- But theses Test results words from an in-house framework (french characters unrelated to ESCO)
+- In these test result there is this an In-house Skill like “Intégration au groupe”
+- The Translator will lookup for semantically similar Skills into ESCO. Rank them, and return the results.
+- At the end, Company_1 get a nice-Json (aka json-ld) file with the ESCO skill : it’s id (esco:fcc0a1c8-d36e-4f8e-b928-00d5bca10a47) and it’s label in english (develop design ideas as a group)
+
 
 The rest of this document will focus on the Edge Translator component.
 
@@ -111,7 +119,7 @@ BB 9b LOMCT & BB 7 Distributed data visualization may have direct connection to 
 ### Integrations into the PDC Flow
 
 The translation service has a specific position inside the actual flow of the PDC. It acts as an intermediary for an exchange between a data-provider and a data-consumer. 
-In order to take into account this specific situation an evolution of the Contract component has to be conducted.
+In order to take into account this specific situation, we will closely follow the evolution of PTX”s “Protocol Component as it may be a solution to orchestrate the Translator’s required flow.
 
 ## Relevant Standards
 
@@ -828,6 +836,13 @@ See [detailed documentation here](https://docs.google.com/spreadsheets/d/13Lf4Pf
 ## Test specification
 ### Test plan
 See [specific document](https://docs.google.com/document/d/1_kgb8CnV1rWnnxHC3EbGbp50ygiJExdIKGtRu-iZSxE/edit) on test plan
+The main tests scenarios will cover: 
+- Translated Outputs : Snapshot testing
+- AI & functionals : Unit-tested
+- Internal API calls : Integration tests
+- API endpoint : Postman collections
+- Perf Caching : load tests.
+
 
 ### Unit tests
 Unit tests will be set-up on a range of sample data to ensure non-regression during the development. These unit tests will take as input an example of a data provider and the output of the transformation will be checked against a static output file.
