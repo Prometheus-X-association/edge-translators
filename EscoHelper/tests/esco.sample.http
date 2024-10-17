@@ -1,0 +1,32 @@
+POST http://localhost:8080/api/v1/esco/getLabel
+Content-Type: application/json
+
+{
+    "uri":"edebd83d-35f6-4ed5-a940-6c203d178c01",
+    "language":"en"
+}
+
+###############################################################
+
+POST http://localhost:8080/api/v1/esco/getClosestLabel
+Content-Type: application/json
+
+{
+    "label":"Data Science",
+    "language":"en",
+    "maxDistance": 3
+}
+
+###############################################################
+
+POST http://localhost:8080/api/v1/esco/translate
+Content-Type: application/json
+
+{
+    "label": "Data Science",
+    "sourceLanguage": "en",
+    "destLanguage": "fr",
+    "maxDistance": 3
+}
+
+###############################################################
