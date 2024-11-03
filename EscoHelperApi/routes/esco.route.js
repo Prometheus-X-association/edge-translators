@@ -60,6 +60,14 @@ EscoRouter.post('/getLabel',
  *                              type: string
  *                              description: Language of the label to be obtained. It must be formatted following the ISO 639-2 standard (2-letter language code)
  *                              example: en
+ *                          maxDistance:
+ *                              type: number
+ *                              description: If value is greater than zero, the algoritm will calculate the syntactic distance between the given labels and the list of labels available in ESCO Ontology. Value equal to zero means that only exact matches will be allowed. If you want to have more flexibility in the detection of the ESCO labels, recommended value is 2 (plural/singular matching or small typo handling).
+ *                              example: 0
+ *                          enableSynonyms:
+ *                              type: boolean
+ *                              description: If value is true, enables the search over a list of synonyms that were generated in advance to expand the capabilites of the detector. Otherwise, search will occur only over ESCO concepts. Default value is False to guarantee maximum precision on the operations.
+ *                              example: false
  *      responses:
  *          200:
  *              description: This will return success message upon successful request
@@ -109,6 +117,14 @@ EscoRouter.post('/getClosestLabel',
  *                              type: string
  *                              description: Destination Language of the translation.
  *                              example: es
+ *                          maxDistance:
+ *                              type: number
+ *                              description: If value is greater than zero, the algoritm will calculate the syntactic distance between the given labels and the list of labels available in ESCO Ontology. Value equal to zero means that only exact matches will be allowed. If you want to have more flexibility in the detection of the ESCO labels, recommended value is 2 (plural/singular matching or small typo handling).
+ *                              example: 0
+ *                          enableSynonyms:
+ *                              type: boolean
+ *                              description: If value is true, enables the search over a list of synonyms that were generated in advance to expand the capabilites of the detector. Otherwise, search will occur only over ESCO concepts. Default value is False to guarantee maximum precision on the operations.
+ *                              example: false
  * 
  *      responses:
  *          200:

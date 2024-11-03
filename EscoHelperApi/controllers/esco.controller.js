@@ -1,12 +1,12 @@
 const EscoConstants = require("../constants/esco.constants");
-const EscoUtils = require("../utils/esco.utils");
+const { escoHelper } = require("../constants/esco.constants");
 
 async function getLabel(req,res){
     const {
         uri, language
     } = req.body;
 
-    const label = EscoUtils.getEscoLabel(uri, language);
+    const label = escoHelper.getEscoLabel(uri, language);
 
     if (label == null){
         return res.status(200).json({
@@ -27,46 +27,39 @@ async function getClosestLabel(req,res){
     } = req.body;
 
     const enableSynonyms = req.body.enableSynonyms == true;
+    
+    escoHelper.maxDistance = maxDistance || 0;
+    escoHelper.enableSynonyms = enableSynonyms;
+    const responseClosest = escoHelper.getClosestLabel(label, language);
 
-    const responseClosest = EscoUtils.getClosestLabel(label, language, maxDistance, enableSynonyms);
+    if (responseClosest == null) return res.status(400).json({
+        label: null,
+        uri: null,
+        distance: null,
+        error: `Label '${label}' doesn't match with any of the Official ESCO Concepts.`
+    })
 
-    const response = {
-        label : responseClosest.label,
-        uri : responseClosest.uri,
-        distance : responseClosest.distance,
-    }
-
-    return res.status(200).json(response);
+    return res.status(200).json(responseClosest);
 }
 
 async function translate(req,res){
     const {
-        label, sourceLanguage, destLanguage,
+        label, sourceLanguage, destLanguage, maxDistance,
     } = req.body;
 
-    // Default Distance is 0 -> Exact match
-    const maxDistance = req.body.maxDistance || 0;
+    const enableSynonyms = req.body.enableSynonyms == true;
     
-    // Disabled if not defined. Only enabled if explicitly set as true
-    const enableSynonyms = req.body?.enableSynonyms === true;
+    escoHelper.maxDistance = maxDistance || 0;
+    escoHelper.enableSynonyms = enableSynonyms;
 
-    var responseClosest = EscoUtils.getClosestLabel(label, sourceLanguage, maxDistance, enableSynonyms);
+    const response = escoHelper.translate(label, sourceLanguage, destLanguage);
 
-    const translation = EscoUtils.getEscoLabel(responseClosest.uri, destLanguage);;
-
-    const response = {
-        translation,
-        uri: responseClosest.uri,
-        original : label,
-        detectedEscoLabel : responseClosest.label,
-        distance: responseClosest.distance,
-    }
-
-    if (responseClosest.distance == 0){
-        delete response.original;
-        delete response.detectedEscoLabel;
-        delete response.distance;
-    }
+    if (response == null) return res.status(400).json({
+        label: null,
+        uri: null,
+        distance: null,
+        error: `Label '${label}' doesn't match with any of the Official ESCO Concepts.`
+    })
 
     return res.status(200).json(response);
 }
@@ -82,9 +75,9 @@ function languageValidator(fieldName){
             });
         }
     
-        const esco = EscoConstants.escoOntology[language];
+        const esco = escoHelper.ontology[language];
         if (!Array.isArray(esco)){
-            const availableLanguages = Object.keys(EscoConstants.escoOntology);
+            const availableLanguages = Object.keys(escoHelper.ontology);
             return res.status(400).json({
                 'error': `Language '${language}' is not available`,
                 'availableLanguages': availableLanguages,

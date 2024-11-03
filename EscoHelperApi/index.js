@@ -2,16 +2,18 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
+dotenv.config();
+
 const cors = require('cors');
 
 const mainRouter = require('./routes/index.route');
-const { loadEscoOntology } = require('./constants/esco.constants');
+const { escoHelper } = require('./constants/esco.constants');
 
 async function startServer(){
     // Load External Variables in Environment
-    dotenv.config();
     
-    await loadEscoOntology();
+    
+    await escoHelper.loadOntology();
 
     // Build Express App
     const app = express();
