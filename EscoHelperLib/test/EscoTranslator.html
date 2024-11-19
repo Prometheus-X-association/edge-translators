@@ -1,0 +1,95 @@
+<script src="http://localhost:8080/esco-helper.js"></script>
+
+<html></html>
+    <b>Label:</b>
+    <input type="text" id="label">
+
+    <br /><br />
+
+    <b>Source Language:</b>
+    <select id="srcLanguage">
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="fi">Finnish</option>
+        <option value="es">Spanish</option>
+        <option value="de">German</option>
+    </select>
+
+    <br /><br />
+    <b>Dest Language:</b>
+
+    <select id="destLanguage">
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="fi">Finnish</option>
+        <option value="es">Spanish</option>
+        <option value="de">German</option>
+    </select>
+
+    <br /><br />
+
+    <b>Maximum Edit Distance:</b>
+
+    <input type="number" min="0" max="20" id="maximumDistance" value="0">
+
+    <br /><br />
+
+    <b>Enable Synonym Detection:</b>
+
+    <input type="checkbox" name="subscribe" checked id="enableSynonym">
+
+    <br /><br />
+
+    <button onclick="matchAndTranslate()">Match and Translate</button>
+
+    <br /><br />
+
+    <textarea style="width: 550px; height: 80px; font-size: 16px;" disabled id="result"></textarea>
+</html>
+
+<script>
+
+    const props = {
+        filesLocation: 'http://localhost:3000',
+        maxDistance: 2,
+    };
+    var escoHelper = new esco.EscoOntology(props);
+
+    document.getElementById('result').value = 'Loading ESCO...';
+    escoHelper.loadOntology().then((d)=>{
+        console.log('Loaded ESCO Ontology Succesfully');
+        document.getElementById('result').value = '';
+    });
+
+function matchAndTranslate(){
+    document.getElementById('result').value = 'Processing...';
+
+    const enableSynonyms = document.getElementById('enableSynonym').checked == true;
+    escoHelper.enableSynonyms = enableSynonyms;
+
+    const maximumDistance = document.getElementById('maximumDistance').value;
+    escoHelper.maxDistance = parseInt(maximumDistance);
+
+    const label = document.getElementById('label').value;
+    const srcLang = document.getElementById('srcLanguage').value;
+    const destLang = document.getElementById('destLanguage').value;
+    const closest = escoHelper.getClosestLabel(label, srcLang);
+    const transLabel = escoHelper.getEscoLabel(closest?.uri, destLang);
+
+    var message = '';
+
+    if (closest == null){
+        message = `Couldn't match the given skill with any ESCO term`;
+    } else if (typeof(closest['original']) == 'string'){
+        message = `Closest Synonym: ${closest['label']}
+ESCO Closest Term: ${closest['original']}
+ESCO Translation: ${transLabel}`;
+    } else {
+        message = `ESCO Closest Term: ${closest['label']}
+ESCO Translation: ${transLabel}`;
+    }
+
+    document.getElementById('result').value = message;
+}
+
+</script>
