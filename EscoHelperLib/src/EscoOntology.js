@@ -51,6 +51,7 @@ class EscoOntology {
     getEscoLabel(uri, language){
         if (typeof(uri) !== 'string') return null;
         const ontology = this.ontology[language];
+        console.log(this.ontology,language);    
 
         for (let i = 0; i < ontology.length; i++) {
             const concept = ontology[i];
@@ -86,18 +87,15 @@ class EscoOntology {
         if (closest == null) return null;
     
         if (closestDistance > this.maxDistance) return null;
-
-        if (enableSynonyms) return {
-            label: closest.original,
-            uri: closest.uri,
-            distance: closestDistance,
-            matchedSynonym: closest.label,
-        }
     
+        const preferredLabel = this.getEscoLabel(closest.uri, language);
+
         return {
-            label : closest.label,
-            uri : closest.uri,
-            distance : closestDistance,
+            closestLabel: closest.label,
+            typeClosestLabel: closest.type,
+            preferredLabel: preferredLabel,
+            uri: closest.uri,
+            distance: closestDistance
         };
     }
 
@@ -109,17 +107,8 @@ class EscoOntology {
         const translation = this.getEscoLabel(responseClosest.uri, destLanguage);;
     
         const response = {
+            ...responseClosest,
             translation,
-            uri: responseClosest.uri,
-            detectedEscoLabel : responseClosest.label,
-            matchedSynonym : responseClosest.matchedSynonym,
-            distance: responseClosest.distance,
-        }
-    
-        if (responseClosest.distance == 0){
-            delete response.original;
-            delete response.detectedEscoLabel;
-            delete response.distance;
         }
 
         return response;

@@ -1,4 +1,10 @@
-<script src="http://localhost:8080/esco-helper.js"></script>
+<script src="http://localhost:8081/esco-helper.js"></script>
+
+<script>
+    const filesLocation = 'https://localhost:8082/';
+    const filePrefix = 'esco_labels_expanded';
+</script>
+
 
 <html></html>
     <b>Label:</b>
@@ -44,15 +50,12 @@
 
     <br /><br />
 
-    <textarea style="width: 550px; height: 80px; font-size: 16px;" disabled id="result"></textarea>
+    <textarea style="width: 630px; height: 160px; font-size: 16px;" disabled id="result"></textarea>
 </html>
 
 <script>
-
-    const props = {
-        filesLocation: 'http://localhost:3000',
-        maxDistance: 2,
-    };
+    // Defined at the beginning of this file
+    const props = { filesLocation, filePrefix };
     var escoHelper = new esco.EscoOntology(props);
 
     document.getElementById('result').value = 'Loading ESCO...';
@@ -73,20 +76,19 @@ function matchAndTranslate(){
     const label = document.getElementById('label').value;
     const srcLang = document.getElementById('srcLanguage').value;
     const destLang = document.getElementById('destLanguage').value;
-    const closest = escoHelper.getClosestLabel(label, srcLang);
-    const transLabel = escoHelper.getEscoLabel(closest?.uri, destLang);
+    const results = escoHelper.translate(label, srcLang, destLang);
 
     var message = '';
 
-    if (closest == null){
+    if (results == null){
         message = `Couldn't match the given skill with any ESCO term`;
-    } else if (typeof(closest['original']) == 'string'){
-        message = `Closest Synonym: ${closest['label']}
-ESCO Closest Term: ${closest['original']}
-ESCO Translation: ${transLabel}`;
     } else {
-        message = `ESCO Closest Term: ${closest['label']}
-ESCO Translation: ${transLabel}`;
+        message = `ESCO Closest Term:\t${results.closestLabel}
+Type Closest Term:\t${results.typeClosestLabel}
+Distance:\t\t${results.distance}
+ESCO Preferred Label:\t${results.preferredLabel}
+ESCO URI:\t\t${results.uri}
+ESCO Translation:\t${results.translation}`;
     }
 
     document.getElementById('result').value = message;

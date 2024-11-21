@@ -3,7 +3,8 @@ const esco = require('../lib/esco-helper');
 const supportedLanguages = esco.constants.esco.supportedLanguages;
 
 const props = {
-    filesLocation: process.env.LOCATION_ESCO_FILES,
+    filesLocation: process.env.ESCO_FILES_LOCATION,
+    filePrefix: process.env.ESCO_FILES_PREFIX,
     maxDistance: 2,
     enableSynonyms: false,
 };

@@ -33,9 +33,12 @@ async function getClosestLabel(req,res){
     const responseClosest = escoHelper.getClosestLabel(label, language);
 
     if (responseClosest == null) return res.status(400).json({
-        label: null,
-        uri: null,
+        closestLabel: null,
+        typeClosestLabel: null,
         distance: null,
+        preferredLabel: null,
+        translation: null,
+        uri: null,
         error: `Label '${label}' doesn't match with any of the Official ESCO Concepts.`
     })
 
@@ -55,9 +58,12 @@ async function translate(req,res){
     const response = escoHelper.translate(label, sourceLanguage, destLanguage);
 
     if (response == null) return res.status(400).json({
-        label: null,
-        uri: null,
+        closestLabel: null,
+        typeClosestLabel: null,
         distance: null,
+        preferredLabel: null,
+        translation: null,
+        uri: null,
         error: `Label '${label}' doesn't match with any of the Official ESCO Concepts.`
     })
 

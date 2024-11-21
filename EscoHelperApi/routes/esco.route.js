@@ -76,18 +76,27 @@ EscoRouter.post('/getLabel',
  *                      schema:
  *                        type: object
  *                        properties:
- *                          label:
- *                            type: string
- *                            description: Label of the ESCO Concept that approximates the most to the given term.
- *                            example: data science
- *                          uri:
- *                            type: string
- *                            description: URI of the ESCO Concept  that approximates the most to the given term.
- *                            example: edebd83d-35f6-4ed5-a940-6c203d178c01
+ *                          closestLabel:
+ *                              type: string
+ *                              description: Label of the ESCO Concept that approximates the most to the given term.
+ *                              example: project leader
+ *                          typeClosestLabel:
+ *                              type: string
+ *                              description: Type of the concept that matches with the given term (preferredLabel / altLabel / synonym)
+ *                              example: altLabel
  *                          distance:
- *                            type: integer
- *                            description: Syntactical distance between the given term and the closest ESCO concept
- *                            example: 1
+ *                              type: integer
+ *                              description: Syntactical distance between the given term and the closest ESCO concept
+ *                              example: 1
+ *                          preferredLabel:
+ *                              type: string
+ *                              description: Preferred label of the matching concept 
+ *                              example: project manager
+ *                          uri:
+ *                              type: string
+ *                              description: URI of the ESCO Concept that approximates the most to the given term.
+ *                              example: bea99fea-0383-4c63-b944-70d4799de2c5
+ *                          
  */
 EscoRouter.post('/getClosestLabel', 
     EscoController.languageValidator('language'),
@@ -138,22 +147,26 @@ EscoRouter.post('/getClosestLabel',
  *                            type: string
  *                            description: Label of the ESCO Concept that approximates the most to the given term.
  *                            example: data science
- *                          uri:
- *                            type: string
- *                            description: URI of the ESCO Concept  that approximates the most to the given term.
- *                            example: edebd83d-35f6-4ed5-a940-6c203d178c01
- *                          original:
- *                            type: string
- *                            description: Original Search Term sent via request parameters.
- *                            example: The Data Science
- *                          detectedEscoLabel:
+ *                          closestLabel:
  *                            type: string
  *                            description: Label of the ESCO Concept that approximates the most to the given term.
- *                            example: data science
+ *                            example: project leader
+ *                          typeClosestLabel:
+ *                            type: string
+ *                            description: Type of the concept that matches with the given term (preferredLabel / altLabel / synonym)
+ *                            example: altLabel
  *                          distance:
  *                            type: integer
  *                            description: Syntactical distance between the given term and the closest ESCO concept
  *                            example: 1
+ *                          preferredLabel:
+ *                            type: string
+ *                            description: Preferred label of the matching concept
+ *                            example: project manager
+ *                          uri:
+ *                            type: string
+ *                            description: URI of the ESCO Concept that approximates the most to the given term.
+ *                            example: bea99fea-0383-4c63-b944-70d4799de2c5
  */
 EscoRouter.post('/translate', 
     EscoController.languageValidator('sourceLanguage'),

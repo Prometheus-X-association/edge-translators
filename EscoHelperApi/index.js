@@ -12,8 +12,9 @@ const { escoHelper } = require('./constants/esco.constants');
 async function startServer(){
     // Load External Variables in Environment
     
-    
+    console.log('Loading ESCO Tables...');
     await escoHelper.loadOntology();
+    console.log('ESCO Tables loaded succesfully');
 
     // Build Express App
     const app = express();

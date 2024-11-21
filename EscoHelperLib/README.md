@@ -75,7 +75,7 @@ escoHelper.getEscoLabel(uri,language)
 You can also find the ESCO term that is closer to a given label:
 
 ```
-label = 'data sciences'
+label = 'project leaders'
 language = 'en'
 escoHelper.getClosestLabel(label,language)
 
@@ -83,27 +83,30 @@ escoHelper.getClosestLabel(label,language)
 -- RESPONSE --
 
 {
-    label: 'data science',
-    uri: 'edebd83d-35f6-4ed5-a940-6c203d178c01',
-    distance: 1
+    closestLabel: "project leader",
+    typeClosestLabel: "altLabel",
+    distance: 1,
+    preferredLabel: "project manager",
+    uri: "bea99fea-0383-4c63-b944-70d4799de2c5"
 }
 ```
 
 ESCO Helper also allows you to merge both operations. The translate() function finds the most similar ESCO term of a given label and translates it to a desired language:
 
 ```
-label = 'data sciences'
+label = 'project leaders'
 sourceLang = 'en'
-destLang = 'es'
+destLang = 'fr'
 escoHelper.translate(label, sourceLang, destLang)
 
 -- RESPONSE --
 
 {
-    translation: 'ciencia de datos', 
-    uri: 'edebd83d-35f6-4ed5-a940-6c203d178c01',
-    original: 'data sciences',
-    detectedEscoLabel: 'data science',
-    distance: 1
+    closestLabel: "project leader",
+    typeClosestLabel: "altLabel",
+    distance: 1,
+    preferredLabel: "project manager",
+    translation: "gestionnaire de projet",
+    uri: "bea99fea-0383-4c63-b944-70d4799de2c5"
 }
 ```
