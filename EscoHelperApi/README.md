@@ -17,12 +17,19 @@ npm install pm2 -g
 npm install nodemon -g
 ```
 
+## Explanation of the .env variables
+
+* **IP:** Network Address where Backend will be available.
+* **PORT:** Port under specified IP where Backend will be available.
+* **ESCO_FILES_LOCATION:** Main Directory or path where ESCO Tables will be fetched via HTTP GET request.
+* **ESCO_FILES_PREFIX:** Prefix in the name of the ESCO Table files.
+
 ## Usage
 
 1. You must install the code dependencies of both systems (Frontend and Backend)
 
    ```
-   cd /usr/src/edge-translators/EscoHelper/
+   cd edge-translators/EscoHelper/
    npm install
    ```
 2. Copy the file called .env.template and setup the respective variables.
@@ -47,6 +54,12 @@ npm install nodemon -g
 
    ```
    pm2 restart process.json
+   ```
+
+   Alternatively, you can execute it directly without using pm2:
+
+   ```
+   npm start
    ```
 
 ## API Documentation
