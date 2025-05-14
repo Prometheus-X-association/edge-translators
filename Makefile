@@ -34,22 +34,22 @@ reset-all:
 	sudo rm -rf .local/ .data/ .downloaded/
 	
 	sudo rm -rf api/.env api/.venv/ api/.cache/ api/src/.model
-#	cp api/.env.dist api/.env
+	cp api/.env.dist api/.env
 	
 	sudo rm -rf ui/.env ui/.venv/ ui/.cache/
-#	cp ui/.env.dist ui/.env
+	cp ui/.env.dist ui/.env
 	
 	sudo rm -rf admin/node_modules/
 	
 	sudo rm -rf esco-helper/.env esco-helper/node_modules/
-#	cp esco-helper/.env.dist esco-helper/.env
+	cp esco-helper/.env.dist esco-helper/.env
 
-#	mkdir -p .local
+	mkdir -p .local
 
-#	uv venv --directory=.local/ .venv-api
-#	. .local/.venv-api/bin/activate && uv sync --directory=api --active && deactivate
+	uv venv --directory=.local/ .venv-api
+	. .local/.venv-api/bin/activate && uv sync --directory=api --active && deactivate
 	
-#	uv venv --directory=.local/ .venv-ui
-#	. .local/.venv-ui/bin/activate && uv sync --directory=ui --active && deactivate
+	uv venv --directory=.local/ .venv-ui
+	. .local/.venv-ui/bin/activate && uv sync --directory=ui --active && deactivate
 
-#	docker compose up --build --force-recreate
+	docker compose up --build --force-recreate
