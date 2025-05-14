@@ -1,0 +1,42 @@
+{
+    "@context": {
+        "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+    },
+    "graph": [
+        {
+            "category": "term:skills/category/riasec",
+            "experience": "tr:__experience-id-1__",
+            "id": "tr:__skill-id-1__",
+            "prefLabel": {
+                "@language": "fr",
+                "@value": "ARTISTIQUE"
+            },
+            "type": "soo:Skill",
+            "skillLevelValue": "term:test/skill/1e722f5abafbfa1375af50041eef3246/value/0.6",
+            "skillLevelScale": "term:test/skill/1e722f5abafbfa1375af50041eef3246/scale"
+        },
+        {
+            "id": "term:test/skill/1e722f5abafbfa1375af50041eef3246/value/0.6",
+            "type": "skos:Concept",
+            "prefLabel": [
+                {
+                    "value": "0.6"
+                }
+            ],
+            "memberOf": "term:test/skill/1e722f5abafbfa1375af50041eef3246/scale",
+            "notation": 0.6
+        },
+        {
+            "id": "term:test/skill/1e722f5abafbfa1375af50041eef3246/scale",
+            "type": "skos:Collection",
+            "prefLabel": [
+                {
+                    "value": "test collection for skill in missions.tendencies.score"
+                }
+            ],
+            "member": [
+                "term:test/skill/1e722f5abafbfa1375af50041eef3246/value/0.6"
+            ]
+        }
+    ]
+}

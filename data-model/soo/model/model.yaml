@@ -1,0 +1,64 @@
+ns: 
+  skos: http://www.w3.org/2004/02/skos/core#
+  soo: https://competencies.be/soo/
+import:
+  - 
+triple:
+
+#######SOO DATAMODEL##########
+
+  soo:Experience:                               # Describe an experience whatever type : professional, educational, etc.
+    skos:prefLabel: rdf:langstring              # The preferred label of the experience
+    soo:description: soo:Description            # A description of an Experience, as an object to associate text, links, etc...
+    soo:experienceType: skos:Concept            # The type of experience : vocational, professional, personal, test, ..
+    soo:experienceStatus: skos:Concept          # The experience status : past, ongoing, suggested
+    soo:dateFrom: xsd:date                      # The start date if a time period or the date of occurence
+    soo:dateTo: xsd:date                        # The end date if a time period 
+    soo:profile: soo:Profile                    # The profile attached to this experience
+    soo:company: xsd:string                     # A company attached to this experience
+    soo:location: xsd:string                    # A location attached to this experience
+    soo:contractType: xsd:string                # A contract type attached to this experience
+    soo:family: soo:Family                      # Any grouping variable for this experience
+    soo:sourceId: xsd:string                    # A source ID if provided
+    soo:polarity: soo:Polarity                  # Any polarity attached to the experience
+    soo:skill: soo:Skill                        # Any skill attached to the experience
+    soo:sourceDataValue: soo:SourceDataJson     # Source data value attached to the experience
+
+  soo:Skill:                                    # Describe the skills attached to an experience
+    soo:experience: soo:Experience              # The experience that provided or is likely to provide the skill
+    soo:description: soo:Description            # A description of a Skill, as an object to associate text, links, etc...
+    soo:category: skos:Concept                  # The skill group as defined in skos collections, e.g. hard skills/soft skills
+    soo:skillLevelScale: skos:OrderedCollection # The scale over which the skill level is defined
+    soo:skillLevelValue: skos:Concept           # The skill level as defined as a value on a scale
+    soo:sourceSkillId: skos:Concept             # The dataprovider's unique concept skill
+
+
+  soo:Polarity:                                 # Polarity express the feeling toward an experience or a skill
+    soo:experience: soo:Experience              # The experience which individual polarity is given
+    soo:polarityScale: skos:OrderedCollection   # The scale over which the polarity value is given
+    soo:polarityValue: skos:Concept             # The polarity defined as a value on a scale
+
+
+  soo:Profile:
+    soo:name: xsd:string                        # The name of the profile
+    soo:email: xsd:string                       # The email of the profile
+    soo:experience: soo:Experience              # The experience(s) associated with the profile
+    soo:address: xsd:string                     # The postal address of the profile
+
+  soo:Family:                         
+    skos:prefLabel: rdf:langstring              # The preffered label of the family member
+    skos:memberOf: skos:Collection              # The id of the collection it belongs to
+    soo:provider: xsd:string                    # The id of the provider of the collection
+    
+  soo:Description:
+    soo:text: rdf:langstring                   # A text to complement the description
+    soo:url:  xsd:string                        # A url to complement the description
+    soo:keywords: rdf:langstring                # Possible keywords to complement the description
+    soo:imagePath:  xsd:string                  # An image to complement the description
+
+  soo:SourceDataJson:
+    soo:value: rdf:JSON                         # see https://w3c.github.io/rdf-concepts/spec/#section-json
+    
+
+
+

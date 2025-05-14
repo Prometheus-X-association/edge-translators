@@ -1,0 +1,90 @@
+[
+    {
+        "id": "test_id",
+        "type": "soo:Experience",
+        "prefLabel": {
+            "value": "Ingénieur informatique",
+            "language": "fr"
+        },
+        "description": "",
+        "framework": "esco",
+        "provider": "test",
+        "match": {
+            "id": "match:suggestion/id_source/931c0c6ce20d36bf2b70452db3d93910/id_target/esco:occupation/38a7f453-a7f0-45d2-a74d-5b92506e4a21",
+            "type": "match:suggestion",
+            "target": {
+                "id": "esco:occupation/38a7f453-a7f0-45d2-a74d-5b92506e4a21",
+                "prefLabel": {
+                    "value": "computer hardware engineering technician",
+                    "language": "en"
+                }
+            },
+            "score": 2.6335511,
+            "validated": 0,
+            "framework": "esco",
+            "mappingType": "skos:exactMatch"
+        },
+        "suggestions": [
+            {
+                "id": "match:suggestion/id_source/931c0c6ce20d36bf2b70452db3d93910/id_target/esco:occupation/92bb3d8c-8a9f-4cd7-80ec-247bbf173004",
+                "type": "match:suggestion",
+                "target": {
+                    "id": "esco:occupation/92bb3d8c-8a9f-4cd7-80ec-247bbf173004",
+                    "prefLabel": {
+                        "value": "computer hardware engineer",
+                        "language": "en"
+                    }
+                },
+                "score": 2.6091418,
+                "validated": 0,
+                "framework": "esco",
+                "mappingType": "skos:exactMatch"
+            },
+            {
+                "id": "match:suggestion/id_source/931c0c6ce20d36bf2b70452db3d93910/id_target/esco:occupation/27811419-407f-4868-a388-2f7df7aafd91",
+                "type": "match:suggestion",
+                "target": {
+                    "id": "esco:occupation/27811419-407f-4868-a388-2f7df7aafd91",
+                    "prefLabel": {
+                        "value": "electronics engineering technician",
+                        "language": "en"
+                    }
+                },
+                "score": 2.5978985,
+                "validated": 0,
+                "framework": "esco",
+                "mappingType": "skos:exactMatch"
+            },
+            {
+                "id": "match:suggestion/id_source/931c0c6ce20d36bf2b70452db3d93910/id_target/esco:occupation/d849fd2a-5210-434b-a50b-2d92de3a4bac",
+                "type": "match:suggestion",
+                "target": {
+                    "id": "esco:occupation/d849fd2a-5210-434b-a50b-2d92de3a4bac",
+                    "prefLabel": {
+                        "value": "electronics drafter",
+                        "language": "en"
+                    }
+                },
+                "score": 2.5558472,
+                "validated": 0,
+                "framework": "esco",
+                "mappingType": "skos:exactMatch"
+            },
+            {
+                "id": "match:suggestion/id_source/931c0c6ce20d36bf2b70452db3d93910/id_target/esco:occupation/e6800524-eec2-4c33-af0e-6f36d1d679bc",
+                "type": "match:suggestion",
+                "target": {
+                    "id": "esco:occupation/e6800524-eec2-4c33-af0e-6f36d1d679bc",
+                    "prefLabel": {
+                        "value": "instrumentation engineer",
+                        "language": "en"
+                    }
+                },
+                "score": 2.5532494,
+                "validated": 0,
+                "framework": "esco",
+                "mappingType": "skos:exactMatch"
+            }
+        ]
+    }
+]

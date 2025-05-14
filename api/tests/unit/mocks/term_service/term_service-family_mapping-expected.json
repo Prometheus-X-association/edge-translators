@@ -1,0 +1,33 @@
+{
+    "@context": {
+        "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+    },
+    "graph": [
+        {
+            "family": "term:test/family/d9e8e5e07211aea6a79908188885427b/metier"
+        },
+        {
+            "id": "term:test/family/d9e8e5e07211aea6a79908188885427b/metier",
+            "type": "skos:Concept",
+            "prefLabel": [
+                {
+                    "value": "Métier"
+                }
+            ],
+            "memberOf": "term:test/family/d9e8e5e07211aea6a79908188885427b",
+            "notation": "Métier"
+        },
+        {
+            "id": "term:test/family/d9e8e5e07211aea6a79908188885427b",
+            "type": "skos:Collection",
+            "prefLabel": [
+                {
+                    "value": "test collection for family in jobCards.type"
+                }
+            ],
+            "member": [
+                "term:test/family/d9e8e5e07211aea6a79908188885427b/metier"
+            ]
+        }
+    ]
+}

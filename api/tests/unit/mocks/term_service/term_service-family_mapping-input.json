@@ -1,0 +1,17 @@
+{
+    "@context": {
+      "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+    },
+    "graph": [
+      {
+        "__family__": {
+          "provider": "orientoi_1",
+          "scale": "family",
+          "scale_path": "jobCards.type",
+          "str_value": "M\u00e9tier",
+          "targetFunction": "fno:handle-family",
+          "value": "M\u00e9tier"
+        }
+      }
+    ]
+  }

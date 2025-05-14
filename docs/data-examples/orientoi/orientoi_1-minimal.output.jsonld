@@ -1,0 +1,270 @@
+{
+  "@context": {
+    "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+  },
+  
+  "graph": [
+    {
+      "id": "tr:__experience-id-1__",
+      "type": "soo:Experience",
+      "sourceId": "0ede4405-fb88-4cac-a501-603916c1484a",
+      "experienceType": "term:experience/type/professional",
+      "experienceStatus": "term:experience/type/suggested",
+      "prefLabel": {
+        "@value": "Agent / Agente de centre de tri de dechet",
+        "@language": "fr"
+      },
+      "description": {
+        "@value": "<h3>Définition</h3><p>Réalise des opérations de tri de déchets et produits industriels en fin de vie (textiles, plastiques, verres, composants, ...) selon les règles de sécurité, d'environnement et les impératifs de récupération (qualité, cadence, ...).<br>Peut reconditionner des produits industriels pour valorisation par réutilisation ou recyclage.<br>Peut coordonner une équipe.</p><h3>Accès au métier</h3><p>Cet emploi/métier est accessible sans diplôme ni expérience professionnelle.<br>Un ou plusieurs Certificat(s) d'Aptitude à la Conduite En Sécurité -CACES- conditionné(s) par une aptitude médicale à renouveler périodiquement peu(ven)t être requis.<br>Des vaccinations spécifiques (leptospirose, hépatite, ...) peuvent être requises selon le secteur d'activité.</p><h3>Condition du métier</h3><p>L'activité de cet emploi/métier s'exerce au sein de sociétés de services, d'associations, de collectivités territoriales, d'entreprises industrielles en contact avec différents intervenants (particuliers, conducteurs d'engins, ...).<br>Elle varie selon le lieu d'intervention et le type de produits collectés.<br>Elle peut impliquer le port de charges.<br>Le port d'équipements de protection (gants, combinaison, ...) peut être requis.</p><h3>Environnement de travail</h3><p>Structures</p><ul><li>Association</li><li>Centre Véhicules hors d'usage - VHU</li><li>Collectivité territoriale</li><li>Déchetterie</li><li>Entreprise industrielle</li><li>Ressourcerie</li><li>Société de collecte et de traitement des déchets</li><li>Société de services</li></ul><p>Secteurs</p><ul><li>Recyclage</li></ul><h3>Compétences de Base attendues</h3><table><tbody><tr><td>Réaliste</td><td>100.0 %</td></tr></tbody></table>",
+        "@language": "fr"
+      },
+      "match": {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/7eeccf75f8e54e538da16fa17a01206e/id_target/occupation:cb3432f8-bad7-4703-ba66-dc980a4ce4f7",
+        "mappingType": "skos:exactMatch",
+        "score": 2.7461572,
+        "target": {
+         "id": "occupation:cb3432f8-bad7-4703-ba66-dc980a4ce4f7",
+         "prefLabel": {
+          "language": "fr",
+          "value": "op\u00e9rateur de traitement des d\u00e9chets m\u00e9talliques/op\u00e9ratrice de traitement des d\u00e9chets m\u00e9talliques"
+         }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+      },
+      "suggestions": [ {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/7eeccf75f8e54e538da16fa17a01206e/id_target/occupation:2480f8b0-4c02-4c66-84ad-2677c1548e03",
+        "mappingType": "skos:exactMatch",
+        "score": 2.7035809,
+        "target": {
+         "id": "occupation:2480f8b0-4c02-4c66-84ad-2677c1548e03",
+         "prefLabel": {
+          "language": "fr",
+          "value": "conducteur de benne \u00e0 ordures/conductrice de benne \u00e0 ordures"
+         }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+       },
+       {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/7eeccf75f8e54e538da16fa17a01206e/id_target/occupation:ea6cd713-94ca-4292-9ba9-ca8a4ec3ed5f",
+        "mappingType": "skos:exactMatch",
+        "score": 2.6895168,
+        "target": {
+         "id": "occupation:ea6cd713-94ca-4292-9ba9-ca8a4ec3ed5f",
+         "prefLabel": {
+          "language": "fr",
+          "value": "d\u00e9manteleur/d\u00e9manteleuse"
+         }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+       },
+       {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/7eeccf75f8e54e538da16fa17a01206e/id_target/occupation:9fcce643-276b-435f-aa94-4516c2414686",
+        "mappingType": "skos:exactMatch",
+        "score": 2.686366,
+        "target": {
+         "id": "occupation:9fcce643-276b-435f-aa94-4516c2414686",
+         "prefLabel": {
+          "language": "fr",
+          "value": "responsable de la logistique distribution de d\u00e9chets et d\u00e9bris"
+         }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+       },
+       {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/7eeccf75f8e54e538da16fa17a01206e/id_target/occupation:4ed9ce62-75d4-4b05-80d4-e86528fecdcd",
+        "mappingType": "skos:exactMatch",
+        "score": 2.681744,
+        "target": {
+         "id": "occupation:4ed9ce62-75d4-4b05-80d4-e86528fecdcd",
+         "prefLabel": {
+          "language": "fr",
+          "value": "recycleur/recycleuse"
+         }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+       }],
+      "polarity": "tr:__polarity-id-1__",
+      "family": "term:orientoi_1/family/d9e8e5e07211aea6a79908188885427b/M\u00e9tier"
+    }, 
+
+
+    {
+      "id": "tr:__polarity-id-1__",
+      "type": "soo:Polarity",
+      "polarityScale": "term:orientoi_1/polarity/c3b52713f081d481375e28106c72acb9/scale",
+      "polarityValue": "term:orientoi_1/polarity/c3b52713f081d481375e28106c72acb9/value/Je ne sais pas",
+      "experience":"tr:__experience-id-1__"
+    },
+    {
+      "id": "term:orientoi/polarity/value/1", 
+      "type": "skos:Concept",
+      "prefLabel": {"@value": "Je ne sais pas", "@language": "en"},
+      "notation": "Je ne sais pas"
+    },
+
+    {
+      "id": "term:orientoi_1/family/d9e8e5e07211aea6a79908188885427b/M\u00e9tier",
+      "type": "skos:Concept",
+      "prefLabel": {"@value": "Métier" , "@language": "fr"},
+      "memberOf": "term:orientoi/collection"
+    },
+
+    {
+      "id": "term:orientoi_1/family/d9e8e5e07211aea6a79908188885427b",
+      "type": "skos:Collection",
+      "member": [
+       "term:orientoi_1/family/d9e8e5e07211aea6a79908188885427b/M\u00e9tier",
+       "term:orientoi_1/family/d9e8e5e07211aea6a79908188885427b/Secteur d''activit\u00e9"
+      ],
+      "prefLabel": [
+       {
+        "language": "en",
+        "value": "orientoi_1 collection for family in jobCards.type"
+       }
+      ]
+     },
+
+
+
+
+    {
+      "id": "tr:__experience-id-2__",
+      "type": "soo:Experience",
+      "sourceId": "1535e1c6-37e8-11e8-8177-782bcb695311",
+      "experienceType": "term:experience/type/professional",
+      "experienceStatus": "term:experience/type/suggested",
+      "prefLabel": {"@value": "Social", "@language": "fr"},
+      "description": {"@value": "<h3>Travailler dans LE SOCIAL</h3><p>Ce secteur est fondé sur l’humain et au service de la communauté.</p><p><img src=\"{{url}}/{{path}}/intro46.png\"></p><p>Les professionnels de ce domaine écoutent, accompagnent, aident et conseillent par leurs actions matérielles, pédagogiques et psychologiques des personnes dépendantes, des enfants, des personnes fragiles ou en difficulté : personnes âgées, handicapés, jeunes enfants, adolescents... Ils interviennent à travers l'action éducative, l'animation socioculturelle, le conseil... Ce secteur intègre également les métiers administratifs du secteur.</p><p>Les missions et publics sont variés. Les travailleurs sociaux permettent à une personne âgée dépendante de continuer à vivre chez elle en lui rendant des services chaque jour. Ils aident un enfant en situation de handicap moteur à suivre une scolarité normale en le secondant dans ses gestes d'écolier. Ils informent une famille en situation de précarité sur les aides auxquelles elle peut prétendre.</p><p><u><b>Quelques métiers du secteur :</b></u></p><p><u>L’aide sociale</u></p><p><ul><li>Assistant / Assistante sociale</li><li>Conseiller / Conseillère en insertion sociale et professionnelle</li></ul></p><p><u>L’éducation spécialisée</u></p><p><ul><li>Educateur / Educatrice de jeunes enfants</li><li>Moniteur éducateur / Monitrice éducatrice</li></ul></p><p><u>L’animation</u></p><p><ul><li>Animateur / Animatrice socio-culturel</li><li>Animateur / Animatrice multimédia</li></ul></p><p><u>Le travail à domicile</u></p><p><ul><li>Auxiliaire de vie</li><li>Technicien / Technicienne de l'intervention sociale et familiale</li></ul></p><p><b><u>Quelques chiffres du secteur</u></b></p><p><ul><li>800 000 travailleurs sociaux</li><li>55 000 éducateurs spécialisés, 31 000 moniteurs éducateurs, 42 000 aides médico-psychologiques, 262 000 auxiliaires de vie sociale et 39 000 assistants de service social</li><li>Les travailleurs sociaux exercent au sein des hôpitaux, des caisses d'allocation familiales, des centres de protection maternelle et infantile, des prisons, des centres d'accueil d'urgence, des maisons de quartier, des crèches, des centres d'hébergement pour personnes handicapées, etc. D'autres interviennent à domicile.</li></ul></p><p><b><i>“L’humain est au cœur de mes préoccupations, je me mets au service des métiers du social.”</i></b></p><p><img src=\"{{url}}/{{path}}/fin46.png\"></p>", "@language": "fr"},
+      "match": {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/f431e17ea0081a3c9e51fc240221ee21/id_target/occupation:fa4a3b52-990c-44eb-a912-490f5d689400",
+        "mappingType": "skos:exactMatch",
+        "score": 2.7762527,
+        "target": {
+         "id": "occupation:fa4a3b52-990c-44eb-a912-490f5d689400",
+         "prefLabel": {
+          "language": "fr",
+          "value": "\u00e9ducateur social/\u00e9ducatrice sociale"
+         }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+       },
+      "suggestions": [
+        {
+         "framework": "esco",
+         "id": "match:suggestion/id_source/f431e17ea0081a3c9e51fc240221ee21/id_target/occupation:0d423a2e-6fb7-4704-8544-bd6c522b3c62",
+         "mappingType": "skos:exactMatch",
+         "score": 2.7511585,
+         "target": {
+          "id": "occupation:0d423a2e-6fb7-4704-8544-bd6c522b3c62",
+          "prefLabel": {
+           "language": "fr",
+           "value": "agent d\u2019intervention sociale et familiale/agente d\u2019intervention sociale et familiale"
+          }
+         },
+         "type": "match:suggestion",
+         "validated": 0
+        },
+        {
+         "framework": "esco",
+         "id": "match:suggestion/id_source/f431e17ea0081a3c9e51fc240221ee21/id_target/occupation:5727b567-993d-4d41-a13d-81a6af1a9a8e",
+         "mappingType": "skos:exactMatch",
+         "score": 2.7500849,
+         "target": {
+          "id": "occupation:5727b567-993d-4d41-a13d-81a6af1a9a8e",
+          "prefLabel": {
+           "language": "fr",
+           "value": "assistant de service social/assistante de service social"
+          }
+         },
+         "type": "match:suggestion",
+         "validated": 0
+        },
+        {
+         "framework": "esco",
+         "id": "match:suggestion/id_source/f431e17ea0081a3c9e51fc240221ee21/id_target/occupation:4b05bef2-ded4-4b09-ab94-f4c6a555a775",
+         "mappingType": "skos:exactMatch",
+         "score": 2.7481203,
+         "target": {
+          "id": "occupation:4b05bef2-ded4-4b09-ab94-f4c6a555a775",
+          "prefLabel": {
+           "language": "fr",
+           "value": "travailleur social/travailleuse sociale"
+          }
+         },
+         "type": "match:suggestion",
+         "validated": 0
+        },
+        {
+         "framework": "esco",
+         "id": "match:suggestion/id_source/f431e17ea0081a3c9e51fc240221ee21/id_target/occupation:2ae76ccc-f02e-4eb6-b693-fff70ba8f409",
+         "mappingType": "skos:exactMatch",
+         "score": 2.7473388,
+         "target": {
+          "id": "occupation:2ae76ccc-f02e-4eb6-b693-fff70ba8f409",
+          "prefLabel": {
+           "language": "fr",
+           "value": "auxiliaire de vie sociale aupr\u00e8s d\u2019enfants"
+          }
+         },
+         "type": "match:suggestion",
+         "validated": 0
+        }
+       ],
+      "polarity": "tr:__polarity-id-2__",
+      "family": "term:orientoi_1/family/d9e8e5e07211aea6a79908188885427b/Secteur d''activit\u00e9"
+    }, 
+
+    
+
+
+    {
+      "id": "tr:__polarity-id-2__",
+      "type": "soo:Polarity",
+      "polarityScale": "term:orientoi_1/polarity/c3b52713f081d481375e28106c72acb9/scale",
+      "polarityValue": "term:orientoi_1/polarity/c3b52713f081d481375e28106c72acb9/value/ça me correspond",
+      "experience":"tr:__experience-id-2__"
+    },
+    {
+      "id": "term:orientoi_1/polarity/c3b52713f081d481375e28106c72acb9/value/ça me correspond", 
+      "type": "skos:Concept",
+      "prefLabel": {"@value": "ça me correspond", "@language": "fr"},
+      "notation": "ça me correspond"
+    },
+
+    {
+      "id": "term:orientoi_1/family/d9e8e5e07211aea6a79908188885427b/Secteur d''activit\u00e9",
+      "type": "skos:Concept",
+      "prefLabel": {"@value": "Secteur d''activité" , "@language": "fr"},
+      "memberOf": "term:orientoi/collection"
+    },
+
+    {
+      "id": "term:orientoi_1/polarity/c3b52713f081d481375e28106c72acb9/scale",
+      "member": [
+       "term:orientoi_1/polarity/c3b52713f081d481375e28106c72acb9/value/Je ne sais pas",
+       "term:orientoi_1/polarity/c3b52713f081d481375e28106c72acb9/value/\u00e7a me correspond"
+      ],
+      "prefLabel": [
+       {
+        "language": "en",
+        "value": "orientoi_1 collection for polarity in jobCards.positionnement"
+       }
+      ],
+      "type": "skos:Collection"
+     }
+    
+
+  ]
+}

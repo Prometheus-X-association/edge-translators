@@ -1,0 +1,19 @@
+{
+    "@context": {
+        "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+    },
+    "graph": [
+        {
+            "type": "soo:Experience",
+            "id": "tr:__experience-id-1__",
+            "__matching__": {
+                "sourceValue": "Software Engineer",
+                "provider": "faketestprovider",
+                "subtype": "job",
+                "language": "en"
+            },
+            "experienceType": "term:experience/type/professional",
+            "experienceStatus": "term:experience/type/past"
+        }
+    ]
+  }

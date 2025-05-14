@@ -1,0 +1,238 @@
+{
+	"@context": {
+		"id": "@id",
+		"graph": {
+			"@id": "@graph",
+			"@container": "@set"
+		},
+		"type": {
+			"@id": "@type",
+			"@container": "@set"
+		},
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"sh": "https://www.w3.org/ns/shacl#",
+		"dct": "http://purl.org/dc/terms/",
+		"skos": "http://www.w3.org/2004/02/skos/core#",
+		"gendj": "https://gen.competencies.be/terms/digitalJobs/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"qb": "http://purl.org/linked-data/cube#",
+		"dv": "http://www.w3.org/2003/g/data-view#",
+		"mmo": "https://ontologies.mindmatcher.org/carto/",
+		"mnx": "http://ns.mnemotix.com/ontologies/2019/8/generic-model/",
+		"oep": "http://ontology.datasud.fr/openemploi/"
+	},
+	"graph": [
+		{
+			"id": "mmm:3dbeb694d4bc161372e96871388751dff8827517",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:prefLabel",
+			"predicate": "domain",
+			"object": "rome:onto/WorkContext/Hours",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:53b8be48b6b4be28f25c1e0e547d59d4e883bd8d",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:broader",
+			"predicate": "domain",
+			"object": "rome:onto/WorkContext/Hours",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:b0e4473c1bef06c9136efde66e7bfbd8c38d1ed3",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:narrower",
+			"predicate": "domain",
+			"object": "rome:onto/WorkContext/Hours",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:6c49d63a396c1f898022eda95ab65cb45feb29e6",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:prefLabel",
+			"predicate": "domain",
+			"object": "rome:onto/Knowledge",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:47a0a36b7bc16341d058f6eaadc11fea517a009a",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:broader",
+			"predicate": "domain",
+			"object": "rome:onto/Knowledge",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:ec353f7881fca0f62e9206efe851d299f2845699",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:narrower",
+			"predicate": "domain",
+			"object": "rome:onto/Knowledge",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:8baeec24bafa539d2e0d59d540d8bbb5f1086773",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:prefLabel",
+			"predicate": "domain",
+			"object": "rome:onto/KnowledgeCategory",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:075f78c13553ae7510bf84c035114e1d6dd2c5a4",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:broader",
+			"predicate": "domain",
+			"object": "rome:onto/KnowledgeCategory",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:a26b826d2a9061d79b3370a8c0fc9dc5564d7d76",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:narrower",
+			"predicate": "domain",
+			"object": "rome:onto/KnowledgeCategory",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:83622c1f041efcd15375deb16c9f202e60571358",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:prefLabel",
+			"predicate": "domain",
+			"object": "rome:onto/SoftSkillDomain",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:149d75a90574e8b97d8cd50cf187780f981112a5",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:broader",
+			"predicate": "domain",
+			"object": "rome:onto/SoftSkillDomain",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:c27df3d073cf2107724d78f088850b97bdc26040",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:narrower",
+			"predicate": "domain",
+			"object": "rome:onto/SoftSkillDomain",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:60f1cd2b288d823a02bb872419a1ebacd0ab7e81",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:prefLabel",
+			"predicate": "domain",
+			"object": "rome:onto/Employment/Position",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:78104e0884e71c69e95e488fdb75bb82f6caba51",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:broader",
+			"predicate": "domain",
+			"object": "rome:onto/Employment/Position",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:4fbb31836875143884372873062fa4f94b29a675",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:narrower",
+			"predicate": "domain",
+			"object": "rome:onto/Employment/Position",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:9304304a6223038653a8c9c36f8ecae9126bc96b",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:prefLabel",
+			"predicate": "domain",
+			"object": "rome:onto/Employment/Sector",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:8e867be4d1ddd356720cb42800c1e2d55530629a",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:broader",
+			"predicate": "domain",
+			"object": "rome:onto/Employment/Sector",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:f17d5941e9109479c120003ff4e2ccb627aa397d",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:narrower",
+			"predicate": "domain",
+			"object": "rome:onto/Employment/Sector",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:0075fe371fae029109b69f4d4892f30cfce6ae85",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:prefLabel",
+			"predicate": "domain",
+			"object": "rome:onto/Employment/Field",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:d768afede25eb0244e95def2b585d48e6b461bd1",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:broader",
+			"predicate": "domain",
+			"object": "rome:onto/Employment/Field",
+			"engine": "jobs-skills-fr-rome4-3"
+		},
+		{
+			"id": "mmm:70a1d63a40e35344d822e26efe188a21956dbe6a",
+			"type": [
+				"met:PropertyEngine"
+			],
+			"subject": "skos:narrower",
+			"predicate": "domain",
+			"object": "rome:onto/Employment/Field",
+			"engine": "jobs-skills-fr-rome4-3"
+		}
+	]
+}

@@ -1,0 +1,162 @@
+[
+    {
+        "name": "Astrophysicien",
+        "company": "CosmoResearch Lab",
+        "description": "Étudie les phénomènes célestes et l'évolution de l'univers."
+    },
+    {
+        "name": "Océanographe",
+        "company": "BlueDepth Institute",
+        "description": "Analyse les écosystèmes marins et leur évolution."
+    },
+    {
+        "name": "Horloger",
+        "company": "SwissTime Masters",
+        "description": "Assemble et répare des montres de haute précision."
+    },
+    {
+        "name": "Forgeron",
+        "company": "IronCraft Workshop",
+        "description": "Façonne des objets en métal à partir de techniques artisanales."
+    },
+    {
+        "name": "Tatoueur",
+        "company": "InkVision Studio",
+        "description": "Crée et applique des tatouages artistiques sur la peau."
+    },
+    {
+        "name": "Paléontologue",
+        "company": "DinoDiscovery Center",
+        "description": "Étudie les fossiles pour comprendre l'histoire de la vie."
+    },
+    {
+        "name": "Maraîcher",
+        "company": "GreenHarvest Farms",
+        "description": "Cultive et vend des légumes et fruits en circuit court."
+    },
+    {
+        "name": "Ébéniste",
+        "company": "WoodArt Creations",
+        "description": "Fabrique et restaure des meubles en bois précieux."
+    },
+    {
+        "name": "Plombier",
+        "company": "AquaFlow Services",
+        "description": "Installe et répare les systèmes de plomberie et de chauffage."
+    },
+    {
+        "name": "Astronaute",
+        "company": "SpaceExplorers Agency",
+        "description": "Participe à des missions spatiales pour l'exploration de l'univers."
+    },
+    {
+        "name": "Facteur",
+        "company": "PostExpress",
+        "description": "Distribue le courrier et assure un lien essentiel avec les citoyens."
+    },
+    {
+        "name": "Chocolatier",
+        "company": "SweetDelight Artisans",
+        "description": "Conçoit et fabrique des chocolats artisanaux de qualité."
+    },
+    {
+        "name": "Herboriste",
+        "company": "NaturalCure Remedies",
+        "description": "Prépare et vend des remèdes naturels à base de plantes médicinales."
+    },
+    {
+        "name": "Domoticien",
+        "company": "SmartHome Solutions",
+        "description": "Installe des systèmes domotiques pour automatiser les habitations."
+    },
+    {
+        "name": "Pompier",
+        "company": "FireRescue Brigade",
+        "description": "Intervient en cas d'incendie et assure des missions de secours."
+    },
+    {
+        "name": "Coutelier",
+        "company": "BladeMaster Forge",
+        "description": "Fabrique et aiguise des couteaux et outils tranchants."
+    },
+    {
+        "name": "Guide de haute montagne",
+        "company": "Summit Adventures",
+        "description": "Accompagne et sécurise les expéditions en montagne."
+    },
+    {
+        "name": "Pilote de course",
+        "company": "SpeedTrack Racing",
+        "description": "Conduit des véhicules de compétition à haute vitesse."
+    },
+    {
+        "name": "Maître brasseur",
+        "company": "CraftBeer Brewery",
+        "description": "Conçoit et produit des bières artisanales uniques."
+    },
+    {
+        "name": "Marin pêcheur",
+        "company": "OceanHarvest Fisheries",
+        "description": "Capture et vend du poisson frais en haute mer."
+    },
+    {
+        "name": "Opérateur de drone",
+        "company": "SkyView Technologies",
+        "description": "Pilote des drones pour la surveillance et la capture d'images aériennes."
+    },
+    {
+        "name": "Sculpteur",
+        "company": "Stone & Wood Art",
+        "description": "Crée des œuvres artistiques en pierre, en bois ou en métal."
+    },
+    {
+        "name": "Météorologue",
+        "company": "WeatherTech Institute",
+        "description": "Analyse les phénomènes climatiques et prédit la météo."
+    },
+    {
+        "name": "Parfumeur",
+        "company": "AromaSens Creations",
+        "description": "Crée des fragrances uniques à partir d'essences naturelles et synthétiques."
+    },
+    {
+        "name": "Verrier",
+        "company": "CrystalArt Workshop",
+        "description": "Façonne des objets en verre grâce à des techniques artisanales."
+    },
+    {
+        "name": "Journaliste de terrain",
+        "company": "GlobalNews Network",
+        "description": "Rapporte des événements en direct depuis le terrain."
+    },
+    {
+        "name": "Restaurateur de patrimoine",
+        "company": "HistoricPreserve",
+        "description": "Restaure et protège les monuments et œuvres d'art anciens."
+    },
+    {
+        "name": "Maître d'hôtel",
+        "company": "Gourmet Hospitality",
+        "description": "Supervise le service en salle dans un restaurant de prestige."
+    },
+    {
+        "name": "Pilote d'hélicoptère",
+        "company": "SkyRescue Aviation",
+        "description": "Effectue des vols de secours, de surveillance et de transport."
+    },
+    {
+        "name": "Danseur professionnel",
+        "company": "EliteDance Academy",
+        "description": "Interprète des chorégraphies sur scène et en spectacle."
+    },
+    {
+        "name": "Libraire",
+        "company": "BookHaven Store",
+        "description": "Gère une librairie et conseille les lecteurs sur leurs choix."
+    },
+    {
+        "name": "Écrivain",
+        "company": "Pen & Ink Publishing",
+        "description": "Rédige des œuvres littéraires, des romans ou des essais."
+    }
+]

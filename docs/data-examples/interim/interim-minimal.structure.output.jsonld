@@ -1,0 +1,78 @@
+{
+  "@context": {
+    
+  },
+  "graph": [
+    {
+      "id": "tr:__generated-id-1__",
+      "type": "soo:Profile",
+      "name": "Alice Smith",
+      "email": "alice.smith@example.com",
+      "address": "456 Oak St, Anytown, USA",
+      "experience": ["tr:__xp-1__", "tr:__xp-2__", "tr:__xp-3__","tr:__xp-4__","tr:__xp-5__","tr:__xp-6__"],
+      "polarity": {"@value": "0", "@language":"en"}
+    },
+    {
+      "id": "tr:__xp-1__",
+      "type": "soo:Experience",
+      "prefLabel": {"@value": "Software Engineer", "@language":"en"},
+      "company": "Tech Corp",
+      "dateFrom": "2017-06-01",
+      "dateTo": "2019-08-01",
+      "experienceType": "term:experience/type/professional",
+      "experienceStatus": "term:experience/type/past"
+    },
+    {
+      "id": "tr:__xp-2__",
+      "type": "soo:Experience",
+      "prefLabel": {"@value": "Lead Engineer", "@language":"en"},
+      "company": "Innovate Ltd",
+      "dateFrom": "2019-09-01",
+      "dateTo": "2023-01-01",
+      "experienceType": "term:experience/type/professional",
+      "experienceStatus": "term:experience/type/past"
+    },
+
+    {
+      "id": "tr:__xp-3__",
+      "type": "soo:Experience",
+      "prefLabel": {"@value": "Certified Scrum Master", "@language":"en"},
+      "company": "Scrum Alliance",
+      "dateFrom": "2018-01-01"
+    },
+    {
+      "id": "tr:__xp-4__",
+      "type": "soo:Experience",
+      "prefLabel": {"@value": "AWS Certified Solutions Architect", "@language":"en"},
+      "company": "Amazon",
+      "dateFrom": "2021-01-01"
+    },
+
+
+    {
+      "id": "tr:__xp-5__",
+      "type": "soo:Experience",
+      "prefLabel": {"@value": "Engineering Manager", "@language":"en"},
+      "description": {"@value": "Managing a team of software engineers", "@language":"en"},
+      "company": "Tech Innovators",
+      "dateFrom": "2023-03-01",
+      "location": "Boston, USA",
+      "contractType": "Full-Time",
+      "experienceType": "term:experience/type/professional",
+      "experienceStatus": "term:experience/type/suggested"
+    },
+    {
+      "id": "tr:__xp-6__",
+      "type": "soo:Experience",
+      "prefLabel": {"@value": "Product Owner", "@language":"en"},
+      "description": {"@value": "Overseeing product development", "@language":"en"},
+      "company": "Creative Solutions",
+      "dateFrom": "2024-02-01",
+      "location": "Seattle, USA",
+      "contractType": "Contract",
+      "experienceType": "term:experience/type/professional",
+      "experienceStatus": "term:experience/type/suggested"
+    }
+    
+  ]
+}

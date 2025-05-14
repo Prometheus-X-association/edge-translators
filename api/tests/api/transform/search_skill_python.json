@@ -1,0 +1,174 @@
+{
+    "took": 18,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 10000,
+            "relation": "gte"
+        },
+        "max_score": 2.7569804,
+        "hits": [
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+                "_score": 2.7569804,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "Python (computer programming)",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/ccd0a1d9-afda-43d9-b901-96344886e14d"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/58d7a289-dafd-4363-833f-d1dc4140885e",
+                "_score": 2.5603943,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "APL",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/58d7a289-dafd-4363-833f-d1dc4140885e"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/5ef0c719-5bcb-49f8-b8eb-824388225333",
+                "_score": 2.522431,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "use scripting programming",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/5ef0c719-5bcb-49f8-b8eb-824388225333"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/8b94aa1e-89c9-459d-b3b4-1dfab8dec2df",
+                "_score": 2.5161862,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "use software libraries",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/8b94aa1e-89c9-459d-b3b4-1dfab8dec2df"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97",
+                "_score": 2.5140152,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "computer programming",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97"
+                }
+            }
+        ]
+    }
+}

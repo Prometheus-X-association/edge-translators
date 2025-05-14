@@ -1,0 +1,107 @@
+[
+  {
+      "name": "Jean Dupont",
+      "email": "jean.dupont@example.com",
+      "phone": "0612345678",
+      "experiences": [
+          {
+              "job_title": "Développeur Full Stack",
+              "company": "TechCorp",
+              "start_date": "2020-01-01",
+              "end_date": "2023-03-01",
+              "responsibilities": [
+                  "Création, développement, et déploiement d'applications web robustes et évolutives en utilisant des technologies modernes adaptées aux besoins des utilisateurs.",
+                  "Assurer la maintenance et l'amélioration continue des systèmes logiciels existants pour garantir une performance optimale et une disponibilité élevée, tout en effectuant des mises à jour régulières et des corrections de bugs."
+              ]
+          },
+          {
+              "job_title": "Stagiaire en développement",
+              "company": "StartUpXYZ",
+              "start_date": "2019-06-01",
+              "end_date": "2019-12-01",
+              "responsibilities": [
+                  "Contribuer activement à des projets innovants en utilisant le langage Python, en développant des fonctionnalités spécifiques et en réalisant des tests pour garantir leur fiabilité.",
+                  "Apporter un soutien technique aux membres de l'équipe en participant aux phases de conception, développement et débogage, tout en acquérant une expérience pratique sur des projets réels."
+              ]
+          }
+      ],
+      "education": [
+          {
+              "degree": "Master Informatique",
+              "institution": "Université de Paris",
+              "start_date": "2017-09-01",
+              "end_date": "2019-06-01",
+              "description": "Programme intensif et avancé axé sur des sujets tels que les algorithmes complexes, les architectures logicielles modernes, et l'intelligence artificielle, avec des projets pratiques permettant d'approfondir ces connaissances."
+          },
+          {
+              "degree": "Licence Informatique",
+              "institution": "Université de Lyon",
+              "start_date": "2014-09-01",
+              "end_date": "2017-06-01",
+              "description": "Formation généraliste en informatique couvrant un éventail de sujets fondamentaux, notamment la programmation orientée objet, la gestion et la conception de bases de données, ainsi que les principes des réseaux informatiques."
+          }
+      ],
+      "skills": [
+          {
+              "name": "Python",
+              "description": "Langage de programmation puissant et polyvalent utilisé pour une multitude d'applications, allant du développement d'applications web aux analyses de données, en passant par l'automatisation de processus complexes."
+          },
+          {
+              "name": "JavaScript",
+              "description": "Langage essentiel pour le développement front-end, permettant de concevoir des interfaces utilisateur interactives et dynamiques grâce à l'intégration avec des bibliothèques et frameworks modernes."
+          },
+          {
+              "name": "Docker",
+              "description": "Outil indispensable pour la conteneurisation, facilitant le déploiement d'applications dans des environnements isolés et reproductibles, tout en simplifiant la gestion des dépendances."
+          },
+          {
+              "name": "SQL",
+              "description": "Langage de manipulation et de gestion des données relationnelles, utilisé pour concevoir, interroger et maintenir des bases de données avec une haute efficacité."
+          }
+      ]
+  },
+  {
+      "name": "Marie Curie",
+      "email": "marie.curie@example.com",
+      "phone": "0623456789",
+      "experiences": [
+          {
+              "job_title": "Data Scientist",
+              "company": "DataCorp",
+              "start_date": "2018-02-01",
+              "end_date": "2023-01-01",
+              "responsibilities": [
+                  "Analyser de grandes quantités de données issues de différentes sources pour découvrir des tendances et fournir des recommandations basées sur des insights data-driven, contribuant directement à la prise de décision stratégique.",
+                  "Développer, entraîner et optimiser des modèles prédictifs sophistiqués en utilisant des algorithmes de machine learning pour résoudre des problèmes complexes liés aux données clients."
+              ]
+          }
+      ],
+      "education": [
+          {
+              "degree": "Doctorat en Mathématiques Appliquées",
+              "institution": "École Polytechnique",
+              "start_date": "2013-09-01",
+              "end_date": "2017-06-01",
+              "description": "Recherche avancée centrée sur l'application des mathématiques à des problèmes réels, incluant l'optimisation, la modélisation statistique et l'élaboration de solutions mathématiques complexes pour des défis pratiques."
+          }
+      ],
+      "skills": [
+          {
+              "name": "Machine Learning",
+              "description": "Ensemble de techniques et d'algorithmes avancés utilisés pour créer des modèles capables de prédire ou de classer des données, avec des applications allant de l'analyse prédictive à la reconnaissance d'images."
+          },
+          {
+              "name": "Python",
+              "description": "Langage de programmation polyvalent, largement utilisé pour le traitement de données, la création de pipelines analytiques et la mise en œuvre d'applications avancées en machine learning et intelligence artificielle."
+          },
+          {
+              "name": "R",
+              "description": "Langage de programmation spécialisé dans les statistiques et l'analyse des données, offrant des outils puissants pour la visualisation et la modélisation de données complexes."
+          },
+          {
+              "name": "Visualisation de données",
+              "description": "Compétence essentielle pour représenter des données de manière claire et esthétique, en créant des graphiques, tableaux et diagrammes pour communiquer efficacement des informations clés aux parties prenantes."
+          }
+      ]
+  }
+]

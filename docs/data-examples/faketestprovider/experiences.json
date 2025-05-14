@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Développeur Full Stack",
+        "company": "Tesla",
+        "description": "Conçoit et développe des applications web complètes, du front-end au back-end."
+    },
+    {
+        "name": "Astrophysicien",
+        "company": "CosmoResearch Lab",
+        "description": "Étudie les phénomènes célestes et l'évolution de l'univers."
+    },
+    {
+        "name": "Guide de haute montagne",
+        "company": "Summit Adventures",
+        "description": "Accompagne et sécurise les expéditions en montagne."
+    }
+]

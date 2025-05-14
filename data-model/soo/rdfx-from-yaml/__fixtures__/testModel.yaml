@@ -1,0 +1,14 @@
+
+triple:
+  # solo ObjectProperties test
+  mms:User:
+    skos:memberOf: skos:Collection
+    mms:personalData: mms:PersonalDataWallet
+
+  # multiple Descriptive property test
+  mms:Address:
+    owl:sameAs: [mnx:Address, hrrdf:AddressType]
+
+  # multiple ObjectProperties test
+  mmo:Experience:
+    mms:occupation: [rome:onto/Employment/Job, rome:onto/Employment/Position]

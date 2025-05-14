@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+  },
+  "graph": [
+    {
+      "id": "tr:__experience-1__",
+      "type": "soo:Experience",
+      "prefLabel": {"@value": "Psychologie sociale Partie 4" , "@language": "fr"},
+      "dateFrom": "2022-05-19T19:09:00"
+    },
+    {
+      "id": "tr:__experience-2__",
+      "type": "soo:Experience",
+      "prefLabel": {"@value": "Psychologie sociale Partie 2" , "@language": "fr"},
+      "dateFrom": "2022-05-19T19:09:00"
+    }
+  ]
+}

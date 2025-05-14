@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Utilisateur 1",
+        "email": "utilisateur1@example.com",
+        "address": "123 Rue de la Paix, Paris, France",
+        "experiences": [
+            {
+                "name": "Développeur Full Stack",
+                "company": "TechNova Solutions",
+                "description": "Conçoit et développe des applications web complètes, du front-end au back-end.",
+                "start_date": "2021-03-01",
+                "end_date": "2024-03-01",
+                "competencies": [
+                    {"name": "Communication", "description": "Capacité à transmettre efficacement des idées.", "skillLevelValue": 4, "type": "soft_skill"},
+                    {"name": "Gestion du temps", "description": "Savoir organiser son temps pour respecter les délais.", "skillLevelValue": 3, "type": "soft_skill"},
+                    {"name": "Esprit d'équipe", "description": "Aptitude à travailler efficacement avec les autres.", "skillLevelValue": 5, "type": "soft_skill"},
+                    {"name": "JavaScript", "description": "Langage de programmation pour le développement web.", "skillLevelValue": 5, "type": "hard_skill"},
+                    {"name": "Node.js", "description": "Plateforme logicielle pour les applications web côté serveur.", "skillLevelValue": 4, "type": "hard_skill"},
+                    {"name": "React", "description": "Bibliothèque JavaScript pour construire des interfaces utilisateur.", "skillLevelValue": 4, "type": "hard_skill"}
+                ]
+            }
+        ]
+    }
+]

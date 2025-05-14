@@ -1,0 +1,61 @@
+{
+  "@context": {
+    "todo": "define_the_rules_context"
+  },
+  "graph": [
+    {
+      "id": "mmr:rule-0",
+      "sourcePath": "Experience Name",
+      "targetClass": "soo:Experience",
+      "targetProperty": "id",
+      "targetFunction": "fno:generateId"
+    },
+    {
+      "id": "mmr:rule-1",
+      "sourcePath": "Experience Name",
+      "targetClass": "soo:Experience",
+      "targetProperty": "skos:prefLabel",
+      "targetLang": "en",
+      "targetFunction": "fno:asIs_WithLang"
+    },
+    {
+      "id": "mmr:rule-2",
+      "sourcePath": "User ID",
+      "targetClass": "soo:Profile",
+      "targetProperty": "soo:email",
+      "generateId": "true",
+      "relationTo": "soo:Experience",
+      "relationName": "soo:experience",
+      "relationNameInverse": "soo:profile"
+    },
+
+    {
+      "id": "mmr:rule-3",
+      "sourcePath": "Date",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:dateFrom",
+      "targetFunction": "fno:date-to-xsd"
+    },
+
+    {
+      "id": "mmr:rule-4",
+      "sourcePath": "Associated Soft Skill Block",
+      "targetClass": "soo:Skill",
+      "generateId": "true",
+      "targetFunction": "fno:find-matching", 
+      "relationTo": "soo:Experience",
+      "relationName": "soo:experience",
+      "relationNameInverse": "soo:skill"
+    },
+
+    {
+      "id": "mmr:rule-5",
+      "sourcePath": "Results",
+      "targetClass": "soo:Skill",
+      "targetProperty": "soo:skillLevelValue",
+      "targetFunction": "fno:as-is"
+    }
+
+    
+  ]
+}

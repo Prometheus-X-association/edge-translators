@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "todo": "define_the_rules_context"
+  },
+  "graph": [
+    {
+      "id": "mmr:rule-0",
+      "sourcePath": "missions.name",
+      "targetClass": "soo:Experience",
+      "generateId": "true"
+    },
+
+    {
+      "id": "mmr:rule-1",
+      "sourcePath": "missions.name",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:experienceType",
+      "targetValue": "term:experience/type/personalityTest"
+    },
+    {
+      "id": "mmr:rule-2",
+      "sourcePath": "missions.name",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:experienceStatus",
+      "targetValue": "term:experience/type/past"
+    },
+
+    {
+      "id": "mmr:rule-3",
+      "sourcePath": "missions.name",
+      "targetClass": "soo:Experience",
+      "targetProperty": "skos:prefLabel",
+      "targetFunction": "fno:asIs_WithLang",
+      "targetLang": "fr"
+    },
+
+
+    {
+      "id": "mmr:rule-4",
+      "sourcePath": "missions.tendencies.name",
+      "targetClass": "soo:Skill",
+      "generateId": "true",
+      "targetProperty": "soo:category",
+      "targetValue": "term:skills/category/riasec",
+      "relationTo": "soo:Experience",
+      "relationName": "soo:experience",
+      "relationNameInverse": "soo:skill"
+    },
+
+    {
+      "id": "mmr:rule-5",
+      "sourcePath": "missions.tendencies.name",
+      "targetClass": "soo:Skill",
+      "targetProperty": "skos:prefLabel",
+      "targetFunction": "fno:asIs_WithLang",
+      "targetLang": "fr"
+    },
+
+    {
+      "id": "mmr:rule-6",
+      "sourcePath": "missions.tendencies.score",
+      "targetClass": "soo:Skill",
+      "targetFunction": "fno:skill-value-to-scale"
+    }
+
+  ]
+}

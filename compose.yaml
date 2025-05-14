@@ -1,0 +1,140 @@
+services:
+  api: 
+    build: 
+      context: api
+      dockerfile: Dockerfile
+      target: runtime_dev
+    depends_on:
+      esco-helper:
+        condition: service_healthy
+        restart: true
+      elasticsearch:
+        condition: service_healthy
+        restart: true
+      database:
+        condition: service_healthy
+        restart: true
+    restart: unless-stopped
+    volumes:
+      - ./api:/app:rwx
+      - api_venv:/app/.venv:rwx
+    ports:
+      - target: 8000
+        published: 8000
+        protocol: tcp
+    networks:
+      - ai-translator-network
+
+  ui:
+    build: 
+      context: ui
+      dockerfile: Dockerfile
+      target: runtime_dev
+    depends_on:
+      api:
+        condition: service_healthy
+        restart: true
+    restart: unless-stopped
+    volumes:
+      - ./ui:/app:rwx
+      - ui_venv:/app/.venv:rwx
+    ports:
+      - target: 8501
+        published: 8501
+        protocol: tcp
+    env_file:
+      - ui/.env
+    networks:
+      - ai-translator-network
+
+  admin:
+    build: 
+      context: admin
+      dockerfile: Dockerfile
+      target: runtime_dev
+    depends_on:
+      api:
+        condition: service_healthy
+        restart: true
+    restart: unless-stopped
+    volumes:
+      - ./admin:/app:rwx
+    environment:
+      - VITE_API_URL=${VITE_API_URL:-http://localhost:8000}
+    ports:
+      - target: 8502
+        published: 8502
+        protocol: tcp
+    networks:
+      - ai-translator-network
+  
+  esco-helper: 
+    build: 
+      context: esco-helper
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file:
+      - esco-helper/.env
+    ports:
+      - target: 8080
+        published: 8080
+        protocol: tcp
+    networks:
+      - ai-translator-network
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.6.2
+    restart: unless-stopped
+    environment:
+      - discovery.type=single-node            # Run Elasticsearch as a single-node cluster
+      - bootstrap.memory_lock=true            # Prevent memory swapping for better performance
+      - xpack.security.enabled=false          # Disable authentication (for development)
+      - ingest.geoip.downloader.enabled=false # if you don't even use GeoIP (like IP-to-location features in logs, etc.), you can disable GeoIP downloader entirely:
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m        # Limit JVM heap size
+      - logger.level=ERROR                    # Set logging level (can be DEBUG, INFO, WARN, ERROR, etc.)
+    ports:
+      - target: 9200
+        published: 9200
+        protocol: tcp
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data:rw
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    networks:
+      - ai-translator-network
+    healthcheck:
+      test: ["CMD", "curl", "-v", "--silent", "--fail", "http://localhost:9200/_cluster/health"]
+      start_period: 60s
+
+  database:
+    image: postgres:${POSTGRES_VERSION:-16}-alpine
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-app_db}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-!ChangeMe!}
+      - POSTGRES_USER=${POSTGRES_USER:-app_user}
+    healthcheck:
+      test: ["CMD", "pg_isready", "-d", "${POSTGRES_DB:-app_db}", "-U", "${POSTGRES_USER:-app_user}"]
+      timeout: 5s
+      retries: 5
+      start_period: 60s
+    volumes:
+      - database_data:/var/lib/postgresql/data:rw
+      - ./.data/postgresql:/var/lib/postgresql/data:rw
+    ports:
+      - target: 5432
+        published: 5432
+        protocol: tcp
+    networks:
+      - ai-translator-network
+
+volumes:
+  api_venv:
+  ui_venv:
+  database_data:
+  elasticsearch_data:
+
+networks:
+  ai-translator-network:
+    driver: bridge

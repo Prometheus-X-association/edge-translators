@@ -1,0 +1,169 @@
+{
+    "took": 6,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 3039,
+            "relation": "eq"
+        },
+        "max_score": 2.5570998,
+        "hits": [
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/c40a2919-48a9-40ea-b506-1f34f693496d",
+                "_score": 2.5570998,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "web developer",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/c40a2919-48a9-40ea-b506-1f34f693496d"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/866c7813-2c03-47d7-9bdc-192cfbace57c",
+                "_score": 2.542714,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "user interface developer",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/866c7813-2c03-47d7-9bdc-192cfbace57c"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/781a6350-e686-45b9-b075-e4c8d5a05ff7",
+                "_score": 2.5140936,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "cloud software developer ",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/781a6350-e686-45b9-b075-e4c8d5a05ff7"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1",
+                "_score": 2.4746597,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "software developer",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/57af9090-55b4-4911-b2d0-86db01c00b02",
+                "_score": 2.4737635,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "embedded systems software developer",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/57af9090-55b4-4911-b2d0-86db01c00b02"
+                }
+            }
+        ]
+    }
+}

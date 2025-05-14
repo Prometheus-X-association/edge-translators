@@ -1,0 +1,65 @@
+{
+  "@context": {
+    "todo": "define_the_rules_context"
+  },
+  "graph": [
+    {
+      "id": "mmr:rule-0",
+      "sourcePath": "inokufu.id",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:sourceId",
+      "generateId": "true"
+    },
+
+    {
+      "id": "mmr:rule-1",
+      "sourcePath": "inokufu.id",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:experienceType",
+      "targetValue": "term:experience/type/educational"
+    },
+    {
+      "id": "mmr:rule-2",
+      "sourcePath": "jobCards.id",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:experienceStatus",
+      "targetValue": "term:experience/type/suggested"
+    },
+
+    {
+      "id": "mmr:rule-3",
+      "sourcePath": "lheo.intitule-formation",
+      "targetClass": "soo:Experience",
+      "targetProperty": "skos:prefLabel",
+      "targetFunction": "fno:asIs_WithLang",
+      "targetLang": "fr"
+    },
+
+    { 
+      "id": "mmr:rule-4",
+      "sourcePath": "lheo.action.session.periode.debut",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:dateFrom",
+      "targetFunction": "fno:date-to-xsd",
+      "targetFunctionParam": "param:big-endian-no-separator"
+    },
+
+    { 
+      "id": "mmr:rule-5",
+      "sourcePath": "lheo.action.session.periode.fin",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:dateTo",
+      "targetFunction": "fno:date-to-xsd",
+      "targetFunctionParam": "param:big-endian-no-separator"
+    },
+
+    { 
+      "id": "mmr:rule-6",
+      "sourcePath": ".",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:sourceDataValue",
+      "targetFunction": "fno:keep-source-data"
+    }
+
+  ]
+}

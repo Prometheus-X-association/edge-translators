@@ -1,0 +1,6 @@
+api/__pycache__
+api/.venv
+
+ui/.venv
+ui/__pycache__
+

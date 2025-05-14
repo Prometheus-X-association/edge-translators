@@ -1,0 +1,108 @@
+{
+  "@context": {
+    "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+  },
+  
+  "graph": [
+    {
+      "id": "tr:__experience-id-1__",
+      "type": "soo:Experience",
+      "prefLabel": {"@value": "Problem-Solving Puzzle", "@language": "en"},
+      "profile": "tr:__profile-id-1__",
+      "dateFrom": "2023-06-28",
+      "skill": "tr:__skill-id-1__"
+    },
+    {
+      "id":"tr:__profile-id-1__",
+      "type": "soo:Profile",
+      "email":"zayne.harding@gmail.com",
+      "experience": "tr:__experience-id-1__"
+    },
+    {
+      "id": "tr:__skill-id-1__",
+      "type": "soo:Skill",
+      "experience": "tr:__experience-id-1__",
+      "match": {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/55eefc9e28432347635c61fba45b70b5/id_target/skill:adc6dc11-3376-467b-96c5-9b0a21edc869",
+        "mappingType": "skos:exactMatch",
+        "score": 2.550754,
+        "target": {
+        "id": "skill:adc6dc11-3376-467b-96c5-9b0a21edc869",
+        "prefLabel": {
+          "language": "fr",
+          "value": "r\u00e9soudre les probl\u00e8mes"
+        }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+      },
+      "suggestions": [
+        {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/55eefc9e28432347635c61fba45b70b5/id_target/skill:9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c",
+        "mappingType": "skos:exactMatch",
+        "score": 2.5397387,
+        "target": {
+          "id": "skill:9e06bac6-6b91-48ca-8b7d-c1f48cdecd7c",
+          "prefLabel": {
+          "language": "fr",
+          "value": "r\u00e9soudre les probl\u00e8mes des syst\u00e8mes d\u2019information"
+          }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+        },
+        {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/55eefc9e28432347635c61fba45b70b5/id_target/skill:a3ce2bf7-5562-4639-9b52-fdb4850a3904",
+        "mappingType": "skos:exactMatch",
+        "score": 2.5081873,
+        "target": {
+          "id": "skill:a3ce2bf7-5562-4639-9b52-fdb4850a3904",
+          "prefLabel": {
+          "language": "fr",
+          "value": "techniques de r\u00e9solution de probl\u00e8mes"
+          }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+        },
+        {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/55eefc9e28432347635c61fba45b70b5/id_target/skill:a32e7fb1-af9e-4c09-8ea7-72b7442e9cda",
+        "mappingType": "skos:exactMatch",
+        "score": 2.4961505,
+        "target": {
+          "id": "skill:a32e7fb1-af9e-4c09-8ea7-72b7442e9cda",
+          "prefLabel": {
+          "language": "fr",
+          "value": "r\u00e9soudre des probl\u00e8mes dans le domaine de la sant\u00e9"
+          }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+        },
+        {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/55eefc9e28432347635c61fba45b70b5/id_target/skill:14832d87-2f2f-4895-b290-e4760ebae42a",
+        "mappingType": "skos:exactMatch",
+        "score": 2.4881005,
+        "target": {
+          "id": "skill:14832d87-2f2f-4895-b290-e4760ebae42a",
+          "prefLabel": {
+          "language": "fr",
+          "value": "r\u00e9soudre des probl\u00e8mes techniques"
+          }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+        }
+      ],
+      "skillLevelValue": "Validated"
+    }
+    
+    
+
+  ]
+}

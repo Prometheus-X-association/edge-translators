@@ -1,0 +1,141 @@
+{
+    "@context": "https://mindmatcher.org/ontology-1.0.0.jsonld",
+    "graph": [
+        {
+            "id": "mmr:rule-0",
+            "sourcePath": "name",
+            "targetClass": "soo:Profile",
+            "generateId": true
+        },
+        {
+            "id": "mmr:rule-1",
+            "sourcePath": "name",
+            "targetClass": "soo:Profile",
+            "targetProperty": "soo:name"
+        },
+        {
+            "id": "mmr:rule-2",
+            "sourcePath": "email",
+            "targetClass": "soo:Profile",
+            "targetProperty": "soo:email"
+        },
+        {
+            "id": "mmr:rule-3",
+            "sourcePath": "address",
+            "targetClass": "soo:Profile",
+            "targetProperty": "soo:address"
+        },
+        {
+            "id": "mmr:rule-4",
+            "sourcePath": "experiences.name",
+            "targetClass": "soo:Experience",
+            "generateId": true
+        },
+        {
+            "id": "mmr:rule-5",
+            "sourcePath": "experiences.name",
+            "targetClass": "soo:Experience",
+            "relationTo": "soo:Profile",
+            "relationName": "soo:profile",
+            "relationNameInverse": "soo:experience"
+        },
+        {
+            "id": "mmr:rule-6",
+            "sourcePath": "experiences.name",
+            "targetClass": "soo:Experience",
+            "targetProperty": "soo:experienceType",
+            "targetValue": "term:experience/type/professional"
+        },
+        {
+            "id": "mmr:rule-7",
+            "sourcePath": "experiences.name",
+            "targetClass": "soo:Experience",
+            "targetProperty": "soo:experienceStatus",
+            "targetValue": "term:experience/status/past"
+        },
+        {
+            "id": "mmr:rule-8",
+            "sourcePath": "experiences.name",
+            "targetClass": "soo:Experience",
+            "targetProperty": "soo:prefLabel",
+            "targetFunction": "fno:find-matching"
+        },
+        {
+            "id": "mmr:rule-9",
+            "sourcePath": "experiences.company",
+            "targetClass": "soo:Experience",
+            "targetProperty": "soo:company"
+        },
+        {
+            "id": "mmr:rule-10",
+            "sourcePath": "experiences.description",
+            "targetClass": "soo:Experience",
+            "targetProperty": "soo:description"
+        },
+        {
+            "id": "mmr:rule-11",
+            "sourcePath": "experiences.start_date",
+            "targetClass": "soo:Experience",
+            "targetProperty": "soo:dateFrom",
+            "targetFunction": "fno:date-to-xsd",
+            "targetFunctionParam": "param:big-endian-no-separator"
+        },
+        {
+            "id": "mmr:rule-12",
+            "sourcePath": "experiences.end_date",
+            "targetClass": "soo:Experience",
+            "targetProperty": "soo:dateTo",
+            "targetFunction": "fno:date-to-xsd",
+            "targetFunctionParam": "param:big-endian-no-separator"
+        },
+        {
+            "id": "mmr:rule-13",
+            "sourcePath": "experiences.competencies.name",
+            "targetClass": "soo:Skill",
+            "generateId": true
+        },
+        {
+            "id": "mmr:rule-14",
+            "sourcePath": "experiences.competencies.name",
+            "targetClass": "soo:Skill",
+            "relationTo": "soo:Experience",
+            "relationName": "soo:experience",
+            "relationNameInverse": "soo:skill"
+        },
+        {
+            "id": "mmr:rule-15",
+            "sourcePath": "experiences.competencies.name",
+            "targetClass": "soo:Skill",
+            "relationTo": "soo:Profile",
+            "relationName": "soo:profile",
+            "relationNameInverse": "soo:skill"
+        },
+        {
+            "id": "mmr:rule-16",
+            "sourcePath": "experiences.competencies.name",
+            "targetClass": "soo:Skill",
+            "targetProperty": "soo:prefLabel",
+            "targetFunction": "fno:find-matching"
+        },
+        {
+            "id": "mmr:rule-17",
+            "sourcePath": "experiences.competencies.description",
+            "targetClass": "soo:Skill",
+            "targetProperty": "soo:description"
+        },
+        {
+            "id": "mmr:rule-18",
+            "sourcePath": "experiences.competencies.skillLevelValue",
+            "targetClass": "soo:Skill",
+            "targetProperty": "soo:skillLevelValue",
+            "targetFunction": "fno:skill-value-to-scale"
+        },
+        {
+            "id": "mmr:rule-19",
+            "sourcePath": "experiences.competencies.type",
+            "targetClass": "soo:Skill",
+            "targetProperty": "soo:family",
+            "targetFunction": "fno:handle-family"
+        }
+    ]
+}

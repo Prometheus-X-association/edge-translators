@@ -1,0 +1,367 @@
+[
+  {
+    "inokufu": {
+      "id": "5d081491-0b18-47b1-a9aa-0b73712b160c",
+      "codeForma": {
+        "base": [
+          "46207"
+        ],
+        "min": [
+          "46207"
+        ],
+        "max": [
+          "46328",
+          "30801",
+          "31088",
+          "31010",
+          "31036",
+          "31054",
+          "31090",
+          "22223",
+          "46270",
+          "31067",
+          "30867",
+          "30857",
+          "46207"
+        ]
+      },
+      "codeRome": {
+        "max": [
+          "M1805",
+          "F1101"
+        ]
+      },
+      "dcList": {
+        "base": [
+          "numérique",
+          "conduite projet multimédia"
+        ],
+        "min": [
+          "insertion professionnelle",
+          "numérique",
+          "conduite projet multimédia"
+        ],
+        "max": [
+          "librairie",
+          "bases de données",
+          "mars",
+          "paris",
+          "architecture web",
+          "architecture",
+          "business",
+          "css",
+          "développeur",
+          "html",
+          "javascript",
+          "jquery",
+          "json",
+          "théorie",
+          "développement web",
+          "insertion professionnelle",
+          "numérique",
+          "conduite projet multimédia",
+          "base de données",
+          "fichiers et bases de données",
+          "base de donnée",
+          "gestion de base de données",
+          "stockage de base de données",
+          "développement de bases de données",
+          "création site internet",
+          "conception site web",
+          "programmation web",
+          "conception web",
+          "architecte",
+          "langage css",
+          "feuilles de style en cascade (css)",
+          "code (programmation)",
+          "programmation",
+          "développement",
+          "développeuse",
+          "dev",
+          "langage html",
+          "langage javascript",
+          "théories",
+          "design web",
+          "développement d'applications web",
+          "création de sites web"
+        ],
+        "source": [
+          "insertion",
+          "conduite projet multimédia",
+          "numérique",
+          "professionnelle",
+          "accompagne",
+          "école",
+          "toile",
+          "La",
+          "la toile, l'école de la qualification numérique - la toile accompagne l'insertion professionnelle dans les métiers du numérique",
+          "qualification",
+          "métiers"
+        ]
+      },
+      "age": {
+        "min": 15,
+        "max": 150
+      },
+      "learningTime": {
+        "min": 27000,
+        "index": 3.1034597967106143,
+        "value": 450,
+        "unit": "h"
+      },
+      "url": {
+        "1": "https://www.coteformations.fr/je-recherche/une-formation#1502977S"
+      },
+      "title": {
+        "base": "La toile, l'école de la qualification numérique - La toile accompagne l'insertion professionnelle dans les métiers du numérique",
+        "tokenized": "la toile l'école de la qualification numérique la toile accompagne l'insertion professionnelle dans les métiers du numérique"
+      },
+      "LOSearchTagList": {
+        "strict": "insertion professionnelle numérique conduite projet multimédia la toile l'école de la qualification numérique la toile accompagne l'insertion professionnelle dans les métiers du numérique fr formation",
+        "extended": "librairie bases de données mars paris architecture web architecture business css développeur html javascript jquery json théorie développement web insertion professionnelle numérique conduite projet multimédia base de données fichiers et bases de données base de donnée gestion de base de données stockage de base de données développement de bases de données création site internet conception site web programmation web conception web architecte langage css feuilles de style en cascade (css) code (programmation) programmation développement développeuse dev langage html langage javascript théories design web développement d'applications web création de sites web la toile l'école de la qualification numérique la toile accompagne l'insertion professionnelle dans les métiers du numérique fr formation"
+      },
+      "langue": "fr",
+      "LOTypeList": [
+        "Training"
+      ],
+      "LOBloomList": [
+        "Cursus"
+      ],
+      "LOProvider": "Carif-oref",
+      "lieu_de_formation": {
+        "text": "51 Cr Fauriel 42009 Saint-Étienne",
+        "address": {
+          "type": "Point",
+          "coordinates": [
+            4.4033825,
+            45.427156
+          ]
+        }
+      },
+      "note": 0.5,
+      "learnWordCount": 8,
+      "LOLevel": -0.5,
+      "description": "Modalités de notre formation ? 100% gratuite et délivrée par emlyon Formation délivrée sur 3 campus : Lyon, Paris et Saint-Étienne À taille humaine : 25 apprenantes et apprenants par campus, 15 apprenants maximum par salle de cours 2 sessions par an, soit octobre ou mars. En présentiel, à raison de ...",
+      "publisher": [
+        {
+          "name": "AESCRA - EM Lyon Business School"
+        }
+      ],
+      "PriceSpecification": {
+        "@context": "https://schema.org/",
+        "@type": "PriceSpecification",
+        "price-free": true
+      }
+    },
+    "extras": {
+      "raw": {
+        "intitule-formation": "TGEgdG9pbGUsIGwnw6ljb2xlIGRlIGxhIHF1YWxpZmljYXRpb24gbnVtw6lyaXF1ZSAtIExhIHRvaWxlIGFjY29tcGFnbmUgbCdpbnNlcnRpb24gcHJvZmVzc2lvbm5lbGxlIGRhbnMgbGVzIG3DqXRpZXJzIGR1IG51bcOpcmlxdWU=",
+        "objectif-formation": "Tm90cmUgbWlzc2lvbiA6PGJyIC8+CkxhIHRvaWxlIGVzdCBsJ8OpY29sZSBkZSBsYSBxdWFsaWZpY2F0aW9uIG51bcOpcmlxdWUgZCdlbWx5b24gYnVzaW5lc3Mgc2Nob29sLCAxMDAlIGdyYXR1aXRlLCBheWFudCBwb3VyIG9iamVjdGlmIGQnb2ZmcmlyIHVuZSBmb3JtYXRpb24gcXVhbGlmaWFudGUgw6AgZGVzIHBlcnNvbm5lcyDDqWxvaWduw6llcyBkZSBsYSBmb3JtYXRpb24gZXQgZGUgbCdlbXBsb2kuPGJyIC8+CkxhIHRvaWxlIGFjY29tcGFnbmUgbGV1ciBpbnNlcnRpb24gcHJvZmVzc2lvbm5lbGxlIGRhbnMgbGVzIG3DqXRpZXJzIGR1IG51bcOpcmlxdWUuPGJyIC8+PGJyIC8+ClNhIG1pc3Npb24gZXN0IGRlIHLDqWR1aXJlIGxlcyBpbsOpZ2FsaXTDqXMgc29jaWFsZXMgb3UgY3VsdHVyZWxsZXMgZXQgY29udHJpYnVlciDDoCBsJ8OpZ2FsaXTDqSBlbnRyZSBsZXMgaG9tbWVzIGV0IGxlcyBmZW1tZXMgZW4gcGVybWV0dGFudCDDoCB0b3V0ZXMgZXQgw6AgdG91cyBkZSBkw6l2ZWxvcHBlciBsZXVycyBjb21ww6l0ZW5jZXMgcHJvZmVzc2lvbm5lbGxlcy48YnIgLz48YnIgLz4KQWNxdWlzaXRpb24gZGUgY29tcMOpdGVuY2VzIGRhbnMgZGlmZsOpcmVudHMgZG9tYWluZXMgZCdhY3Rpdml0w6kgbnVtw6lyaXF1ZSA6Cjx1bD4KCTxsaT5Ew6l2ZWxvcHBlbWVudCBldCBjb25jZXB0aW9uIHdlYjwvbGk+PC91bD4KVHlwZXMgZCdlbXBsb2lzIGFjY2Vzc2libGVzLCDDoCB0aXRyZSBkJ2V4ZW1wbGVzIDoKCjx1bD4KCTxsaT5Ew6l2ZWxvcHBldXIgZGUgc2l0ZXMgd2ViPC9saT4KCTxsaT5DaGVmIGRlIHByb2pldCBqdW5pb3Igd2ViPC9saT4KCTxsaT5HZXN0aW9uIGRlIHByb2pldDwvbGk+Cgk8bGk+RMOpdmVsb3BwZXVyL3NlIGQnYXBwbGljYXRpb24gQW5kcm9pZDwvbGk+Cgk8bGk+RMOpdmVsb3BwZXVyL3NlIGQnYXBwbGljYXRpb24gSU9TPC9saT4KCTxsaT5Ew6l2ZWxvcHBldXIvc2UgZCdhcHBsaWNhdGlvbiBKYXZhPC9saT4KCTxsaT5Ew6l2ZWxvcHBldXIvc2UgZCdhcHBsaWNhdGlvbnMgbW9iaWxlczwvbGk+Cgk8bGk+RMOpdmVsb3BwZXVyL3NlIGRlIGpldXggdmlkw6lvPC9saT4KCTxsaT5Ew6l2ZWxvcHBldXIvc2UgYmxvY2tjaGFpbjwvbGk+Cgk8bGk+RMOpdmVsb3BwZXVyL3NlIGZsYXNoPC9saT4KCTxsaT5Ew6l2ZWxvcHBldXIvc2UgZnJvbnQtZW5kPC9saT4KCTxsaT5Ew6l2ZWxvcHBldXIvc2UgYmFjay1lbmTCoDwvbGk+Cgk8bGk+RMOpdmVsb3BwZXVyL3NlIEphdmFTY3JpcHQ8L2xpPgoJPGxpPkTDqXZlbG9wcGV1ci9zZSBQSFA8L2xpPgoJPGxpPkTDqXZlbG9wcGV1ci9zZSBtdWx0aW3DqWRpYTwvbGk+PC91bD4=",
+        "resultats-attendus": "QXR0ZXN0YXRpb24gZGUgZm9ybWF0aW9u",
+        "contenu-formation": "PHN0cm9uZz5Nb2RhbGl0w6lzwqBkZSBub3RyZSBmb3JtYXRpb24gPzwvc3Ryb25nPjx1bD4KCTxsaT48c3Ryb25nPjEwMCUgPC9zdHJvbmc+Z3JhdHVpdGUgZXQgZMOpbGl2csOpZSBwYXIgZW1seW9uPC9saT4KCTxsaT5Gb3JtYXRpb24gPHN0cm9uZz5kw6lsaXZyw6llIHN1ciAzIGNhbXB1cyA6IEx5b24sIFBhcmlzIGV0IFNhaW50LcOJdGllbm5lPC9zdHJvbmc+PC9saT4KCTxsaT7DgCB0YWlsbGUgaHVtYWluZcKgOsKgMjUgYXBwcmVuYW50ZXMgZXQgYXBwcmVuYW50cyBwYXIgY2FtcHVzLCAxNSBhcHByZW5hbnRzIG1heGltdW0gcGFyIHNhbGxlIGRlIGNvdXJzPC9saT4KCTxsaT4yIHNlc3Npb25zIHBhciBhbiwgc29pdCBvY3RvYnJlIG91IG1hcnMuPC9saT4KCTxsaT5FbjxzdHJvbmc+IHByw6lzZW50aWVsLCDDoCByYWlzb24gZGUgPC9zdHJvbmc+NCBqb3VycyBwYXIgc2VtYWluZSAoIGR1IGx1bmRpIGF1IGpldWRpIGRlIDloIMOgIDE3aCk8L2xpPgoJPGxpPjxzdHJvbmc+RMOpbGl2csOpIGVuIGZyYW7Dp2Fpczwvc3Ryb25nPjwvbGk+Cgk8bGk+Q2UgcHJvZ3JhbW1lIGVzdCB2YWxpZMOpIHBhciB1biA8c3Ryb25nPmNlcnRpZmljYXQgZCfDqXRhYmxpc3NlbWVudDwvc3Ryb25nPiByZW1pcyBwYXIgbGUgcHJvZ3JhbW1lIGRlIGw8c3Ryb25nPmEgdG9pbGUsIGwnw6ljb2xlIGRlIGxhIHF1YWxpZmljYXRpb24gbnVtw6lyaXF1ZTwvc3Ryb25nPiBkJzxzdHJvbmc+ZW1seW9uIGJ1c2luZXNzIHNjaG9vbDwvc3Ryb25nPjxzdHJvbmc+Ljwvc3Ryb25nPjwvbGk+PC91bD48YnIgLz48c3Ryb25nPkNlIHF1ZSBjb21wcmVuZCBsZSBjb3VycyBkZSBkw6l2ZWxvcHBlbWVudCB3ZWI8L3N0cm9uZz4gOgoKPHVsPgoJPGxpPlByZW1pw6hyZSBhcHByb2NoZSBkdSB3ZWIgZXQgZHUgcHJvdG90eXBhZ2UgY2VudHLDqSB1dGlsaXNhdGV1ciwgZW4gcGFydGljdWxpZXIgOiBsJ2FwcHJlbnRpc3NhZ2UgZGVzIGxhbmdhZ2VzIHNvY2xlcyBkdSBkw6l2ZWxvcHBlbWVudCBmcm9udC1lbmQgPHN0cm9uZz5IVE1MPC9zdHJvbmc+LCA8c3Ryb25nPkNTUzwvc3Ryb25nPiBldCA8c3Ryb25nPkphdmFzY3JpcHQ8L3N0cm9uZz4sIGwndXRpbGlzYXRpb24gZGUgPHN0cm9uZz5mcmFtZXdvcmsgQ1NTIDwvc3Ryb25nPig8c3Ryb25nPnNrZWxldG9uPC9zdHJvbmc+KSBldCBkZSBsaWJyYWlyaWUgPHN0cm9uZz5KYXZhc2NyaXB0PC9zdHJvbmc+ICg8c3Ryb25nPmpRdWVyeTwvc3Ryb25nPiksIGwnaW50w6lncmF0aW9uIGR5bmFtaXF1ZSBkZSBkb25uw6llcyAoPHN0cm9uZz5maWNoaWVycyBKU09OPC9zdHJvbmc+KS4gPGVtPkludHJvZHVjdGlvbiBhdXggbcOpdGhvZGVzIGRlIGNvbmNlcHRpb24gZGUgcHJvamV0IGNlbnRyw6llcyB1dGlsaXNhdGV1ciwgdmlhIGxhIHRow6lvcmllIGR1IGRvdWJsZSBkaWFtYW50IChlbnF1w6p0ZSB0ZXJyYWluLCBpZMOpYXRpb24sIGl0w6lyYXRpb24sIHRlc3RzIHV0aWxpc2F0ZXVycywgcsOpYWxpc2F0aW9uIGQnaW50ZXJmYWNlcyBhdmVjIGRpZmbDqXJlbnRzIGRlZ3LDqXMgZGUgZmlkw6lsaXTDqXMpPC9lbT4uPC9saT4KCTxsaT5MYSBkw6ljb3V2ZXJ0ZSBkZXMgcnVkaW1lbnRzIGRlIGwnPHN0cm9uZz5hcmNoaXRlY3R1cmUgd2ViPC9zdHJvbmc+LCBsJ2V4cGxvcmF0aW9uIGR1IGZvbmN0aW9ubmVtZW50IGRlcyA8c3Ryb25nPkFQSTwvc3Ryb25nPiBldCA8c3Ryb25nPmRlcyBiYXNlcyBkZSBkb25uw6llczwvc3Ryb25nPjwvbGk+Cgk8bGk+TCdpZMOpYXRpb24gZXQgZMOpZmluaXRpb24gZGUgcHJvamV0IHN1ciB1biB0aMOobWUgaXNzdSBkZXMgT2JqZWN0aWZzIGRlIETDqXZlbG9wcGVtZW50cyBEdXJhYmxlcyBkZSBsJ09OVSwgbGEgcsOpYWxpc2F0aW9uIGRlIHdpcmVmcmFtZXMgZXQgZGUgbWFxdWV0dGVzIGQnaW50ZXJmYWNlcyAoPHN0cm9uZz5GaWdtYTwvc3Ryb25nPiksIGxhIGNvbmR1aXRlIGRlIHRlc3RzIHV0aWxpc2F0ZXVycywgbGEgY3LDqWF0aW9uIGQndW5lIGxhbmRpbmcgcGFnZSBldCBsYSBwcm9kdWN0aW9uIGQndW5lIGRvY3VtZW50YXRpb24gZGUgcHJvamV0LjwvbGk+PC91bD4KQ2UgcHJvZ3JhbW1lIG4nYSBwYXMgcG91ciBvYmplY3RpZiBkZSBmYWlyZSBkZSB2b3VzIGRlcyBkw6l2ZWxvcHBldXJzIHdlYi4gSWwgcydhZ2l0IHBsdXTDtHQgZGUgdm91cyBmYWlyZSBjb21wcmVuZHJlIGNlcyB0ZWNobm9sb2dpZXMsIGNlIHF1J2VsbGVzIGltcGxpcXVlbnQsIGxldXJzIGxhbmdhZ2VzLCBjb21tZW50IGVsbGVzIGZvbmN0aW9ubmVudCBldCBjb21tZW50IHZvdXMgcG91dmV6IGVuIHByb2ZpdGVyLiBMJ2FtYml0aW9uIGRlIGNlIHByb2dyYW1tZSBlc3QgZGUgdm91cyBpbml0aWVyIDxzdHJvbmc+YXV4IGNvbmNlcHRzIGV0IGF1eCB0ZWNobm9sb2dpZXMgcXVpIGZvbnQgbGUgV2ViIGQnYXVqb3VyZCdodWk8L3N0cm9uZz4u"
+      }
+    },
+    "lheo": {
+      "formation": {
+        "domaine-formation": {
+          "code-FORMACODE": [
+            "46207"
+          ]
+        },
+        "intitule-formation": "La toile, l'école de la qualification numérique - La toile accompagne l'insertion professionnelle dans les métiers du numérique",
+        "objectif-formation": "Notre mission : La toile est l'école de la qualification numérique d'emlyon business school, 100% gratuite, ayant pour objectif d'offrir une formation qualifiante à des personnes éloignées de la formation et de l'emploi. La toile accompagne leur insertion professionnelle dans les métiers du numérique. Sa mission est de réduire les inégalités sociales ou culturelles et contribuer à l'égalité entre les hommes et les femmes en permettant à toutes et à tous de développer leurs compétences professionnelles. Acquisition de compétences dans différents domaines d'activité numérique : Développement et conception web Types d'emplois accessibles, à titre d'exemples : Développeur de sites web Chef de projet junior web Gestion de projet Développeur/se d'application Android Développeur/se d'application IOS Développeur/se d'application Java Développeur/se d'applications mobiles Développeur/se de jeux vidéo Développeur/se blockchain Développeur/se flash Développeur/se front-end Développeur/se back-end Développeur/se JavaScript Développeur/se PHP Développeur/se multimédia",
+        "resultats-attendus": "Attestation de formation",
+        "contenu-formation": "Modalités de notre formation ? 100% gratuite et délivrée par emlyon Formation délivrée sur 3 campus : Lyon, Paris et Saint-Étienne À taille humaine : 25 apprenantes et apprenants par campus, 15 apprenants maximum par salle de cours 2 sessions par an, soit octobre ou mars. En présentiel, à raison de 4 jours par semaine ( du lundi au jeudi de 9h à 17h) Délivré en français Ce programme est validé par un certificat d'établissement remis par le programme de l a toile, l'école de la qualification numérique d' emlyon business school . Ce que comprend le cours de développement web : Première approche du web et du prototypage centré utilisateur, en particulier : l'apprentissage des langages socles du développement front-end HTML , CSS et Javascript , l'utilisation de framework CSS ( skeleton ) et de librairie Javascript ( jQuery ), l'intégration dynamique de données ( fichiers JSON ). Introduction aux méthodes de conception de projet centrées utilisateur, via la théorie du double diamant (enquête terrain, idéation, itération, tests utilisateurs, réalisation d'interfaces avec différents degrés de fidélités) . La découverte des rudiments de l' architecture web , l'exploration du fonctionnement des API et des bases de données L'idéation et définition de projet sur un thème issu des Objectifs de Développements Durables de l'ONU, la réalisation de wireframes et de maquettes d'interfaces ( Figma ), la conduite de tests utilisateurs, la création d'une landing page et la production d'une documentation de projet. Ce programme n'a pas pour objectif de faire de vous des développeurs web. Il s'agit plutôt de vous faire comprendre ces technologies, ce qu'elles impliquent, leurs langages, comment elles fonctionnent et comment vous pouvez en profiter. L'ambition de ce programme est de vous initier aux concepts et aux technologies qui font le Web d'aujourd'hui .",
+        "certifiante": {
+          "value": "0",
+          "info": "non"
+        },
+        "parcours-de-formation": {
+          "value": "1",
+          "info": "en groupe (non personnalisable)"
+        },
+        "code-niveau-entree": {
+          "value": "1",
+          "info": "sans niveau spécifique"
+        },
+        "code-niveau-sortie": {
+          "value": "1",
+          "info": "sans niveau spécifique"
+        },
+        "action": [
+          {
+            "rythme-formation": "Temps plein",
+            "niveau-entree-obligatoire": {
+              "value": "0",
+              "info": "non"
+            },
+            "modalites-enseignement": {
+              "value": "0",
+              "info": "formation entièrement présentielle"
+            },
+            "lieu-de-formation": [
+              {
+                "coordonnees": {
+                  "nom": "AESCRA - EM Lyon Business School",
+                  "adresse": {
+                    "ligne": [
+                      "51 Cr Fauriel"
+                    ],
+                    "codepostal": "42009",
+                    "ville": "Saint-Étienne",
+                    "departement": {
+                      "value": "42",
+                      "info": "Loire"
+                    },
+                    "region": {
+                      "value": "84",
+                      "info": "Auvergne-Rhône-Alpes"
+                    },
+                    "pays": "FRANCE",
+                    "geolocalisation": {
+                      "latitude": "45.427156",
+                      "longitude": "4.4033825"
+                    }
+                  }
+                }
+              }
+            ],
+            "url-action": {
+              "urlweb": [
+                "https://latoile.em-lyon.com/"
+              ]
+            },
+            "session": [
+              {
+                "periode": {
+                  "debut": "20231009",
+                  "fin": "20240531"
+                },
+                "cycle": [
+                  {
+                    "type-cycle": {
+                      "value": "0",
+                      "info": "Formation initiale"
+                    }
+                  }
+                ]
+              },
+              {
+                "periode": {
+                  "debut": "20231009",
+                  "fin": "20240531"
+                },
+                "cycle": [
+                  {
+                    "type-cycle": {
+                      "value": "0",
+                      "info": "Formation initiale"
+                    }
+                  }
+                ]
+              }
+            ],
+            "nombre-heures-centre": 450,
+            "nombre-heures-total": 450,
+            "organisme-financeur": [
+              {
+                "code-financeur": {
+                  "value": "10",
+                  "info": "Bénéficiaire de l'action"
+                },
+                "extras": {
+                  "specificites": {
+                    "programme-financeur": "Individuel (AIF, POEI, autofinancement)"
+                  }
+                }
+              },
+              {
+                "code-financeur": {
+                  "value": "5",
+                  "info": "Entreprise"
+                },
+                "extras": {
+                  "specificites": {
+                    "programme-financeur": "Entreprise"
+                  }
+                }
+              }
+            ],
+            "extras": {
+              "dispositif": {
+                "contrat-apprentissage": "0",
+                "contrat-professionnalisation": "0"
+              }
+            }
+          }
+        ],
+        "organisme-formation-responsable": {
+          "SIRET-organisme-formation": {
+            "SIRET": "95950473900019"
+          },
+          "raison-sociale": "AESCRA - EM Lyon Business School"
+        }
+      }
+    },
+    "node_fr": {
+      "caracteristiques_de_la_formation": [
+        {
+          "libelle": "La toile, l'école de la qualification numérique - La toile accompagne l'insertion professionnelle dans les métiers du numérique",
+          "a_pour_objectif": [
+            "Notre mission : La toile est l'école de la qualification numérique d'emlyon business school, 100% gratuite, ayant pour objectif d'offrir une formation qualifiante à des personnes éloignées de la formation et de l'emploi. La toile accompagne leur insertion professionnelle dans les métiers du numérique. Sa mission est de réduire les inégalités sociales ou culturelles et contribuer à l'égalité entre les hommes et les femmes en permettant à toutes et à tous de développer leurs compétences professionnelles. Acquisition de compétences dans différents domaines d'activité numérique : Développement et conception web Types d'emplois accessibles, à titre d'exemples : Développeur de sites web Chef de projet junior web Gestion de projet Développeur/se d'application Android Développeur/se d'application IOS Développeur/se d'application Java Développeur/se d'applications mobiles Développeur/se de jeux vidéo Développeur/se blockchain Développeur/se flash Développeur/se front-end Développeur/se back-end Développeur/se JavaScript Développeur/se PHP Développeur/se multimédia"
+          ],
+          "description": "Modalités de notre formation ? 100% gratuite et délivrée par emlyon Formation délivrée sur 3 campus : Lyon, Paris et Saint-Étienne À taille humaine : 25 apprenantes et apprenants par campus, 15 apprenants maximum par salle de cours 2 sessions par an, soit octobre ou mars. En présentiel, à raison de 4 jours par semaine ( du lundi au jeudi de 9h à 17h) Délivré en français Ce programme est validé par un certificat d'établissement remis par le programme de l a toile, l'école de la qualification numérique d' emlyon business school . Ce que comprend le cours de développement web : Première approche du web et du prototypage centré utilisateur, en particulier : l'apprentissage des langages socles du développement front-end HTML , CSS et Javascript , l'utilisation de framework CSS ( skeleton ) et de librairie Javascript ( jQuery ), l'intégration dynamique de données ( fichiers JSON ). Introduction aux méthodes de conception de projet centrées utilisateur, via la théorie du double diamant (enquête terrain, idéation, itération, tests utilisateurs, réalisation d'interfaces avec différents degrés de fidélités) . La découverte des rudiments de l' architecture web , l'exploration du fonctionnement des API et des bases de données L'idéation et définition de projet sur un thème issu des Objectifs de Développements Durables de l'ONU, la réalisation de wireframes et de maquettes d'interfaces ( Figma ), la conduite de tests utilisateurs, la création d'une landing page et la production d'une documentation de projet. Ce programme n'a pas pour objectif de faire de vous des développeurs web. Il s'agit plutôt de vous faire comprendre ces technologies, ce qu'elles impliquent, leurs langages, comment elles fonctionnent et comment vous pouvez en profiter. L'ambition de ce programme est de vous initier aux concepts et aux technologies qui font le Web d'aujourd'hui .",
+          "duree_hors_entreprise": "PT450H"
+        }
+      ],
+      "institution": {
+        "siret": "95950473900019",
+        "vend__realisation": [
+          {
+            "lieu_de_realisation__site": [
+              {
+                "coordonnees_gps__coordonnees_gps": {
+                  "latitude": 45,
+                  "longitude": 4
+                },
+                "code_postal": "42009",
+                "ligne": "51 Cr Fauriel",
+                "pays": "FRANCE",
+                "ville": "Saint-Étienne"
+              }
+            ]
+          }
+        ],
+        "vend_propose__formation": [
+          {
+            "financeur": [
+              "Bénéficiaire de l'action",
+              "Entreprise"
+            ],
+            "programme_ref": [
+              "https://latoile.em-lyon.com/"
+            ]
+          }
+        ]
+      },
+      "offre_de_formation": {
+        "niveau_de_sortie__niveau_de_certification": [
+          {
+            "valeur": "sans niveau spécifique"
+          }
+        ],
+        "se_decline_en__parcours": [
+          {
+            "financeur": [
+              "Bénéficiaire de l'action",
+              "Entreprise"
+            ],
+            "programme_ref": [
+              "https://latoile.em-lyon.com/"
+            ]
+          }
+        ]
+      }
+    }
+  }
+]
