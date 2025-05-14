@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+  },
+  "graph": [
+    {
+      "id": "tr:__generated-id-1__",
+      "type": "soo:Experience",
+      "prefLabel": {"@value": "Problem-Solving Puzzle", "@language": "en"},
+      "profile": "tr:__profile-id-1__",
+      "dateFrom": "2023-06-28",
+      "skill": "tr:__skill-id-1__"
+    },
+    {
+      "id":"tr:__profile-id-1__",
+      "type": "soo:Profile",
+      "email":"zayne.harding@gmail.com",
+      "experience": "tr:__generated-id-1__"
+    },
+    {
+      "id": "tr:__skill-id-1__",
+      "skillLevelValue": "Validated",
+      "type": "soo:Skill",
+      "experience": "tr:__generated-id-1__",
+      "prefLabel": {"@value": "Problem-Solving", "@language": "en"}
+    }
+  ]
+}

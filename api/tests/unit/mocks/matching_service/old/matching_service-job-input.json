@@ -1,0 +1,31 @@
+{
+    "@context": {
+        "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+    },
+    "graph": [
+        {
+            "type": "soo:Experience",
+            "id": "tr:__experience-id-1__",
+            "sourceId": "0ede4405-fb88-4cac-a501-603916c1484a",
+            "experienceType": "term:experience/type/professional",
+            "experienceStatus": "term:experience/type/suggested",
+            "prefLabel": {
+                "@value": "Agent / Agente de centre de tri de dechet",
+                "@language": "fr"
+            },
+            "__matching__": {
+                "sourceValue": "Agent / Agente de centre de tri de dechet",
+                "parameter": "<h3>D\u00e9finition</h3><p>R\u00e9alise des op\u00e9rations de tri de d\u00e9chets et produits industriels en fin de vie (textiles, plastiques, verres, composants, ...) selon les r\u00e8gles de s\u00e9curit\u00e9, d'environnement et les imp\u00e9ratifs de r\u00e9cup\u00e9ration (qualit\u00e9, cadence, ...).<br>Peut reconditionner des produits industriels pour valorisation par r\u00e9utilisation ou recyclage.<br>Peut coordonner une \u00e9quipe.</p><h3>Acc\u00e8s au m\u00e9tier</h3><p>Cet emploi/m\u00e9tier est accessible sans dipl\u00f4me ni exp\u00e9rience professionnelle.<br>Un ou plusieurs Certificat(s) d'Aptitude \u00e0 la Conduite En S\u00e9curit\u00e9 -CACES- conditionn\u00e9(s) par une aptitude m\u00e9dicale \u00e0 renouveler p\u00e9riodiquement peu(ven)t \u00eatre requis.<br>Des vaccinations sp\u00e9cifiques (leptospirose, h\u00e9patite, ...) peuvent \u00eatre requises selon le secteur d'activit\u00e9.</p><h3>Condition du m\u00e9tier</h3><p>L'activit\u00e9 de cet emploi/m\u00e9tier s'exerce au sein de soci\u00e9t\u00e9s de services, d'associations, de collectivit\u00e9s territoriales, d'entreprises industrielles en contact avec diff\u00e9rents intervenants (particuliers, conducteurs d'engins, ...).<br>Elle varie selon le lieu d'intervention et le type de produits collect\u00e9s.<br>Elle peut impliquer le port de charges.<br>Le port d'\u00e9quipements de protection (gants, combinaison, ...) peut \u00eatre requis.</p><h3>Environnement de travail</h3><p>Structures</p><ul><li>Association</li><li>Centre V\u00e9hicules hors d'usage - VHU</li><li>Collectivit\u00e9 territoriale</li><li>D\u00e9chetterie</li><li>Entreprise industrielle</li><li>Ressourcerie</li><li>Soci\u00e9t\u00e9 de collecte et de traitement des d\u00e9chets</li><li>Soci\u00e9t\u00e9 de services</li></ul><p>Secteurs</p><ul><li>Recyclage</li></ul><h3>Comp\u00e9tences de Base attendues</h3><table><tbody><tr><td>R\u00e9aliste</td><td>100.0 %</td></tr></tbody></table>",
+                "provider": "orientoi_1",
+                "subtype": "job",
+                "language": "en"
+            },
+            "description": {
+                "@value": "<h3>D\u00e9finition</h3><p>R\u00e9alise des op\u00e9rations de tri de d\u00e9chets et produits industriels en fin de vie (textiles, plastiques, verres, composants, ...) selon les r\u00e8gles de s\u00e9curit\u00e9, d'environnement et les imp\u00e9ratifs de r\u00e9cup\u00e9ration (qualit\u00e9, cadence, ...).<br>Peut reconditionner des produits industriels pour valorisation par r\u00e9utilisation ou recyclage.<br>Peut coordonner une \u00e9quipe.</p><h3>Acc\u00e8s au m\u00e9tier</h3><p>Cet emploi/m\u00e9tier est accessible sans dipl\u00f4me ni exp\u00e9rience professionnelle.<br>Un ou plusieurs Certificat(s) d'Aptitude \u00e0 la Conduite En S\u00e9curit\u00e9 -CACES- conditionn\u00e9(s) par une aptitude m\u00e9dicale \u00e0 renouveler p\u00e9riodiquement peu(ven)t \u00eatre requis.<br>Des vaccinations sp\u00e9cifiques (leptospirose, h\u00e9patite, ...) peuvent \u00eatre requises selon le secteur d'activit\u00e9.</p><h3>Condition du m\u00e9tier</h3><p>L'activit\u00e9 de cet emploi/m\u00e9tier s'exerce au sein de soci\u00e9t\u00e9s de services, d'associations, de collectivit\u00e9s territoriales, d'entreprises industrielles en contact avec diff\u00e9rents intervenants (particuliers, conducteurs d'engins, ...).<br>Elle varie selon le lieu d'intervention et le type de produits collect\u00e9s.<br>Elle peut impliquer le port de charges.<br>Le port d'\u00e9quipements de protection (gants, combinaison, ...) peut \u00eatre requis.</p><h3>Environnement de travail</h3><p>Structures</p><ul><li>Association</li><li>Centre V\u00e9hicules hors d'usage - VHU</li><li>Collectivit\u00e9 territoriale</li><li>D\u00e9chetterie</li><li>Entreprise industrielle</li><li>Ressourcerie</li><li>Soci\u00e9t\u00e9 de collecte et de traitement des d\u00e9chets</li><li>Soci\u00e9t\u00e9 de services</li></ul><p>Secteurs</p><ul><li>Recyclage</li></ul><h3>Comp\u00e9tences de Base attendues</h3><table><tbody><tr><td>R\u00e9aliste</td><td>100.0 %</td></tr></tbody></table>",
+                "@language": "fr"
+            },
+            "polarity": "tr:__polarity-id-1__",
+            "family": "term:orientoi_1/family/d9e8e5e07211aea6a79908188885427b/M\u00e9tier"
+        }
+    ]
+}

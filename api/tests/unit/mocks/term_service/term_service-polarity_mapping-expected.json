@@ -1,0 +1,37 @@
+{
+    "@context": {
+        "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+    },
+    "graph": [
+        {
+            "experience": "tr:__experience-id-1__",
+            "id": "tr:__polarity-id-1__",
+            "type": "soo:Polarity",
+            "skillLevelValue": "term:test/polarity/c3b52713f081d481375e28106c72acb9/value/Je ne sais pas",
+            "skillLevelScale": "term:test/polarity/c3b52713f081d481375e28106c72acb9/scale"
+        },
+        {
+            "id": "term:test/polarity/c3b52713f081d481375e28106c72acb9/value/Je ne sais pas",
+            "type": "skos:Concept",
+            "prefLabel": [
+                {
+                    "value": "Je ne sais pas"
+                }
+            ],
+            "memberOf": "term:test/polarity/c3b52713f081d481375e28106c72acb9/scale",
+            "notation": "Je ne sais pas"
+        },
+        {
+            "id": "term:test/polarity/c3b52713f081d481375e28106c72acb9/scale",
+            "type": "skos:Collection",
+            "prefLabel": [
+                {
+                    "value": "test collection for skill in jobCards.positionnement"
+                }
+            ],
+            "member": [
+                "term:test/polarity/c3b52713f081d481375e28106c72acb9/value/Je ne sais pas"
+            ]
+        }
+    ]
+}

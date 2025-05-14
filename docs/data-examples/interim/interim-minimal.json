@@ -1,0 +1,50 @@
+[{
+    "name": "Alice Smith",
+    "email": "alice.smith@example.com",
+    "address": "456 Oak St, Anytown, USA",
+    "pastExperience": [
+        {
+            "role": "Software Engineer",
+            "company": "Tech Corp",
+            "dateStart": "2017-06-01",
+            "dateEnd": "2019-08-01"
+        },
+        {
+            "role": "Lead Engineer",
+            "company": "Innovate Ltd",
+            "dateStart": "2019-09-01",
+            "dateEnd": "2023-01-01"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Certified Scrum Master",
+            "institution": "Scrum Alliance",
+            "year": 2018
+        },
+        {
+            "name": "AWS Certified Solutions Architect",
+            "institution": "Amazon",
+            "year": 2021
+        }
+    ],
+    "suggestedExperiences": [
+        {
+            "title": "Engineering Manager",
+            "description": "Managing a team of software engineers",
+            "company": "Tech Innovators",
+            "dateStart": "2023-03-01",
+            "location": "Boston, USA",
+            "contractType": "Full-Time"
+        },
+        {
+            "title": "Product Owner",
+            "description": "Overseeing product development",
+            "company": "Creative Solutions",
+            "dateStart": "2024-02-01",
+            "location": "Seattle, USA",
+            "contractType": "Contract"
+        }
+    ],
+    "openToInterim": 0
+}]

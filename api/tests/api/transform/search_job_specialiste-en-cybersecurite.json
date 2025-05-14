@@ -1,0 +1,169 @@
+{
+    "took": 6,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 3039,
+            "relation": "eq"
+        },
+        "max_score": 2.7481532,
+        "hits": [
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/0464b062-cea6-4164-b10d-956c61956ae7",
+                "_score": 2.7481532,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "ICT security administrator",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/0464b062-cea6-4164-b10d-956c61956ae7"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/276ba420-ef09-4a0e-b215-2c2e2f80ad28",
+                "_score": 2.6929755,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "chief ICT security officer",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/276ba420-ef09-4a0e-b215-2c2e2f80ad28"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/0ce5a9f4-e00a-4bbe-b255-3c63407167a4",
+                "_score": 2.647138,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "cyber incident responder",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/0ce5a9f4-e00a-4bbe-b255-3c63407167a4"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/7754d570-9519-48c2-b1c9-8e165f8bca0f",
+                "_score": 2.63627,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "cybersecurity risk manager",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/7754d570-9519-48c2-b1c9-8e165f8bca0f"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/a44a1dc5-be08-4840-8bd5-770c4ac1ca6d",
+                "_score": 2.622109,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "ICT security technician",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/a44a1dc5-be08-4840-8bd5-770c4ac1ca6d"
+                }
+            }
+        ]
+    }
+}

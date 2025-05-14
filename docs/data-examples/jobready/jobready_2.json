@@ -1,0 +1,28 @@
+[
+    {
+        "fields": [
+            {
+                "context": [
+                    "Engagement"
+                ],
+                "level": 0,
+                "skill": {
+                    "description": "Faculté de se diriger vers un collectif déjà constitué, d'y trouver une place et d'en devenir un membre légitime",
+                    "name": "Intégration au groupe"
+                }
+            },
+            {
+                "context": [
+                    "Engagement"
+                ],
+                "level": 0,
+                "skill": {
+                    "description": "S'investir, orienter son action et nourrir une satisfaction et un enthousiasme vis-à-vis d'une organisation, d'un projet collectif ou d'un objectif personnel",
+                    "name": "Motivation et implication"
+                }
+            }
+        ],
+        "name": "Badges",
+        "table": "badges"
+    }
+]

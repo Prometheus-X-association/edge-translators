@@ -1,0 +1,174 @@
+{
+    "took": 17,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 10000,
+            "relation": "gte"
+        },
+        "max_score": 2.8413577,
+        "hits": [
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/625b57ee-29d4-425b-bf99-9fd54dd021fe",
+                "_score": 2.8413577,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "Kali Linux",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/625b57ee-29d4-425b-bf99-9fd54dd021fe"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/8a30eb28-eca0-4ab6-8c05-32c47d3e0dd6",
+                "_score": 2.6135921,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "BlackArch",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/8a30eb28-eca0-4ab6-8c05-32c47d3e0dd6"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/f4a85869-1855-45d5-a43c-7ee8cd451996",
+                "_score": 2.5539303,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "perform ICT security testing",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/f4a85869-1855-45d5-a43c-7ee8cd451996"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/baf1fadb-975a-42be-9744-d8ba02304d09",
+                "_score": 2.5392957,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "Samurai Web Testing Framework",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/baf1fadb-975a-42be-9744-d8ba02304d09"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/52b38e90-3d05-4042-a9e2-d19dec8dd7c1",
+                "_score": 2.5391397,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "test hardware",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/52b38e90-3d05-4042-a9e2-d19dec8dd7c1"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,169 @@
+{
+    "took": 7,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 3039,
+            "relation": "eq"
+        },
+        "max_score": 2.6335511,
+        "hits": [
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/38a7f453-a7f0-45d2-a74d-5b92506e4a21",
+                "_score": 2.6335511,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "computer hardware engineering technician",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/38a7f453-a7f0-45d2-a74d-5b92506e4a21"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/92bb3d8c-8a9f-4cd7-80ec-247bbf173004",
+                "_score": 2.6091418,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "computer hardware engineer",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/92bb3d8c-8a9f-4cd7-80ec-247bbf173004"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/27811419-407f-4868-a388-2f7df7aafd91",
+                "_score": 2.5978985,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "electronics engineering technician",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/27811419-407f-4868-a388-2f7df7aafd91"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/d849fd2a-5210-434b-a50b-2d92de3a4bac",
+                "_score": 2.5558472,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "electronics drafter",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/d849fd2a-5210-434b-a50b-2d92de3a4bac"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/e6800524-eec2-4c33-af0e-6f36d1d679bc",
+                "_score": 2.5532494,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "instrumentation engineer",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/e6800524-eec2-4c33-af0e-6f36d1d679bc"
+                }
+            }
+        ]
+    }
+}

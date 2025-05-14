@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Utilisateur 1",
+        "email": "utilisateur1@example.com",
+        "address": "123 Rue de la Paix, Paris, France",
+        "experiences": [
+            {
+                "name": "Développeur Full Stack",
+                "company": "TechNova Solutions",
+                "description": "Conçoit et développe des applications web complètes, du front-end au back-end.",
+                "start_date": "2021-03-01",
+                "end_date": "2024-03-01",
+                "competencies": [
+                    {"name": "Communication", "description": "Capacité à transmettre efficacement des idées.", "skillLevelValue": 4, "type": "soft_skill"},
+                    {"name": "Gestion du temps", "description": "Savoir organiser son temps pour respecter les délais.", "skillLevelValue": 3, "type": "soft_skill"},
+                    {"name": "Esprit d'équipe", "description": "Aptitude à travailler efficacement avec les autres.", "skillLevelValue": 5, "type": "soft_skill"},
+                    {"name": "JavaScript", "description": "Langage de programmation pour le développement web.", "skillLevelValue": 5, "type": "hard_skill"},
+                    {"name": "Node.js", "description": "Plateforme logicielle pour les applications web côté serveur.", "skillLevelValue": 4, "type": "hard_skill"},
+                    {"name": "React", "description": "Bibliothèque JavaScript pour construire des interfaces utilisateur.", "skillLevelValue": 4, "type": "hard_skill"}
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Utilisateur 2",
+        "email": "utilisateur2@example.com",
+        "address": "456 Avenue des Champs, Lyon, France",
+        "experiences": [
+            {
+                "name": "Ingénieur en Machine Learning",
+                "company": "AI Fusion Labs",
+                "description": "Crée et entraîne des modèles d'intelligence artificielle pour résoudre des problèmes complexes.",
+                "start_date": "2020-05-15",
+                "end_date": "2023-12-01",
+                "competencies": [
+                    {"name": "Pensée critique", "description": "Capacité à évaluer des problèmes complexes et à proposer des solutions.", "skillLevelValue": 5, "type": "soft_skill"},
+                    {"name": "Collaboration", "description": "Travail en équipe pour atteindre des objectifs communs.", "skillLevelValue": 4, "type": "soft_skill"},
+                    {"name": "Curiosité", "description": "Capacité à chercher et découvrir de nouvelles solutions.", "skillLevelValue": 4, "type": "soft_skill"},
+                    {"name": "Python", "description": "Langage de programmation populaire en IA.", "skillLevelValue": 5, "type": "hard_skill"},
+                    {"name": "TensorFlow", "description": "Framework pour les modèles de machine learning.", "skillLevelValue": 4, "type": "hard_skill"},
+                    {"name": "scikit-learn", "description": "Bibliothèque pour les algorithmes de machine learning.", "skillLevelValue": 4, "type": "hard_skill"}
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Utilisateur 3",
+        "email": "utilisateur3@example.com",
+        "address": "789 Boulevard Saint-Michel, Marseille, France",
+        "experiences": [
+            {
+                "name": "Spécialiste en Cybersécurité",
+                "company": "SecureByte Inc.",
+                "description": "Protège les systèmes informatiques contre les menaces et les cyberattaques.",
+                "start_date": "2021-06-01",
+                "end_date": "2024-06-01",
+                "competencies": [
+                    {"name": "Vigilance", "description": "Capacité à détecter rapidement les menaces de sécurité.", "skillLevelValue": 5, "type": "soft_skill"},
+                    {"name": "Analyse", "description": "Aptitude à étudier en détail les incidents de sécurité.", "skillLevelValue": 4, "type": "soft_skill"},
+                    {"name": "Travail d'équipe", "description": "Collaboration avec les équipes pour garantir la sécurité.", "skillLevelValue": 4, "type": "soft_skill"},
+                    {"name": "Kali Linux", "description": "Distribution spécialisée pour les tests de sécurité.", "skillLevelValue": 5, "type": "hard_skill"},
+                    {"name": "Wireshark", "description": "Outil d'analyse de trafic réseau.", "skillLevelValue": 4, "type": "hard_skill"},
+                    {"name": "Firewall", "description": "Configuration et gestion des pare-feu.", "skillLevelValue": 4, "type": "hard_skill"}
+                ]
+            }
+        ]
+    }
+]

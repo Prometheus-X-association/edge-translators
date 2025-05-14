@@ -1,0 +1,90 @@
+{
+    "@context": {
+        "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+    },
+    "graph": [
+        {
+        "experience": "tr:__experience-id-1__",
+        "id": "tr:__skill-id-1__",
+        "match": {
+            "framework": "esco",
+            "id": "match:suggestion/id_source/55eefc9e28432347635c61fba45b70b5/id_target/esco:skill/03b9b491-fc9b-4868-914a-bf7cd47b5041",
+            "mappingType": "skos:exactMatch",
+            "score": 2.6728945,
+            "target": {
+            "id": "esco:skill/03b9b491-fc9b-4868-914a-bf7cd47b5041",
+            "prefLabel": {
+                "language": "fr",
+                "value": "trouver des solutions aux probl\u00e8mes"
+            }
+            },
+            "type": "match:suggestion",
+            "validated": 0
+        },
+        "skillLevelValue": "Validated",
+        "suggestions": [
+            {
+            "framework": "esco",
+            "id": "match:suggestion/id_source/55eefc9e28432347635c61fba45b70b5/id_target/esco:skill/7a8fb784-67fa-41e9-a75c-6b491d91f800",
+            "mappingType": "skos:exactMatch",
+            "score": 2.666301,
+            "target": {
+                "id": "esco:skill/7a8fb784-67fa-41e9-a75c-6b491d91f800",
+                "prefLabel": {
+                "language": "fr",
+                "value": "\u00e9laborer une strat\u00e9gie pour r\u00e9soudre les probl\u00e8mes"
+                }
+            },
+            "type": "match:suggestion",
+            "validated": 0
+            },
+            {
+            "framework": "esco",
+            "id": "match:suggestion/id_source/55eefc9e28432347635c61fba45b70b5/id_target/esco:skill/7e5147d1-60b1-4a68-804b-1f5cb0396b91",
+            "mappingType": "skos:exactMatch",
+            "score": 2.638123,
+            "target": {
+                "id": "esco:skill/7e5147d1-60b1-4a68-804b-1f5cb0396b91",
+                "prefLabel": {
+                "language": "fr",
+                "value": "r\u00e9solution des probl\u00e8mes \u00e0 l'aide d'outils et de mat\u00e9riel TIC"
+                }
+            },
+            "type": "match:suggestion",
+            "validated": 0
+            },
+            {
+            "framework": "esco",
+            "id": "match:suggestion/id_source/55eefc9e28432347635c61fba45b70b5/id_target/esco:skill/a32e7fb1-af9e-4c09-8ea7-72b7442e9cda",
+            "mappingType": "skos:exactMatch",
+            "score": 2.62194,
+            "target": {
+                "id": "esco:skill/a32e7fb1-af9e-4c09-8ea7-72b7442e9cda",
+                "prefLabel": {
+                "language": "fr",
+                "value": "r\u00e9soudre des probl\u00e8mes dans le domaine de la sant\u00e9"
+                }
+            },
+            "type": "match:suggestion",
+            "validated": 0
+            },
+            {
+            "framework": "esco",
+            "id": "match:suggestion/id_source/55eefc9e28432347635c61fba45b70b5/id_target/esco:skill/adc6dc11-3376-467b-96c5-9b0a21edc869",
+            "mappingType": "skos:exactMatch",
+            "score": 2.5827968,
+            "target": {
+                "id": "esco:skill/adc6dc11-3376-467b-96c5-9b0a21edc869",
+                "prefLabel": {
+                "language": "fr",
+                "value": "r\u00e9soudre les probl\u00e8mes"
+                }
+            },
+            "type": "match:suggestion",
+            "validated": 0
+            }
+        ],
+        "type": "soo:Skill"
+        }
+    ]
+}

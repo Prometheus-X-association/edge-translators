@@ -1,0 +1,174 @@
+{
+    "took": 17,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 10000,
+            "relation": "gte"
+        },
+        "max_score": 2.5430427,
+        "hits": [
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+                "_score": 2.5430427,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "web programming",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+                "_score": 2.5400562,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "JavaScript",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/9b9de2a4-d8af-4a7b-933a-a8334ae60067",
+                "_score": 2.5279343,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "JavaScript Framework",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/9b9de2a4-d8af-4a7b-933a-a8334ae60067"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+                "_score": 2.5213284,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "design user interface",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/fd33c66c-70c4-40e6-b87c-5495bd3bf26e"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/b0096dc5-2e2d-4bc1-8172-05bf486c3968",
+                "_score": 2.5017939,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "design application interfaces",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/b0096dc5-2e2d-4bc1-8172-05bf486c3968"
+                }
+            }
+        ]
+    }
+}

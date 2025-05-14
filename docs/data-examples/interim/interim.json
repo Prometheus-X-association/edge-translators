@@ -1,0 +1,252 @@
+[
+    {
+        "name": "Alice Smith",
+        "email": "alice.smith@example.com",
+        "address": "456 Oak St, Anytown, USA",
+        "pastExperience": [
+            {
+                "role": "Software Engineer",
+                "company": "Tech Corp",
+                "dateStart": "2017-06-01",
+                "dateEnd": "2019-08-01"
+            },
+            {
+                "role": "Lead Engineer",
+                "company": "Innovate Ltd",
+                "dateStart": "2019-09-01",
+                "dateEnd": "2023-01-01"
+            }
+        ],
+        "certifications": [
+            {
+                "name": "Certified Scrum Master",
+                "institution": "Scrum Alliance",
+                "year": 2018
+            },
+            {
+                "name": "AWS Certified Solutions Architect",
+                "institution": "Amazon",
+                "year": 2021
+            }
+        ],
+        "suggestedExperiences": [
+            {
+                "title": "Engineering Manager",
+                "description": "Managing a team of software engineers",
+                "company": "Tech Innovators",
+                "dateStart": "2023-03-01",
+                "location": "Boston, USA",
+                "contractType": "Full-Time"
+            },
+            {
+                "title": "Product Owner",
+                "description": "Overseeing product development",
+                "company": "Creative Solutions",
+                "dateStart": "2024-02-01",
+                "location": "Seattle, USA",
+                "contractType": "Contract"
+            }
+        ],
+        "openToInterim": 0
+    },
+    {
+        "name": "Bob Johnson",
+        "email": "bob.johnson@example.com",
+        "address": "789 Pine St, Somewhere, USA",
+        "pastExperience": [
+            {
+                "role": "Data Analyst",
+                "company": "Data Insights",
+                "dateStart": "2016-05-01",
+                "dateEnd": "2018-11-01"
+            },
+            {
+                "role": "Data Scientist",
+                "company": "Big Data Co",
+                "dateStart": "2018-12-01",
+                "dateEnd": "2022-07-01"
+            }
+        ],
+        "certifications": [
+            {
+                "name": "Certified Data Scientist",
+                "institution": "Data Science Academy",
+                "year": 2019
+            },
+            {
+                "name": "Machine Learning Specialist",
+                "institution": "ML Institute",
+                "year": 2021
+            }
+        ],
+        "suggestedExperiences": [
+            {
+                "title": "Senior Data Scientist",
+                "description": "Leading data science projects",
+                "company": "AI Solutions",
+                "dateStart": "2023-04-01",
+                "location": "Austin, USA",
+                "contractType": "Full-Time"
+            },
+            {
+                "title": "Data Science Consultant",
+                "description": "Providing data science consulting services",
+                "company": "Consulting Pros",
+                "dateStart": "2024-01-15",
+                "location": "Denver, USA",
+                "contractType": "Contract"
+            }
+        ],
+        "openToInterim": 1
+    },
+    {
+        "name": "Charlie Brown",
+        "email": "charlie.brown@example.com",
+        "address": "101 Maple St, Anytown, USA",
+        "pastExperience": [
+            {
+                "role": "Project Manager",
+                "company": "Build It Inc",
+                "dateStart": "2015-03-01",
+                "dateEnd": "2018-04-01"
+            },
+            {
+                "role": "Senior Project Manager",
+                "company": "Construct Co",
+                "dateStart": "2018-05-01",
+                "dateEnd": "2023-02-01"
+            }
+        ],
+        "certifications": [
+            {
+                "name": "PMP Certification",
+                "institution": "PMI",
+                "year": 2016
+            },
+            {
+                "name": "Lean Six Sigma Black Belt",
+                "institution": "Quality Institute",
+                "year": 2019
+            }
+        ],
+        "suggestedExperiences": [
+            {
+                "title": "Program Manager",
+                "description": "Managing multiple projects",
+                "company": "Program Solutions",
+                "dateStart": "2023-05-01",
+                "location": "Chicago, USA",
+                "contractType": "Full-Time"
+            },
+            {
+                "title": "Operations Manager",
+                "description": "Overseeing operations",
+                "company": "Operations Experts",
+                "dateStart": "2024-01-20",
+                "location": "Houston, USA",
+                "contractType": "Contract"
+            }
+        ],
+        "openToInterim": 1
+    },
+    {
+        "name": "Diana Prince",
+        "email": "diana.prince@example.com",
+        "address": "202 Birch St, Anytown, USA",
+        "pastExperience": [
+            {
+                "role": "Graphic Designer",
+                "company": "Design Studio",
+                "dateStart": "2014-02-01",
+                "dateEnd": "2017-12-01"
+            },
+            {
+                "role": "Senior Graphic Designer",
+                "company": "Creative Works",
+                "dateStart": "2018-01-01",
+                "dateEnd": "2023-03-01"
+            }
+        ],
+        "certifications": [
+            {
+                "name": "Certified Graphic Designer",
+                "institution": "Design Institute",
+                "year": 2015
+            },
+            {
+                "name": "Advanced Photoshop",
+                "institution": "Adobe Academy",
+                "year": 2018
+            }
+        ],
+        "suggestedExperiences": [
+            {
+                "title": "Art Director",
+                "description": "Leading the creative team",
+                "company": "Artistic Vision",
+                "dateStart": "2023-06-01",
+                "location": "Los Angeles, USA",
+                "contractType": "Full-Time"
+            },
+            {
+                "title": "Creative Director",
+                "description": "Overseeing creative projects",
+                "company": "Creative Minds",
+                "dateStart": "2024-02-01",
+                "location": "San Diego, USA",
+                "contractType": "Contract"
+            }
+        ],
+        "openToInterim": 0
+    },
+    {
+        "name": "Eve Adams",
+        "email": "eve.adams@example.com",
+        "address": "303 Cedar St, Anytown, USA",
+        "pastExperience": [
+            {
+                "role": "Marketing Specialist",
+                "company": "Market Experts",
+                "dateStart": "2013-09-01",
+                "dateEnd": "2016-12-01"
+            },
+            {
+                "role": "Marketing Manager",
+                "company": "Advertise Now",
+                "dateStart": "2017-01-01",
+                "dateEnd": "2022-10-01"
+            }
+        ],
+        "certifications": [
+            {
+                "name": "Certified Marketing Professional",
+                "institution": "Marketing Institute",
+                "year": 2014
+            },
+            {
+                "name": "Digital Marketing Specialist",
+                "institution": "Digital Academy",
+                "year": 2017
+            }
+        ],
+        "suggestedExperiences": [
+            {
+                "title": "Senior Marketing Manager",
+                "description": "Leading marketing campaigns",
+                "company": "Marketing Leaders",
+                "dateStart": "2023-07-01",
+                "location": "Miami, USA",
+                "contractType": "Full-Time"
+            },
+            {
+                "title": "Marketing Consultant",
+                "description": "Providing marketing strategies",
+                "company": "Consulting Solutions",
+                "dateStart": "2024-01-01",
+                "location": "Orlando, USA",
+                "contractType": "Contract"
+            }
+        ],
+        "openToInterim": 1
+    }
+]

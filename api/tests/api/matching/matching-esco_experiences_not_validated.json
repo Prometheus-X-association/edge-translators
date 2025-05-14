@@ -1,0 +1,298 @@
+{
+  "took": 2,
+  "timed_out": false,
+  "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+  },
+  "hits": {
+      "total": {
+          "value": 3,
+          "relation": "eq"
+      },
+      "max_score": 2.8842583,
+      "hits": [
+          {
+              "_index": "edge_matchings",
+              "_id": "match:provider/provider1/framework/esco/label/41f958e6339634212869fe17d84f87f2/slang/fr/tlang/en",
+              "_score": 2.8842583,
+              "_source": {
+                  "id": "experience:provider/provider1/value/developpeur-full-stack",
+                  "prefLabel": {
+                      "value": "Développeur Full Stack",
+                      "language": "fr"
+                  },
+                  "description": "Conçoit et développe des applications web complètes, du front-end au back-end.",
+                  "type": "soo:Experience",
+                  "framework": "esco",
+                  "provider": "provider1",
+                  "match": {
+                      "id": "match:suggestion/id_source/41f958e6339634212869fe17d84f87f2/id_target/esco:occupation/c40a2919-48a9-40ea-b506-1f34f693496d",
+                      "type": "match:suggestion",
+                      "target": {
+                          "id": "esco:occupation/c40a2919-48a9-40ea-b506-1f34f693496d",
+                          "prefLabel": {
+                              "value": "web developer",
+                              "language": "en"
+                          }
+                      },
+                      "score": 2.5570998,
+                      "validated": 0,
+                      "framework": "esco",
+                      "mappingType": "skos:exactMatch"
+                  },
+                  "suggestions": [
+                      {
+                          "id": "match:suggestion/id_source/41f958e6339634212869fe17d84f87f2/id_target/esco:occupation/866c7813-2c03-47d7-9bdc-192cfbace57c",
+                          "type": "match:suggestion",
+                          "target": {
+                              "id": "esco:occupation/866c7813-2c03-47d7-9bdc-192cfbace57c",
+                              "prefLabel": {
+                                  "value": "user interface developer",
+                                  "language": "en"
+                              }
+                          },
+                          "score": 2.542714,
+                          "validated": 0,
+                          "framework": "esco",
+                          "mappingType": "skos:exactMatch"
+                      },
+                      {
+                          "id": "match:suggestion/id_source/41f958e6339634212869fe17d84f87f2/id_target/esco:occupation/781a6350-e686-45b9-b075-e4c8d5a05ff7",
+                          "type": "match:suggestion",
+                          "target": {
+                              "id": "esco:occupation/781a6350-e686-45b9-b075-e4c8d5a05ff7",
+                              "prefLabel": {
+                                  "value": "cloud software developer ",
+                                  "language": "en"
+                              }
+                          },
+                          "score": 2.5140936,
+                          "validated": 0,
+                          "framework": "esco",
+                          "mappingType": "skos:exactMatch"
+                      },
+                      {
+                          "id": "match:suggestion/id_source/41f958e6339634212869fe17d84f87f2/id_target/esco:occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1",
+                          "type": "match:suggestion",
+                          "target": {
+                              "id": "esco:occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1",
+                              "prefLabel": {
+                                  "value": "software developer",
+                                  "language": "en"
+                              }
+                          },
+                          "score": 2.4746597,
+                          "validated": 0,
+                          "framework": "esco",
+                          "mappingType": "skos:exactMatch"
+                      },
+                      {
+                          "id": "match:suggestion/id_source/41f958e6339634212869fe17d84f87f2/id_target/esco:occupation/57af9090-55b4-4911-b2d0-86db01c00b02",
+                          "type": "match:suggestion",
+                          "target": {
+                              "id": "esco:occupation/57af9090-55b4-4911-b2d0-86db01c00b02",
+                              "prefLabel": {
+                                  "value": "embedded systems software developer",
+                                  "language": "en"
+                              }
+                          },
+                          "score": 2.4737635,
+                          "validated": 0,
+                          "framework": "esco",
+                          "mappingType": "skos:exactMatch"
+                      }
+                  ]
+              }
+          },
+          {
+              "_index": "edge_matchings",
+              "_id": "match:provider/provider1/framework/esco/label/23c6a5a6ae61441522ff34d049f77b54/slang/fr/tlang/en",
+              "_score": 2.8842583,
+              "_source": {
+                  "id": "experience:provider/provider1/value/ingenieur-en-machine-learning",
+                  "prefLabel": {
+                      "value": "Ingénieur en Machine Learning",
+                      "language": "fr"
+                  },
+                  "description": "Crée et entraîne des modèles d'intelligence artificielle pour résoudre des problèmes complexes.",
+                  "type": "soo:Experience",
+                  "framework": "esco",
+                  "provider": "provider1",
+                  "match": {
+                      "id": "match:suggestion/id_source/23c6a5a6ae61441522ff34d049f77b54/id_target/esco:occupation/35553663-deab-4d9a-bf22-15c1625d28e8",
+                      "type": "match:suggestion",
+                      "target": {
+                          "id": "esco:occupation/35553663-deab-4d9a-bf22-15c1625d28e8",
+                          "prefLabel": {
+                              "value": " artificial intelligence engineer ",
+                              "language": "en"
+                          }
+                      },
+                      "score": 2.8110113,
+                      "validated": 0,
+                      "framework": "esco",
+                      "mappingType": "skos:exactMatch"
+                  },
+                  "suggestions": [
+                      {
+                          "id": "match:suggestion/id_source/23c6a5a6ae61441522ff34d049f77b54/id_target/esco:occupation/1c5a45b9-440e-4726-b565-16a952abd341",
+                          "type": "match:suggestion",
+                          "target": {
+                              "id": "esco:occupation/1c5a45b9-440e-4726-b565-16a952abd341",
+                              "prefLabel": {
+                                  "value": "computer vision engineer",
+                                  "language": "en"
+                              }
+                          },
+                          "score": 2.6845398,
+                          "validated": 0,
+                          "framework": "esco",
+                          "mappingType": "skos:exactMatch"
+                      },
+                      {
+                          "id": "match:suggestion/id_source/23c6a5a6ae61441522ff34d049f77b54/id_target/esco:occupation/812c217d-32b7-4f6a-9faf-993d3577ac7f",
+                          "type": "match:suggestion",
+                          "target": {
+                              "id": "esco:occupation/812c217d-32b7-4f6a-9faf-993d3577ac7f",
+                              "prefLabel": {
+                                  "value": "knowledge engineer",
+                                  "language": "en"
+                              }
+                          },
+                          "score": 2.6656535,
+                          "validated": 0,
+                          "framework": "esco",
+                          "mappingType": "skos:exactMatch"
+                      },
+                      {
+                          "id": "match:suggestion/id_source/23c6a5a6ae61441522ff34d049f77b54/id_target/esco:occupation/6ce5f7e3-a534-4aa2-ab23-255408ddb53a",
+                          "type": "match:suggestion",
+                          "target": {
+                              "id": "esco:occupation/6ce5f7e3-a534-4aa2-ab23-255408ddb53a",
+                              "prefLabel": {
+                                  "value": "IoT developer",
+                                  "language": "en"
+                              }
+                          },
+                          "score": 2.5577247,
+                          "validated": 0,
+                          "framework": "esco",
+                          "mappingType": "skos:exactMatch"
+                      },
+                      {
+                          "id": "match:suggestion/id_source/23c6a5a6ae61441522ff34d049f77b54/id_target/esco:occupation/bb609566-3ab6-44dd-8f48-cf0b15b96827",
+                          "type": "match:suggestion",
+                          "target": {
+                              "id": "esco:occupation/bb609566-3ab6-44dd-8f48-cf0b15b96827",
+                              "prefLabel": {
+                                  "value": "automation engineer",
+                                  "language": "en"
+                              }
+                          },
+                          "score": 2.5260823,
+                          "validated": 0,
+                          "framework": "esco",
+                          "mappingType": "skos:exactMatch"
+                      }
+                  ]
+              }
+          },
+          {
+              "_index": "edge_matchings",
+              "_id": "match:provider/provider1/framework/esco/label/ca7bf55e2290e046a1adc52e7ea610c1/slang/fr/tlang/en",
+              "_score": 2.8842583,
+              "_source": {
+                  "id": "experience:provider/provider1/value/specialiste-en-cybersecurite",
+                  "prefLabel": {
+                      "value": "Spécialiste en Cybersécurité",
+                      "language": "fr"
+                  },
+                  "description": "Protège les systèmes informatiques contre les menaces et les cyberattaques.",
+                  "type": "soo:Experience",
+                  "framework": "esco",
+                  "provider": "provider1",
+                  "match": {
+                      "id": "match:suggestion/id_source/ca7bf55e2290e046a1adc52e7ea610c1/id_target/esco:occupation/0464b062-cea6-4164-b10d-956c61956ae7",
+                      "type": "match:suggestion",
+                      "target": {
+                          "id": "esco:occupation/0464b062-cea6-4164-b10d-956c61956ae7",
+                          "prefLabel": {
+                              "value": "ICT security administrator",
+                              "language": "en"
+                          }
+                      },
+                      "score": 2.7481532,
+                      "validated": 0,
+                      "framework": "esco",
+                      "mappingType": "skos:exactMatch"
+                  },
+                  "suggestions": [
+                      {
+                          "id": "match:suggestion/id_source/ca7bf55e2290e046a1adc52e7ea610c1/id_target/esco:occupation/276ba420-ef09-4a0e-b215-2c2e2f80ad28",
+                          "type": "match:suggestion",
+                          "target": {
+                              "id": "esco:occupation/276ba420-ef09-4a0e-b215-2c2e2f80ad28",
+                              "prefLabel": {
+                                  "value": "chief ICT security officer",
+                                  "language": "en"
+                              }
+                          },
+                          "score": 2.6929755,
+                          "validated": 0,
+                          "framework": "esco",
+                          "mappingType": "skos:exactMatch"
+                      },
+                      {
+                          "id": "match:suggestion/id_source/ca7bf55e2290e046a1adc52e7ea610c1/id_target/esco:occupation/0ce5a9f4-e00a-4bbe-b255-3c63407167a4",
+                          "type": "match:suggestion",
+                          "target": {
+                              "id": "esco:occupation/0ce5a9f4-e00a-4bbe-b255-3c63407167a4",
+                              "prefLabel": {
+                                  "value": "cyber incident responder",
+                                  "language": "en"
+                              }
+                          },
+                          "score": 2.647138,
+                          "validated": 0,
+                          "framework": "esco",
+                          "mappingType": "skos:exactMatch"
+                      },
+                      {
+                          "id": "match:suggestion/id_source/ca7bf55e2290e046a1adc52e7ea610c1/id_target/esco:occupation/7754d570-9519-48c2-b1c9-8e165f8bca0f",
+                          "type": "match:suggestion",
+                          "target": {
+                              "id": "esco:occupation/7754d570-9519-48c2-b1c9-8e165f8bca0f",
+                              "prefLabel": {
+                                  "value": "cybersecurity risk manager",
+                                  "language": "en"
+                              }
+                          },
+                          "score": 2.63627,
+                          "validated": 0,
+                          "framework": "esco",
+                          "mappingType": "skos:exactMatch"
+                      },
+                      {
+                          "id": "match:suggestion/id_source/ca7bf55e2290e046a1adc52e7ea610c1/id_target/esco:occupation/a44a1dc5-be08-4840-8bd5-770c4ac1ca6d",
+                          "type": "match:suggestion",
+                          "target": {
+                              "id": "esco:occupation/a44a1dc5-be08-4840-8bd5-770c4ac1ca6d",
+                              "prefLabel": {
+                                  "value": "ICT security technician",
+                                  "language": "en"
+                              }
+                          },
+                          "score": 2.622109,
+                          "validated": 0,
+                          "framework": "esco",
+                          "mappingType": "skos:exactMatch"
+                      }
+                  ]
+              }
+          }
+      ]
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "@context": {
+    "@TODO": "define the result context"
+
+  },
+  "graph": [
+    {
+      "id": "tr:__skill-id-1__",
+      "type": "soo:Skill",
+      "match": {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/be004d6aa747b221399a3bf55415555f/id_target/skill:a4a882a1-0263-4dd2-b29a-f0028cac2393",
+        "mappingType": "skos:exactMatch",
+        "score": 2.4589055,
+        "target": {
+        "id": "skill:a4a882a1-0263-4dd2-b29a-f0028cac2393",
+        "prefLabel": {
+          "language": "fr",
+          "value": "d\u00e9finir une strat\u00e9gie d\u2019int\u00e9gration"
+        }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+      },
+      "suggestions": [
+        {
+         "framework": "esco",
+         "id": "match:suggestion/id_source/be004d6aa747b221399a3bf55415555f/id_target/skill:eab3bafa-eebb-47bf-85ce-e336c5019108",
+         "mappingType": "skos:exactMatch",
+         "score": 2.4193354,
+         "target": {
+          "id": "skill:eab3bafa-eebb-47bf-85ce-e336c5019108",
+          "prefLabel": {
+           "language": "fr",
+           "value": "consolidation d'\u00e9quipe"
+          }
+         },
+         "type": "match:suggestion",
+         "validated": 0
+        },
+        {
+         "framework": "esco",
+         "id": "match:suggestion/id_source/be004d6aa747b221399a3bf55415555f/id_target/skill:7eb4c570-9dc7-4f4d-83d2-f4c4c87b6e49",
+         "mappingType": "skos:exactMatch",
+         "score": 2.4099069,
+         "target": {
+          "id": "skill:7eb4c570-9dc7-4f4d-83d2-f4c4c87b6e49",
+          "prefLabel": {
+           "language": "fr",
+           "value": "g\u00e9rer des op\u00e9rations de fusion et acquisition"
+          }
+         },
+         "type": "match:suggestion",
+         "validated": 0
+        },
+        {
+         "framework": "esco",
+         "id": "match:suggestion/id_source/be004d6aa747b221399a3bf55415555f/id_target/skill:b19e0820-a96f-4c0a-a724-3c056180c1b3",
+         "mappingType": "skos:exactMatch",
+         "score": 2.4011123,
+         "target": {
+          "id": "skill:b19e0820-a96f-4c0a-a724-3c056180c1b3",
+          "prefLabel": {
+           "language": "fr",
+           "value": "construire un esprit d\u2019\u00e9quipe"
+          }
+         },
+         "type": "match:suggestion",
+         "validated": 0
+        },
+        {
+         "framework": "esco",
+         "id": "match:suggestion/id_source/be004d6aa747b221399a3bf55415555f/id_target/skill:9d9ba780-4aa2-43d2-888c-95a41a713fb9",
+         "mappingType": "skos:exactMatch",
+         "score": 2.3956618,
+         "target": {
+          "id": "skill:9d9ba780-4aa2-43d2-888c-95a41a713fb9",
+          "prefLabel": {
+           "language": "fr",
+           "value": "pr\u00e9senter des nouveaux employ\u00e9s"
+          }
+         },
+         "type": "match:suggestion",
+         "validated": 0
+        }
+       ],
+      "description": {"@value": "Faculté de se diriger vers un collectif déjà constitué, d'y trouver une place et d'en devenir un membre légitime", "@language": "fr"}
+    },
+    {
+      "id": "tr:__skill-id-2__",
+      "type": "soo:Skill",
+      "match": {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/f253c906320bbfd165cf18800e3592c9/id_target/skill:28e3b87e-74ad-4e98-bef1-8e1adc8845af",
+        "mappingType": "skos:exactMatch",
+        "score": 2.7096715,
+        "target": {
+        "id": "skill:28e3b87e-74ad-4e98-bef1-8e1adc8845af",
+        "prefLabel": {
+          "language": "fr",
+          "value": "motiver des militants"
+        }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+      },
+      "suggestions": [
+        {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/f253c906320bbfd165cf18800e3592c9/id_target/skill:ece81686-331c-4381-bf3f-5ea610d47a7f",
+        "mappingType": "skos:exactMatch",
+        "score": 2.6897001,
+        "target": {
+          "id": "skill:ece81686-331c-4381-bf3f-5ea610d47a7f",
+          "prefLabel": {
+          "language": "fr",
+          "value": "donner de la motivation dans les sports"
+          }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+        },
+        {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/f253c906320bbfd165cf18800e3592c9/id_target/skill:e2d44a9b-f28c-489e-9861-b654b5ded507",
+        "mappingType": "skos:exactMatch",
+        "score": 2.6741939,
+        "target": {
+          "id": "skill:e2d44a9b-f28c-489e-9861-b654b5ded507",
+          "prefLabel": {
+          "language": "fr",
+          "value": "motiver d'autres personnes"
+          }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+        },
+        {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/f253c906320bbfd165cf18800e3592c9/id_target/skill:22b7d99d-252f-4572-8e3c-438ea87607eb",
+        "mappingType": "skos:exactMatch",
+        "score": 2.666713,
+        "target": {
+          "id": "skill:22b7d99d-252f-4572-8e3c-438ea87607eb",
+          "prefLabel": {
+          "language": "fr",
+          "value": "faire preuve d\u2019enthousiasme"
+          }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+        },
+        {
+        "framework": "esco",
+        "id": "match:suggestion/id_source/f253c906320bbfd165cf18800e3592c9/id_target/skill:22c2af9e-ba0d-4cee-abb6-b6dbef006cd5",
+        "mappingType": "skos:exactMatch",
+        "score": 2.6557188,
+        "target": {
+          "id": "skill:22c2af9e-ba0d-4cee-abb6-b6dbef006cd5",
+          "prefLabel": {
+          "language": "fr",
+          "value": "motiver des employ\u00e9s"
+          }
+        },
+        "type": "match:suggestion",
+        "validated": 0
+        }
+      ],
+      "description": {"@value": "S'investir, orienter son action et nourrir une satisfaction et un enthousiasme vis-à-vis d'une organisation, d'un projet collectif ou d'un objectif personnel", "@language": "fr"}
+    }
+    
+
+  ]
+}

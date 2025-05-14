@@ -1,0 +1,1281 @@
+{
+  "@context": {
+    "graph": {
+      "@id": "@graph",
+      "@container": "@set"
+    },
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "domain": {
+      "@id": "rdfs:domain",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "range": {
+      "@id": "rdfs:range",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "label": {
+      "@id": "rdfs:label",
+      "@container": "@set"
+    },
+    "comment": {
+      "@id": "rdfs:comment",
+      "@container": "@set"
+    },
+    "subClassOf": {
+      "@id": "rdfs:subClassOf",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "subPropertyOf": {
+      "@id": "rdfs:subPropertyOf",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "isDefinedBy": {
+      "@id": "rdfs:isDefinedBy",
+      "@container": "@set"
+    },
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "inverseOf": {
+      "@id": "owl:inverseOf",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "disjointWith": {
+      "@id": "owl:disjointWith",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "title_dct": {
+      "@id": "dct:title",
+      "@container": "@set"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "member": {
+      "@id": "skos:member",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@container": "@set"
+    },
+    "scopeNote": {
+      "@id": "skos:scopeNote",
+      "@container": "@set"
+    },
+    "mms": "https://ismene.competencies.be/mms/",
+    "rome": "https://competencies.be/rome4/"
+  },
+  "graph": [
+    {
+      "id": "rome:Ontology",
+      "type": [
+        "owl:Ontology"
+      ],
+      "dct:description": {
+        "@language": "en",
+        "@value": "The RDF ontology for ROME terminology."
+      },
+      "title_dct": [
+        {
+          "@language": "en",
+          "@value": "ROME Ontology"
+        }
+      ]
+    },
+    {
+      "id": "skos:Concept",
+      "type": [
+        "owl:Class",
+        "rdfs:Class"
+      ],
+      "isDefinedBy": [
+        {
+          "id": "http://www.w3.org/2004/02/skos/core"
+        }
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Concept"
+        }
+      ],
+      "definition": [
+        {
+          "@language": "en",
+          "@value": "An idea or notion; a unit of thought."
+        }
+      ],
+      "inScheme": [
+        "skos:scheme_for_rdfs:Class_generated"
+      ]
+    },
+    {
+      "id": "skos:Collection",
+      "type": [
+        "owl:Class",
+        "rdfs:Class"
+      ],
+      "isDefinedBy": [
+        {
+          "id": "http://www.w3.org/2004/02/skos/core"
+        }
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Collection"
+        }
+      ],
+      "disjointWith": [
+        "skos:Concept",
+        "skos:ConceptScheme"
+      ],
+      "definition": [
+        {
+          "@language": "en",
+          "@value": "A meaningful collection of concepts."
+        }
+      ],
+      "inScheme": [
+        "skos:scheme_for_rdfs:Class_generated"
+      ],
+      "scopeNote": [
+        {
+          "@language": "en",
+          "@value": "Labelled collections can be used where you would like a set of concepts to be displayed under a 'node label' in the hierarchy."
+        }
+      ]
+    },
+    {
+      "id": "skos:member",
+      "type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "domain": [
+        "skos:Collection"
+      ],
+      "isDefinedBy": [
+        {
+          "id": "http://www.w3.org/2004/02/skos/core"
+        }
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "has member"
+        }
+      ],
+      "range": [
+        "skos:Collection",
+        "skos:Concept"
+      ],
+      "definition": [
+        {
+          "@language": "en",
+          "@value": "Relates a collection to one of its members."
+        }
+      ],
+      "inScheme": [
+        "skos:scheme_for_rdf:Property_generated"
+      ]
+    },
+    {
+      "id": "skos:memberOf",
+      "type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "domain": [
+        "skos:Collection",
+        "skos:Concept",
+        "rome:onto/Employment/Job"
+      ],
+      "range": [
+        "skos:Collection"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "MemberOf"
+        }
+      ],
+      "definition": [
+        {
+          "@language": "en",
+          "@value": "Relates members to collections"
+        }
+      ]
+    },
+    {
+      "id": "rome:onto/WorkContext",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "skos:Concept"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "WorkContext "
+        },
+        {
+          "@language": "fr",
+          "@value": "WorkContext "
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ]
+    },
+    {
+      "id": "rome:onto/WorkContext/Hours",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "rome:onto/WorkContext"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Hours (WorkContext)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Hours (WorkContext)"
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ],
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "rome:onto/WorkContext/Conditions",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "rome:onto/WorkContext"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Conditions (WorkContext)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Conditions (WorkContext)"
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ]
+    },
+    {
+      "id": "rome:onto/WorkContext/StructureType",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "rome:onto/WorkContext"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "StructureType (WorkContext)"
+        },
+        {
+          "@language": "fr",
+          "@value": "StructureType (WorkContext)"
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ]
+    },
+    {
+      "id": "rome:onto/WorkContext/Travel",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "rome:onto/WorkContext"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Travel (WorkContext)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Travel (WorkContext)"
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ]
+    },
+    {
+      "id": "rome:onto/WorkContext/Beneficiary",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "rome:onto/WorkContext"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Beneficiary (WorkContext)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Beneficiary (WorkContext)"
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ]
+    },
+    {
+      "id": "rome:onto/SkillDomain",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "skos:Concept"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "SkillDomain "
+        },
+        {
+          "@language": "fr",
+          "@value": "SkillDomain "
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ]
+    },
+    {
+      "id": "rome:onto/Stake",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "skos:Concept"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Stake "
+        },
+        {
+          "@language": "fr",
+          "@value": "Stake "
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ]
+    },
+    {
+      "id": "rome:onto/Goal",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "skos:Concept"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Goal "
+        },
+        {
+          "@language": "fr",
+          "@value": "Goal "
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ]
+    },
+    {
+      "id": "rome:onto/Skill",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "skos:Concept"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Skill "
+        },
+        {
+          "@language": "fr",
+          "@value": "Skill "
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ]
+    },
+    {
+      "id": "rome:onto/KnowHowDomain",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "skos:Concept"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "KnowHowDomain "
+        },
+        {
+          "@language": "fr",
+          "@value": "KnowHowDomain "
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ]
+    },
+    {
+      "id": "rome:onto/KnowledgeCategory",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "skos:Concept"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "KnowledgeCategory "
+        },
+        {
+          "@language": "fr",
+          "@value": "KnowledgeCategory "
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ],
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "rome:onto/Knowledge",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "skos:Concept"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Knowledge "
+        },
+        {
+          "@language": "fr",
+          "@value": "Knowledge "
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ],
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "rome:onto/SoftSkillDomain",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "skos:Concept"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "SoftSkillDomain "
+        },
+        {
+          "@language": "fr",
+          "@value": "SoftSkillDomain "
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ],
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "rome:onto/Employment/Field",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "skos:Concept"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Field (Employment)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Field (Employment)"
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ],
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "rome:onto/Employment/Sector",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "skos:Concept"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Sector (Employment)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Sector (Employment)"
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ],
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "rome:onto/Employment/Job",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "skos:Concept"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Job (Employment)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Job (Employment)"
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ]
+    },
+    {
+      "id": "rome:onto/Employment/Position",
+      "type": [
+        "rdfs:Class"
+      ],
+      "subClassOf": [
+        "skos:Concept"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Position (Employment)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Position (Employment)"
+        }
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "__definition_to_add_here__"
+        },
+        {
+          "@language": "fr",
+          "@value": "__definition_à_ajouter_ici__"
+        }
+      ],
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "skos:prefLabel",
+      "type": [
+        "rdf:Property",
+        "owl:AnnotationProperty"
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "A resource has no more than one value of skos:prefLabel per language tag, and no more than one value of skos:prefLabel without language tag."
+        },
+        {
+          "@language": "en",
+          "@value": "The range of skos:prefLabel is the class of RDF plain literals."
+        },
+        {
+          "@language": "en",
+          "@value": "skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise\n      disjoint properties."
+        }
+      ],
+      "isDefinedBy": [
+        {
+          "id": "http://www.w3.org/2004/02/skos/core"
+        }
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "preferred label"
+        }
+      ],
+      "subPropertyOf": [
+        "rdfs:label"
+      ],
+      "definition": [
+        {
+          "@language": "en",
+          "@value": "The preferred lexical label for a resource, in a given language."
+        }
+      ],
+      "inScheme": [
+        "skos:scheme_for_rdf:Property_generated"
+      ],
+      "domain": [
+        "rdfs:Resource",
+        "skos:Collection",
+        "skos:Concept",
+        "skos:ConceptScheme",
+        "skos:OrderedCollection",
+        "rome:onto/WorkContext",
+        "rome:onto/WorkContext/Hours",
+        "rome:onto/WorkContext/Conditions",
+        "rome:onto/WorkContext/StructureType",
+        "rome:onto/WorkContext/Travel",
+        "rome:onto/WorkContext/Beneficiary",
+        "rome:onto/SkillDomain",
+        "rome:onto/Stake",
+        "rome:onto/Goal",
+        "rome:onto/Skill",
+        "rome:onto/KnowHowDomain",
+        "rome:onto/KnowledgeCategory",
+        "rome:onto/Knowledge",
+        "rome:onto/SoftSkillDomain",
+        "rome:onto/Employment/Field",
+        "rome:onto/Employment/Sector",
+        "rome:onto/Employment/Job",
+        "rome:onto/Employment/Position"
+      ],
+      "range": [
+        "rdfs:Literal"
+      ]
+    },
+    {
+      "id": "skos:broader",
+      "type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."
+        }
+      ],
+      "isDefinedBy": [
+        {
+          "id": "http://www.w3.org/2004/02/skos/core"
+        }
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "has broader"
+        }
+      ],
+      "subPropertyOf": [
+        "skos:broaderTransitive",
+        "skos:semanticRelation"
+      ],
+      "inverseOf": [
+        "skos:narrower"
+      ],
+      "definition": [
+        {
+          "@language": "en",
+          "@value": "Relates a concept to a concept that is more general in meaning."
+        }
+      ],
+      "inScheme": [
+        "skos:scheme_for_rdf:Property_generated"
+      ],
+      "scopeNote": [
+        {
+          "@language": "en",
+          "@value": "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."
+        }
+      ],
+      "domain": [
+        "skos:Concept",
+        "rome:onto/WorkContext",
+        "rome:onto/WorkContext/Hours",
+        "rome:onto/WorkContext/Conditions",
+        "rome:onto/WorkContext/StructureType",
+        "rome:onto/WorkContext/Travel",
+        "rome:onto/WorkContext/Beneficiary",
+        "rome:onto/SkillDomain",
+        "rome:onto/Stake",
+        "rome:onto/Goal",
+        "rome:onto/Skill",
+        "rome:onto/KnowHowDomain",
+        "rome:onto/KnowledgeCategory",
+        "rome:onto/Knowledge",
+        "rome:onto/SoftSkillDomain",
+        "rome:onto/Employment/Field",
+        "rome:onto/Employment/Sector",
+        "rome:onto/Employment/Job",
+        "rome:onto/Employment/Position"
+      ],
+      "range": [
+        "skos:Concept"
+      ]
+    },
+    {
+      "id": "skos:narrower",
+      "type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "comment": [
+        {
+          "@language": "en",
+          "@value": "Narrower concepts are typically rendered as children in a concept hierarchy (tree)."
+        }
+      ],
+      "isDefinedBy": [
+        {
+          "id": "http://www.w3.org/2004/02/skos/core"
+        }
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "has narrower"
+        }
+      ],
+      "subPropertyOf": [
+        "skos:narrowerTransitive",
+        "skos:semanticRelation"
+      ],
+      "inverseOf": [
+        "skos:broader"
+      ],
+      "definition": [
+        {
+          "@language": "en",
+          "@value": "Relates a concept to a concept that is more specific in meaning."
+        }
+      ],
+      "inScheme": [
+        "skos:scheme_for_rdf:Property_generated"
+      ],
+      "scopeNote": [
+        {
+          "@language": "en",
+          "@value": "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."
+        }
+      ],
+      "domain": [
+        "skos:Concept",
+        "rome:onto/WorkContext",
+        "rome:onto/WorkContext/Hours",
+        "rome:onto/WorkContext/Conditions",
+        "rome:onto/WorkContext/StructureType",
+        "rome:onto/WorkContext/Travel",
+        "rome:onto/WorkContext/Beneficiary",
+        "rome:onto/SkillDomain",
+        "rome:onto/Stake",
+        "rome:onto/Goal",
+        "rome:onto/Skill",
+        "rome:onto/KnowHowDomain",
+        "rome:onto/KnowledgeCategory",
+        "rome:onto/Knowledge",
+        "rome:onto/SoftSkillDomain",
+        "rome:onto/Employment/Field",
+        "rome:onto/Employment/Sector",
+        "rome:onto/Employment/Job",
+        "rome:onto/Employment/Position"
+      ],
+      "range": [
+        "skos:Concept"
+      ]
+    },
+    {
+      "id": "rome:competence",
+      "type": [
+        "rdf:Property"
+      ],
+      "label": [
+        {
+          "@language": "en",
+          "@value": "Competencie / Skill (Rome)"
+        }
+      ],
+      "domain": [
+        "rome:onto/Employment/Job"
+      ],
+      "range": [
+        "rome:onto/Skill",
+        "rome:onto/KnowHowDomain"
+      ]
+    },
+    {
+      "id": "mmm:Mission",
+      "engine": "5-min-mission-3"
+    },
+    {
+      "id": "mmm:MissionRequirement",
+      "engine": "5-min-mission-3"
+    },
+    {
+      "id": "mmm:Contract",
+      "engine": "5-min-mission-3"
+    },
+    {
+      "id": "skos:Logging",
+      "engine": "5-min-logging"
+    },
+    {
+      "id": "as:root",
+      "type": [
+        "mms:ApiCollection",
+        "skos:Collection"
+      ],
+      "member": [
+        "as:companies",
+        "as:rome"
+      ]
+    },
+    {
+      "id": "as:rome",
+      "type": [
+        "mms:ApiCollection",
+        "skos:Collection"
+      ],
+      "label": "rome",
+      "member": [
+        "as:skills",
+        "as:employment",
+        "as:workContext"
+      ]
+    },
+    {
+      "id": "as:skills",
+      "type": [
+        "mms:ApiCollection",
+        "skos:Collection"
+      ],
+      "label": "skills",
+      "member": [
+        "rome:onto/Goal",
+        "rome:onto/Stake",
+        "rome:onto/SkillDomain",
+        "rome:onto/Skill",
+        "rome:onto/SoftSkillDomain",
+        "rome:onto/Competency",
+        "rome:onto/KnowledgeCategory",
+        "rome:onto/Knowledge",
+        "rome:onto/KnowHowDomain"
+      ]
+    },
+    {
+      "id": "as:employment",
+      "type": [
+        "mms:ApiCollection",
+        "skos:Collection"
+      ],
+      "label": "employment",
+      "member": [
+        "rome:onto/Employment/Field",
+        "rome:onto/Employment/Sector",
+        "rome:onto/Employment/Job",
+        "rome:onto/Employment/Position"
+      ]
+    },
+    {
+      "id": "as:workContext",
+      "type": [
+        "mms:ApiCollection",
+        "skos:Collection"
+      ],
+      "label": "workConditions",
+      "member": [
+        "rome:onto/WorkContext/Hours",
+        "rome:onto/WorkContext/Conditions",
+        "rome:onto/WorkContext/StructureType",
+        "rome:onto/WorkContext/Travel",
+        "rome:onto/WorkContext/Beneficiary",
+        "rome:onto/WorkContext"
+      ]
+    },
+    {
+      "id": "mmm:3dbeb694d4bc161372e96871388751dff8827517",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:prefLabel",
+      "predicate": "domain",
+      "object": "rome:onto/WorkContext/Hours",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:53b8be48b6b4be28f25c1e0e547d59d4e883bd8d",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:broader",
+      "predicate": "domain",
+      "object": "rome:onto/WorkContext/Hours",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:b0e4473c1bef06c9136efde66e7bfbd8c38d1ed3",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:narrower",
+      "predicate": "domain",
+      "object": "rome:onto/WorkContext/Hours",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:6c49d63a396c1f898022eda95ab65cb45feb29e6",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:prefLabel",
+      "predicate": "domain",
+      "object": "rome:onto/Knowledge",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:47a0a36b7bc16341d058f6eaadc11fea517a009a",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:broader",
+      "predicate": "domain",
+      "object": "rome:onto/Knowledge",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:ec353f7881fca0f62e9206efe851d299f2845699",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:narrower",
+      "predicate": "domain",
+      "object": "rome:onto/Knowledge",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:8baeec24bafa539d2e0d59d540d8bbb5f1086773",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:prefLabel",
+      "predicate": "domain",
+      "object": "rome:onto/KnowledgeCategory",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:075f78c13553ae7510bf84c035114e1d6dd2c5a4",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:broader",
+      "predicate": "domain",
+      "object": "rome:onto/KnowledgeCategory",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:a26b826d2a9061d79b3370a8c0fc9dc5564d7d76",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:narrower",
+      "predicate": "domain",
+      "object": "rome:onto/KnowledgeCategory",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:83622c1f041efcd15375deb16c9f202e60571358",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:prefLabel",
+      "predicate": "domain",
+      "object": "rome:onto/SoftSkillDomain",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:149d75a90574e8b97d8cd50cf187780f981112a5",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:broader",
+      "predicate": "domain",
+      "object": "rome:onto/SoftSkillDomain",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:c27df3d073cf2107724d78f088850b97bdc26040",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:narrower",
+      "predicate": "domain",
+      "object": "rome:onto/SoftSkillDomain",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:60f1cd2b288d823a02bb872419a1ebacd0ab7e81",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:prefLabel",
+      "predicate": "domain",
+      "object": "rome:onto/Employment/Position",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:78104e0884e71c69e95e488fdb75bb82f6caba51",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:broader",
+      "predicate": "domain",
+      "object": "rome:onto/Employment/Position",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:4fbb31836875143884372873062fa4f94b29a675",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:narrower",
+      "predicate": "domain",
+      "object": "rome:onto/Employment/Position",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:9304304a6223038653a8c9c36f8ecae9126bc96b",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:prefLabel",
+      "predicate": "domain",
+      "object": "rome:onto/Employment/Sector",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:8e867be4d1ddd356720cb42800c1e2d55530629a",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:broader",
+      "predicate": "domain",
+      "object": "rome:onto/Employment/Sector",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:f17d5941e9109479c120003ff4e2ccb627aa397d",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:narrower",
+      "predicate": "domain",
+      "object": "rome:onto/Employment/Sector",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:0075fe371fae029109b69f4d4892f30cfce6ae85",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:prefLabel",
+      "predicate": "domain",
+      "object": "rome:onto/Employment/Field",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:d768afede25eb0244e95def2b585d48e6b461bd1",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:broader",
+      "predicate": "domain",
+      "object": "rome:onto/Employment/Field",
+      "engine": "jobs-skills-fr-rome4-3"
+    },
+    {
+      "id": "mmm:70a1d63a40e35344d822e26efe188a21956dbe6a",
+      "type": [
+        "met:PropertyEngine"
+      ],
+      "subject": "skos:narrower",
+      "predicate": "domain",
+      "object": "rome:onto/Employment/Field",
+      "engine": "jobs-skills-fr-rome4-3"
+    }
+  ]
+}

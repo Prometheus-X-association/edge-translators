@@ -1,0 +1,174 @@
+{
+    "took": 18,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 10000,
+            "relation": "gte"
+        },
+        "max_score": 2.7894683,
+        "hits": [
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/51826e07-64c9-4d2c-9964-88cfbf131ad2",
+                "_score": 2.7894683,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "work as a team in a hazardous environment",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/51826e07-64c9-4d2c-9964-88cfbf131ad2"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/b216d9a2-7d4e-4312-8d05-e375f4ab44d8",
+                "_score": 2.7068992,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "ensure cross-department cooperation",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/b216d9a2-7d4e-4312-8d05-e375f4ab44d8"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/524106a8-b343-45f6-b4ce-58e8d3cf1093",
+                "_score": 2.7008924,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "work in an aviation team",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/524106a8-b343-45f6-b4ce-58e8d3cf1093"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/60c78287-22eb-4103-9c8c-28deaa460da0",
+                "_score": 2.6828852,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "work in teams",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/60c78287-22eb-4103-9c8c-28deaa460da0"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/082967d4-b94c-4305-aa13-35a6aa8c5c7c",
+                "_score": 2.6812634,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "cooperate with colleagues",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/082967d4-b94c-4305-aa13-35a6aa8c5c7c"
+                }
+            }
+        ]
+    }
+}

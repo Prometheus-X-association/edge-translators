@@ -1,0 +1,73 @@
+{
+  "@context": {
+    "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+  },
+  
+  "graph": [
+    {
+      "id": "tr:__experience-id-1__",
+      "type": "soo:Experience",
+      "experienceType": "term:experience/type/personalityTest",
+      "experienceStatus": "term:experience/type/past",
+      "prefLabel": {"@value": "Mes centres d intérêt", "@language": "fr"},
+      "skill": ["tr:__skill-id-1__", "tr:__skill-id-2__", "tr:__skill-id-3__"]
+    }, 
+    {
+      "id": "tr:__skill-id-1__",
+      "type": "soo:Skill",
+      "category": "term:skills/category/riasec",
+      "experience": "tr:__experience-id-1__",
+      "prefLabel": {"@value": "ARTISTIQUE" , "@language": "fr"},
+      "skillLevelScale": "term:pitangoo/skill/1e722f5abafbfa1375af50041eef3246/scale",
+      "skillLevelValue": "term:pitangoo/skill/1e722f5abafbfa1375af50041eef3246/value/0.6"
+    },
+    {
+      "id": "term:pitangoo/skill/1e722f5abafbfa1375af50041eef3246/value/0.6", 
+      "type": "skos:Concept",
+      "prefLabel": {"@value": "0.6", "@language": "en"},
+      "notation": 0.6
+    },
+    {
+      "id": "tr:__skill-id-2__",
+      "type": "soo:Skill",
+      "category": "term:skills/category/riasec",
+      "experience": "tr:__experience-id-1__",
+      "prefLabel": {"@value": "RÉALISTE" , "@language": "fr"},
+      "skillLevelScale": "term:pitangoo/skill/1e722f5abafbfa1375af50041eef3246/scale",
+      "skillLevelValue": "term:pitangoo/skill/1e722f5abafbfa1375af50041eef3246/value/0.8"
+    },
+    {
+      "id": "term:pitangoo/skill/1e722f5abafbfa1375af50041eef3246/value/0.8", 
+      "type": "skos:Concept",
+      "prefLabel": {"@value": "0.8", "@language": "en"},
+      "notation": 0.8
+    },
+
+
+    {
+      "id": "tr:__skill-id-3__",
+      "type": "soo:Skill",
+      "category": "term:skills/category/riasec",
+      "experience": "tr:__experience-id-1__",
+      "prefLabel": {"@value": "ENTREPRENEUR" , "@language": "fr"},
+      "skillLevelScale": "term:pitangoo/skill/1e722f5abafbfa1375af50041eef3246/scale",
+      "skillLevelValue": "term:pitangoo/skill/1e722f5abafbfa1375af50041eef3246/value/0.6"
+    },
+
+    {
+      "id": "term:pitangoo/skill/1e722f5abafbfa1375af50041eef3246/scale",
+      "member": [
+       "term:pitangoo/skill/1e722f5abafbfa1375af50041eef3246/value/0.6",
+       "term:pitangoo/skill/1e722f5abafbfa1375af50041eef3246/value/0.8"
+      ],
+      "prefLabel": [
+       {
+        "language": "en",
+        "value": "pitangoo collection for skill in missions.tendencies.score"
+       }
+      ],
+      "type": "skos:Collection"
+     }
+
+  ]
+}

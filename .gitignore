@@ -1,0 +1,23 @@
+# Global
+*.code-workspace
+.vscode
+.env
+dist
+.model
+__pycache__/
+.pytest_cache
+.data
+.venv
+.cache
+.local
+.downloaded
+node_modules
+
+# ui
+ui/.streamlit/secrets.toml
+ui/data/model
+
+# IAC
+iac/*terraform*
+iac/*tfstate*
+

@@ -1,0 +1,486 @@
+{
+  "@context": {
+    "graph": {
+      "@id": "@graph",
+      "@container": "@set"
+    },
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "domain": {
+      "@id": "rdfs:domain",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "range": {
+      "@id": "rdfs:range",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "soo": "https://competencies.be/soo/"
+  },
+  "graph": [
+    {
+      "id": "soo:Experience",
+      "type": [
+        "rdfs:Class",
+        "owl:Class"
+      ]
+    },
+    {
+      "id": "skos:prefLabel",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience",
+        "soo:Family"
+      ],
+      "range": [
+        "rdf:langstring"
+      ]
+    },
+    {
+      "id": "soo:description",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience",
+        "soo:Skill"
+      ],
+      "range": [
+        "soo:Description"
+      ]
+    },
+    {
+      "id": "soo:experienceType",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience"
+      ],
+      "range": [
+        "skos:Concept"
+      ]
+    },
+    {
+      "id": "soo:experienceStatus",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience"
+      ],
+      "range": [
+        "skos:Concept"
+      ]
+    },
+    {
+      "id": "soo:dateFrom",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience"
+      ],
+      "range": [
+        "xsd:date"
+      ]
+    },
+    {
+      "id": "soo:dateTo",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience"
+      ],
+      "range": [
+        "xsd:date"
+      ]
+    },
+    {
+      "id": "soo:profile",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience"
+      ],
+      "range": [
+        "soo:Profile"
+      ]
+    },
+    {
+      "id": "soo:company",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience"
+      ],
+      "range": [
+        "xsd:string"
+      ]
+    },
+    {
+      "id": "soo:location",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience"
+      ],
+      "range": [
+        "xsd:string"
+      ]
+    },
+    {
+      "id": "soo:contractType",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience"
+      ],
+      "range": [
+        "xsd:string"
+      ]
+    },
+    {
+      "id": "soo:family",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience"
+      ],
+      "range": [
+        "soo:Family"
+      ]
+    },
+    {
+      "id": "soo:sourceId",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience"
+      ],
+      "range": [
+        "xsd:string"
+      ]
+    },
+    {
+      "id": "soo:polarity",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience"
+      ],
+      "range": [
+        "soo:Polarity"
+      ]
+    },
+    {
+      "id": "soo:skill",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience"
+      ],
+      "range": [
+        "soo:Skill"
+      ]
+    },
+    {
+      "id": "soo:sourceDataValue",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Experience"
+      ],
+      "range": [
+        "soo:SourceDataJson"
+      ]
+    },
+    {
+      "id": "soo:Skill",
+      "type": [
+        "rdfs:Class",
+        "owl:Class"
+      ]
+    },
+    {
+      "id": "soo:experience",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Skill",
+        "soo:Polarity",
+        "soo:Profile"
+      ],
+      "range": [
+        "soo:Experience"
+      ]
+    },
+    {
+      "id": "soo:category",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Skill"
+      ],
+      "range": [
+        "skos:Concept"
+      ]
+    },
+    {
+      "id": "soo:skillLevelScale",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Skill"
+      ],
+      "range": [
+        "skos:OrderedCollection"
+      ]
+    },
+    {
+      "id": "soo:skillLevelValue",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Skill"
+      ],
+      "range": [
+        "skos:Concept"
+      ]
+    },
+    {
+      "id": "soo:sourceSkillId",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Skill"
+      ],
+      "range": [
+        "skos:Concept"
+      ]
+    },
+    {
+      "id": "soo:Polarity",
+      "type": [
+        "rdfs:Class",
+        "owl:Class"
+      ]
+    },
+    {
+      "id": "soo:polarityScale",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Polarity"
+      ],
+      "range": [
+        "skos:OrderedCollection"
+      ]
+    },
+    {
+      "id": "soo:polarityValue",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Polarity"
+      ],
+      "range": [
+        "skos:Concept"
+      ]
+    },
+    {
+      "id": "soo:Profile",
+      "type": [
+        "rdfs:Class",
+        "owl:Class"
+      ]
+    },
+    {
+      "id": "soo:name",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Profile"
+      ],
+      "range": [
+        "xsd:string"
+      ]
+    },
+    {
+      "id": "soo:email",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Profile"
+      ],
+      "range": [
+        "xsd:string"
+      ]
+    },
+    {
+      "id": "soo:address",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Profile"
+      ],
+      "range": [
+        "xsd:string"
+      ]
+    },
+    {
+      "id": "soo:Family",
+      "type": [
+        "rdfs:Class",
+        "owl:Class"
+      ]
+    },
+    {
+      "id": "skos:memberOf",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Family"
+      ],
+      "range": [
+        "skos:Collection"
+      ]
+    },
+    {
+      "id": "soo:provider",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Family"
+      ],
+      "range": [
+        "xsd:string"
+      ]
+    },
+    {
+      "id": "soo:Description",
+      "type": [
+        "rdfs:Class",
+        "owl:Class"
+      ]
+    },
+    {
+      "id": "soo:text",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Description"
+      ],
+      "range": [
+        "rdf:langstring"
+      ]
+    },
+    {
+      "id": "soo:url",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Description"
+      ],
+      "range": [
+        "xsd:string"
+      ]
+    },
+    {
+      "id": "soo:keywords",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Description"
+      ],
+      "range": [
+        "rdf:langstring"
+      ]
+    },
+    {
+      "id": "soo:imagePath",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:Description"
+      ],
+      "range": [
+        "xsd:string"
+      ]
+    },
+    {
+      "id": "soo:SourceDataJson",
+      "type": [
+        "rdfs:Class",
+        "owl:Class"
+      ]
+    },
+    {
+      "id": "soo:value",
+      "type": [
+        "rdf:Property"
+      ],
+      "domain": [
+        "soo:SourceDataJson"
+      ],
+      "range": [
+        "rdf:JSON"
+      ]
+    },
+    {
+      "id": "mms:Ontology",
+      "type": [
+        "owl:Ontology"
+      ],
+      "title": [
+        {
+          "@language": "en",
+          "@value": "Ontologie for Competencies & Skills Profiles"
+        }
+      ],
+      "contributor": [],
+      "creator": [
+        {
+          "@language": "fr",
+          "@value": "Florent André (mindmatcher.org)"
+        }
+      ],
+      "__description": [
+        {
+          "@language": "fr",
+          "@value": "Ontologie pour la description d'un profil de compétences"
+        }
+      ],
+      "imports": []
+    }
+  ]
+}

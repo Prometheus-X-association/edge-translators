@@ -1,0 +1,26 @@
+{
+    "@context": {
+      "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+    },
+    "graph": [
+      {
+        "__term__": {
+          "language": "en",
+          "provider": "pitangoo",
+          "scale": "Skill",
+          "scale_path": "missions.tendencies.score",
+          "str_value": "0.6",
+          "targetFunction": "fno:skill-value-to-scale",
+          "value": 0.6
+        },
+        "category": "term:skills/category/riasec",
+        "experience": "tr:__experience-id-1__",
+        "id": "tr:__skill-id-1__",
+        "prefLabel": {
+          "@language": "fr",
+          "@value": "ARTISTIQUE"
+        },
+        "type": "soo:Skill"
+      }
+    ]
+  }

@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "todo": "define_the_rules_context"
+  },
+  "graph": [
+    {
+      "id": "mmr:rule-0",
+      "sourcePath": "title",
+      "targetClass": "soo:Experience",
+      "targetProperty": "id",
+      "targetFunction": "fno:generateId"
+    },
+    {
+      "id": "mmr:rule-1",
+      "sourcePath": "title",
+      "targetClass": "soo:Experience",
+      "targetProperty": "skos:prefLabel",
+      "targetLang": "fr",
+      "targetFunction": "fno:asIs_WithLang"
+    },
+    {
+      "id": "mmr:rule-2",
+      "sourcePath": "User ID",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:dateFrom",
+      "targetFunction": "fno:date-to-xsd",
+      "targetFunctionParam": "param:date-parser-option-to-define"
+    }
+    
+  ]
+}

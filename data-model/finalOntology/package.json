@@ -1,0 +1,33 @@
+{
+  "name": "final-ontology",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "node": "./index.js",
+    "default": "./index.web.js"
+  },
+  "scripts": {
+    "dev:profile": "nodemon finalOntology.js"
+  },
+  "dependencies": {
+    "@mmorg/rdfx-graphql": "link:../../../ismene/packages/rdfx-graphql",
+    "nodemon": "^2.0.20",
+    "object-hash": "^3.0.0"
+  },
+  "nodemonConfig": {
+    "ext": "js,jsonld,json,ts",
+    "watch": [
+      "./*",
+      "../../../ismene/packages/rdfx-graphql/*",
+      "../mmProfile/mm-profile-1.0.0.jsonld"
+    ],
+    "ignore": [
+      "./final-ontology.ld.json"
+    ]
+  },
+  "devDependencies": {
+    "vite": "^5.2.9",
+    "vite-node": "^1.3.1",
+    "vitest": "^1.3.1"
+  }
+}

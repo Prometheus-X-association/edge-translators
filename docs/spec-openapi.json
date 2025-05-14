@@ -1,0 +1,962 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "Onto-Terminology AI Translator API",
+        "summary": "Onto-Terminology AI Translator API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/auth/token": {
+            "post": {
+                "tags": [
+                    "auth",
+                    "auth"
+                ],
+                "summary": "Authcontroller.Login For Access Token",
+                "operationId": "AuthController_login_for_access_token_auth_token_post",
+                "requestBody": {
+                    "content": {
+                        "application/x-www-form-urlencoded": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Body_AuthController_login_for_access_token_auth_token_post"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Token"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/users/me": {
+            "get": {
+                "tags": [
+                    "user",
+                    "user"
+                ],
+                "summary": "Usercontroller.Get Me",
+                "operationId": "UserController_get_me_users_me_get",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "OAuth2PasswordBearer": []
+                    }
+                ]
+            }
+        },
+        "/users/{id}": {
+            "get": {
+                "tags": [
+                    "user",
+                    "user"
+                ],
+                "summary": "Usercontroller.Get User",
+                "description": "Get a User",
+                "operationId": "UserController_get_user_users__id__get",
+                "parameters": [
+                    {
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "title": "Id"
+                        },
+                        "name": "id",
+                        "in": "path"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "OAuth2PasswordBearer": []
+                    }
+                ]
+            },
+            "put": {
+                "tags": [
+                    "user",
+                    "user"
+                ],
+                "summary": "Usercontroller.Put User",
+                "description": "Update a User",
+                "operationId": "UserController_put_user_users__id__put",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/User"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "OAuth2PasswordBearer": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "user",
+                    "user"
+                ],
+                "summary": "Usercontroller.Delete User",
+                "description": "Delete a User",
+                "operationId": "UserController_delete_user_users__id__delete",
+                "parameters": [
+                    {
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "title": "Id"
+                        },
+                        "name": "id",
+                        "in": "path"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "boolean",
+                                    "title": "Response Usercontroller Delete User Users  Id  Delete"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "OAuth2PasswordBearer": []
+                    }
+                ]
+            },
+            "patch": {
+                "tags": [
+                    "user",
+                    "user"
+                ],
+                "summary": "Usercontroller.Patch User",
+                "description": "Update a User",
+                "operationId": "UserController_patch_user_users__id__patch",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/User"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "OAuth2PasswordBearer": []
+                    }
+                ]
+            }
+        },
+        "/users": {
+            "get": {
+                "tags": [
+                    "user",
+                    "user"
+                ],
+                "summary": "Usercontroller.Get Users",
+                "description": "Get Users filtered, ordered and paginated",
+                "operationId": "UserController_get_users_users_get",
+                "parameters": [
+                    {
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "title": "Page",
+                            "default": 1
+                        },
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "title": "Per Page",
+                            "default": 5
+                        },
+                        "name": "per_page",
+                        "in": "query"
+                    },
+                    {
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "enum": [
+                                "id",
+                                "username",
+                                "email",
+                                "created_at",
+                                "updated_at",
+                                "deleted_at"
+                            ],
+                            "title": "Sort",
+                            "default": "id"
+                        },
+                        "name": "sort",
+                        "in": "query"
+                    },
+                    {
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "enum": [
+                                "ASC",
+                                "DESC"
+                            ],
+                            "title": "Order",
+                            "default": "ASC"
+                        },
+                        "name": "order",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "items": {
+                                        "$ref": "#/components/schemas/User"
+                                    },
+                                    "type": "array",
+                                    "title": "Response Usercontroller Get Users Users Get"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "OAuth2PasswordBearer": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "user",
+                    "user"
+                ],
+                "summary": "Usercontroller.Create User",
+                "description": "Create a User",
+                "operationId": "UserController_create_user_users_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UserCreate"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "OAuth2PasswordBearer": []
+                    }
+                ]
+            }
+        },
+        "/rules": {
+            "get": {
+                "tags": [
+                    "rules",
+                    "rules"
+                ],
+                "summary": "Rulecontroller.Get Rules",
+                "operationId": "RuleController_get_rules_rules_get",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Response Rulecontroller Get Rules Rules Get"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "OAuth2PasswordBearer": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "rules",
+                    "rules"
+                ],
+                "summary": "Rulecontroller.Post Rules",
+                "operationId": "RuleController_post_rules_rules_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Body_RuleController_post_rules_rules_post"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "title": "Response Rulecontroller Post Rules Rules Post"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "OAuth2PasswordBearer": []
+                    }
+                ]
+            }
+        },
+        "/matching": {
+            "get": {
+                "tags": [
+                    "matching",
+                    "matching"
+                ],
+                "summary": "Matchingcontroller.Get Matching",
+                "operationId": "MatchingController_get_matching_matching_get",
+                "parameters": [
+                    {
+                        "required": false,
+                        "schema": {
+                            "type": "boolean",
+                            "title": "Validated"
+                        },
+                        "name": "validated",
+                        "in": "query"
+                    },
+                    {
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "enum": [
+                                "experience",
+                                "skill"
+                            ],
+                            "title": "Concept Type",
+                            "default": "experience"
+                        },
+                        "name": "concept_type",
+                        "in": "query"
+                    },
+                    {
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "enum": [
+                                "esco",
+                                "rome"
+                            ],
+                            "title": "Framework",
+                            "default": "esco"
+                        },
+                        "name": "framework",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Response Matchingcontroller Get Matching Matching Get"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "OAuth2PasswordBearer": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "matching",
+                    "matching"
+                ],
+                "summary": "Matchingcontroller.Delete All",
+                "operationId": "MatchingController_delete_all_matching_delete",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "boolean",
+                                    "title": "Response Matchingcontroller Delete All Matching Delete"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "OAuth2PasswordBearer": []
+                    }
+                ]
+            }
+        },
+        "/transform": {
+            "post": {
+                "tags": [
+                    "transform",
+                    "transform"
+                ],
+                "summary": "Transformcontroller.Transform",
+                "operationId": "TransformController_transform_transform_post",
+                "parameters": [
+                    {
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "enum": [
+                                "esco",
+                                "rome"
+                            ],
+                            "title": "Target Framework",
+                            "default": "esco"
+                        },
+                        "name": "target_framework",
+                        "in": "query"
+                    },
+                    {
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "enum": [
+                                "en",
+                                "fr",
+                                "fi",
+                                "es",
+                                "de"
+                            ],
+                            "title": "Language Source",
+                            "default": "fr"
+                        },
+                        "name": "language_source",
+                        "in": "query"
+                    },
+                    {
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "enum": [
+                                "en",
+                                "fr",
+                                "fi",
+                                "es",
+                                "de"
+                            ],
+                            "title": "Language Target",
+                            "default": "fr"
+                        },
+                        "name": "language_target",
+                        "in": "query"
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Body_TransformController_transform_transform_post"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "OAuth2PasswordBearer": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Body_AuthController_login_for_access_token_auth_token_post": {
+                "properties": {
+                    "grant_type": {
+                        "type": "string",
+                        "pattern": "^password$",
+                        "title": "Grant Type"
+                    },
+                    "username": {
+                        "type": "string",
+                        "title": "Username"
+                    },
+                    "password": {
+                        "type": "string",
+                        "title": "Password"
+                    },
+                    "scope": {
+                        "type": "string",
+                        "title": "Scope",
+                        "default": ""
+                    },
+                    "client_id": {
+                        "type": "string",
+                        "title": "Client Id"
+                    },
+                    "client_secret": {
+                        "type": "string",
+                        "title": "Client Secret"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "grant_type",
+                    "username",
+                    "password"
+                ],
+                "title": "Body_AuthController_login_for_access_token_auth_token_post"
+            },
+            "Body_RuleController_post_rules_rules_post": {
+                "properties": {
+                    "rules": {
+                        "type": "object",
+                        "title": "Rules",
+                        "description": "The provider rules"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "rules"
+                ],
+                "title": "Body_RuleController_post_rules_rules_post"
+            },
+            "Body_TransformController_transform_transform_post": {
+                "properties": {
+                    "document": {
+                        "anyOf": [
+                            {
+                                "items": {
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "type": "object"
+                            }
+                        ],
+                        "title": "Document",
+                        "description": "the document"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "document"
+                ],
+                "title": "Body_TransformController_transform_transform_post"
+            },
+            "HTTPValidationError": {
+                "properties": {
+                    "detail": {
+                        "items": {
+                            "$ref": "#/components/schemas/ValidationError"
+                        },
+                        "type": "array",
+                        "title": "Detail"
+                    }
+                },
+                "type": "object",
+                "title": "HTTPValidationError"
+            },
+            "RoleEnum": {
+                "type": "string",
+                "enum": [
+                    "ROLE_PROVIDER",
+                    "ROLE_ADMIN"
+                ],
+                "title": "RoleEnum",
+                "description": "An enumeration."
+            },
+            "StatusEnum": {
+                "type": "integer",
+                "enum": [
+                    1,
+                    0
+                ],
+                "title": "StatusEnum",
+                "description": "An enumeration."
+            },
+            "Token": {
+                "properties": {
+                    "access_token": {
+                        "type": "string",
+                        "title": "Access Token",
+                        "description": "The access token"
+                    },
+                    "expires_in": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "title": "Expires In",
+                        "description": "The expiration time of the access token in minutes. Must be at least 1 minute.",
+                        "default": 3600
+                    },
+                    "token_type": {
+                        "type": "string",
+                        "title": "Token Type",
+                        "description": "The type of the token (default: 'bearer')",
+                        "default": "bearer"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "access_token"
+                ],
+                "title": "Token"
+            },
+            "User": {
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "title": "Id"
+                    },
+                    "username": {
+                        "type": "string",
+                        "title": "Username"
+                    },
+                    "email": {
+                        "type": "string",
+                        "title": "Email"
+                    },
+                    "status": {
+                        "allOf": [
+                            {
+                                "$ref": "#/components/schemas/StatusEnum"
+                            }
+                        ],
+                        "default": 1
+                    },
+                    "password": {
+                        "type": "string",
+                        "title": "Password"
+                    },
+                    "role": {
+                        "allOf": [
+                            {
+                                "$ref": "#/components/schemas/RoleEnum"
+                            }
+                        ],
+                        "default": "ROLE_PROVIDER"
+                    },
+                    "logged_in": {
+                        "type": "boolean",
+                        "title": "Logged In",
+                        "default": false
+                    },
+                    "failed_login_attempts": {
+                        "type": "integer",
+                        "title": "Failed Login Attempts",
+                        "default": 0
+                    },
+                    "created_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "title": "Created At"
+                    },
+                    "updated_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "title": "Updated At"
+                    },
+                    "deleted_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "title": "Deleted At"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "username",
+                    "email",
+                    "password"
+                ],
+                "title": "User"
+            },
+            "UserCreate": {
+                "properties": {
+                    "username": {
+                        "type": "string",
+                        "title": "Username"
+                    },
+                    "email": {
+                        "type": "string",
+                        "title": "Email"
+                    },
+                    "password": {
+                        "type": "string",
+                        "title": "Password"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "username",
+                    "email",
+                    "password"
+                ],
+                "title": "UserCreate"
+            },
+            "ValidationError": {
+                "properties": {
+                    "loc": {
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "integer"
+                                }
+                            ]
+                        },
+                        "type": "array",
+                        "title": "Location"
+                    },
+                    "msg": {
+                        "type": "string",
+                        "title": "Message"
+                    },
+                    "type": {
+                        "type": "string",
+                        "title": "Error Type"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "loc",
+                    "msg",
+                    "type"
+                ],
+                "title": "ValidationError"
+            }
+        },
+        "securitySchemes": {
+            "OAuth2PasswordBearer": {
+                "type": "oauth2",
+                "flows": {
+                    "password": {
+                        "scopes": {},
+                        "tokenUrl": "/auth/token"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "rules",
+            "description": "Operations with **rules**."
+        },
+        {
+            "name": "transform",
+            "description": "Operations with **transform**."
+        }
+    ]
+}

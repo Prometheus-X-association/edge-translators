@@ -1,0 +1,29 @@
+{
+  "@context": {
+      "todo": "define_the_rules_context"
+  },
+  "graph": [
+    {
+      "id": "mmr:rule-1",
+      "generateId": "true",
+      "sourcePath": "pastExperience.role",
+      "targetClass": "soo:Experience",
+      "targetProperty": "skos:prefLabel",
+      "targetFunction": "fno:find-matching"
+    },
+    {
+      "id": "mmr:rule-2",
+      "sourcePath": "pastExperience.role",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:experienceType",
+      "targetValue": "term:experience/type/professional"
+    },
+    {
+      "id": "mmr:rule-3",
+      "sourcePath": "pastExperience.role",
+      "targetClass": "soo:Experience",
+      "targetProperty": "soo:experienceStatus",
+      "targetValue": "term:experience/type/past"
+    }
+  ]
+}

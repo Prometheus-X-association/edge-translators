@@ -1,0 +1,174 @@
+{
+    "took": 17,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 10000,
+            "relation": "gte"
+        },
+        "max_score": 2.7571323,
+        "hits": [
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+                "_score": 2.7571323,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "communication",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/7ff2c668-0e86-418a-a962-4958262ee337",
+                "_score": 2.724208,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "use communication techniques",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/7ff2c668-0e86-418a-a962-4958262ee337"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/415abd43-e8e5-4643-b5da-5f11307af57a",
+                "_score": 2.7212207,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "use different communication channels",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/415abd43-e8e5-4643-b5da-5f11307af57a"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/c68af615-b24c-4719-a199-c4141e08f2bd",
+                "_score": 2.690444,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "promote communication between parties",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/c68af615-b24c-4719-a199-c4141e08f2bd"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:skill/b5af495b-61f1-4330-9891-dca56d97d714",
+                "_score": 2.6704054,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "skill_type.float",
+                    "pref_label__language.float",
+                    "skill_type.location",
+                    "skill_reuse_level.float",
+                    "pref_label__value.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "skill_reuse_level.date",
+                    "type.date",
+                    "description__value.date",
+                    "skill_reuse_level.location",
+                    "description__language.float",
+                    "skill_type.date",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "communicate with youth",
+                    "pref_label__language": "en",
+                    "id": "esco:skill/b5af495b-61f1-4330-9891-dca56d97d714"
+                }
+            }
+        ]
+    }
+}

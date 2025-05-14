@@ -1,0 +1,5 @@
+[
+    {"name": "Communication", "description": "Capacité à transmettre efficacement des idées.", "skillLevelValue": 4},
+    {"name": "Gestion du temps", "description": "Savoir organiser son temps pour respecter les délais.", "skillLevelValue": 3},
+    {"name": "Esprit d'équipe", "description": "Aptitude à travailler efficacement avec les autres.", "skillLevelValue": 5}
+]

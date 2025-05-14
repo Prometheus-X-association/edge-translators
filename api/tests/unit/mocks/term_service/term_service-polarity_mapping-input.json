@@ -1,0 +1,21 @@
+{
+    "@context": {
+      "@todo": "Define later with https://gitlab.com/mmorg/bupm/ariane/-/blob/main/data/soo/onto-soo-context-1.0.0.jsonld"
+    },
+    "graph": [
+      {
+        "__term__": {
+          "language": "en",
+          "provider": "test",
+          "scale": "Polarity",
+          "scale_path": "jobCards.positionnement",
+          "str_value": "Je ne sais pas",
+          "targetFunction": "fno:handle-polarity",
+          "value": "Je ne sais pas"
+        },
+        "experience": "tr:__experience-id-1__",
+        "id": "tr:__polarity-id-1__",
+        "type": "soo:Polarity"
+      }
+    ]
+  }

@@ -1,0 +1,40 @@
+{
+    "id": "test_id",
+    "prefLabel": {
+        "value": "Développeur web",
+        "language": "fr"
+    },
+    "description": "Conçoit et développe des application web en PHP (backend) et Javascript (frontend).",
+    "type": "soo:Experience",
+    "framework": "esco",
+    "provider": "test",
+    "match": {
+        "id": "test_id_suggestion_1",
+        "type": "match:suggestion",
+        "target": {},
+        "score": 3.3740309,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+    },
+    "suggestions": [
+        {
+            "id": "test_id_suggestion_2",
+            "type": "match:suggestion",
+            "target": {},
+            "score": 2.2040242,
+            "validated": 0,
+            "framework": "esco",
+            "mappingType": "skos:exactMatch"
+        },
+        {
+            "id": "test_id_suggestion_3",
+            "type": "match:suggestion",
+            "target": {},
+            "score": 1.6740303,
+            "validated": 0,
+            "framework": "esco",
+            "mappingType": "skos:exactMatch"
+        }
+    ]
+}

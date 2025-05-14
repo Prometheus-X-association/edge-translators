@@ -1,0 +1,1586 @@
+[
+    {
+      "id": "skill:provider/provider2/value/communication",
+      "prefLabel": {
+        "value": "Communication",
+        "language": "fr"
+      },
+      "description": "Capacité à transmettre efficacement des idées.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/07a3dd247ad6bec7fe401aa11619959f/id_target/esco:skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/15d76317-c71a-4fa2-aadc-2ecc34e627b7",
+          "prefLabel": {
+            "value": "communication",
+            "language": "en"
+          }
+        },
+        "score": 2.7571323,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/07a3dd247ad6bec7fe401aa11619959f/id_target/esco:skill/7ff2c668-0e86-418a-a962-4958262ee337",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/7ff2c668-0e86-418a-a962-4958262ee337",
+            "prefLabel": {
+              "value": "use communication techniques",
+              "language": "en"
+            }
+          },
+          "score": 2.724208,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/07a3dd247ad6bec7fe401aa11619959f/id_target/esco:skill/415abd43-e8e5-4643-b5da-5f11307af57a",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/415abd43-e8e5-4643-b5da-5f11307af57a",
+            "prefLabel": {
+              "value": "use different communication channels",
+              "language": "en"
+            }
+          },
+          "score": 2.7212207,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/07a3dd247ad6bec7fe401aa11619959f/id_target/esco:skill/c68af615-b24c-4719-a199-c4141e08f2bd",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/c68af615-b24c-4719-a199-c4141e08f2bd",
+            "prefLabel": {
+              "value": "promote communication between parties",
+              "language": "en"
+            }
+          },
+          "score": 2.690444,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/07a3dd247ad6bec7fe401aa11619959f/id_target/esco:skill/b5af495b-61f1-4330-9891-dca56d97d714",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/b5af495b-61f1-4330-9891-dca56d97d714",
+            "prefLabel": {
+              "value": "communicate with youth",
+              "language": "en"
+            }
+          },
+          "score": 2.6704054,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/gestion-du-temps",
+      "prefLabel": {
+        "value": "Gestion du temps",
+        "language": "fr"
+      },
+      "description": "Savoir organiser son temps pour respecter les délais.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/2cd636b69317a1c91be2535df58b281b/id_target/esco:skill/d9013e0e-e937-43d5-ab71-0e917ee882b8",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/d9013e0e-e937-43d5-ab71-0e917ee882b8",
+          "prefLabel": {
+            "value": "manage time",
+            "language": "en"
+          }
+        },
+        "score": 2.7994304,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/2cd636b69317a1c91be2535df58b281b/id_target/esco:skill/4932c6e3-f6c7-49bf-bf66-f8508237054f",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/4932c6e3-f6c7-49bf-bf66-f8508237054f",
+            "prefLabel": {
+              "value": "comply with schedule",
+              "language": "en"
+            }
+          },
+          "score": 2.7656157,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/2cd636b69317a1c91be2535df58b281b/id_target/esco:skill/86ffa56b-12f5-4dcd-8afd-9251fbb6b496",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/86ffa56b-12f5-4dcd-8afd-9251fbb6b496",
+            "prefLabel": {
+              "value": "manage time in tourism",
+              "language": "en"
+            }
+          },
+          "score": 2.7633653,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/2cd636b69317a1c91be2535df58b281b/id_target/esco:skill/7a958aae-fc10-48c5-93b2-93777593dda9",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/7a958aae-fc10-48c5-93b2-93777593dda9",
+            "prefLabel": {
+              "value": "manage time in furnace operations",
+              "language": "en"
+            }
+          },
+          "score": 2.7574873,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/2cd636b69317a1c91be2535df58b281b/id_target/esco:skill/ff207c62-ccd0-4788-b99a-996a14320fad",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/ff207c62-ccd0-4788-b99a-996a14320fad",
+            "prefLabel": {
+              "value": "manage time in food processing operations",
+              "language": "en"
+            }
+          },
+          "score": 2.7517436,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/esprit-d-equipe",
+      "prefLabel": {
+        "value": "Esprit d'équipe",
+        "language": "fr"
+      },
+      "description": "Aptitude à travailler efficacement avec les autres.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/1f8ab2523e5b9e7a5f613e46f7da5c66/id_target/esco:skill/60c78287-22eb-4103-9c8c-28deaa460da0",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/60c78287-22eb-4103-9c8c-28deaa460da0",
+          "prefLabel": {
+            "value": "work in teams",
+            "language": "en"
+          }
+        },
+        "score": 2.7793314,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/1f8ab2523e5b9e7a5f613e46f7da5c66/id_target/esco:skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+            "prefLabel": {
+              "value": "build team spirit",
+              "language": "en"
+            }
+          },
+          "score": 2.7770338,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/1f8ab2523e5b9e7a5f613e46f7da5c66/id_target/esco:skill/54936e0e-2e1c-4b04-b73d-720b85a3f907",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/54936e0e-2e1c-4b04-b73d-720b85a3f907",
+            "prefLabel": {
+              "value": "work in metal manufacture teams",
+              "language": "en"
+            }
+          },
+          "score": 2.7677438,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/1f8ab2523e5b9e7a5f613e46f7da5c66/id_target/esco:skill/082967d4-b94c-4305-aa13-35a6aa8c5c7c",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/082967d4-b94c-4305-aa13-35a6aa8c5c7c",
+            "prefLabel": {
+              "value": "cooperate with colleagues",
+              "language": "en"
+            }
+          },
+          "score": 2.7581456,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/1f8ab2523e5b9e7a5f613e46f7da5c66/id_target/esco:skill/cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/cb668e89-6ef5-4ff3-ab4a-506010e7e70b",
+            "prefLabel": {
+              "value": "manage a team",
+              "language": "en"
+            }
+          },
+          "score": 2.7484334,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/javascript",
+      "prefLabel": {
+        "value": "JavaScript",
+        "language": "fr"
+      },
+      "description": "Langage de programmation pour le développement web.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/686155af75a60a0f6e9d80c1f7edd3e9/id_target/esco:skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+          "prefLabel": {
+            "value": "JavaScript",
+            "language": "en"
+          }
+        },
+        "score": 2.8225675,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/686155af75a60a0f6e9d80c1f7edd3e9/id_target/esco:skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+            "prefLabel": {
+              "value": "web programming",
+              "language": "en"
+            }
+          },
+          "score": 2.8223736,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/686155af75a60a0f6e9d80c1f7edd3e9/id_target/esco:skill/9b9de2a4-d8af-4a7b-933a-a8334ae60067",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/9b9de2a4-d8af-4a7b-933a-a8334ae60067",
+            "prefLabel": {
+              "value": "JavaScript Framework",
+              "language": "en"
+            }
+          },
+          "score": 2.7058902,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/686155af75a60a0f6e9d80c1f7edd3e9/id_target/esco:skill/8c88d336-c249-4537-b26e-d679a85c4b9b",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/8c88d336-c249-4537-b26e-d679a85c4b9b",
+            "prefLabel": {
+              "value": "Ajax Framework",
+              "language": "en"
+            }
+          },
+          "score": 2.6480265,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/686155af75a60a0f6e9d80c1f7edd3e9/id_target/esco:skill/dcdd5ddf-82a6-4ac3-8edc-d4b23cae9a88",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/dcdd5ddf-82a6-4ac3-8edc-d4b23cae9a88",
+            "prefLabel": {
+              "value": "VBScript",
+              "language": "en"
+            }
+          },
+          "score": 2.5693226,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/node-js",
+      "prefLabel": {
+        "value": "Node.js",
+        "language": "fr"
+      },
+      "description": "Plateforme logicielle pour les applications web côté serveur.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/3b2819dd4c24eda2faf2052eef449551/id_target/esco:skill/8c88d336-c249-4537-b26e-d679a85c4b9b",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/8c88d336-c249-4537-b26e-d679a85c4b9b",
+          "prefLabel": {
+            "value": "Ajax Framework",
+            "language": "en"
+          }
+        },
+        "score": 2.6259608,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/3b2819dd4c24eda2faf2052eef449551/id_target/esco:skill/a4e31589-3632-4926-91d0-15b889c90b9b",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/a4e31589-3632-4926-91d0-15b889c90b9b",
+            "prefLabel": {
+              "value": "IBM WebSphere",
+              "language": "en"
+            }
+          },
+          "score": 2.6103492,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/3b2819dd4c24eda2faf2052eef449551/id_target/esco:skill/0fb753a1-2ef2-4429-84d2-ecb2b24daf7a",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/0fb753a1-2ef2-4429-84d2-ecb2b24daf7a",
+            "prefLabel": {
+              "value": "Apache Tomcat",
+              "language": "en"
+            }
+          },
+          "score": 2.587492,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/3b2819dd4c24eda2faf2052eef449551/id_target/esco:skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+            "prefLabel": {
+              "value": "web programming",
+              "language": "en"
+            }
+          },
+          "score": 2.5789986,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/3b2819dd4c24eda2faf2052eef449551/id_target/esco:skill/f84a433f-34f1-4083-b0a3-24802623509c",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/f84a433f-34f1-4083-b0a3-24802623509c",
+            "prefLabel": {
+              "value": "web services",
+              "language": "en"
+            }
+          },
+          "score": 2.5564823,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/react",
+      "prefLabel": {
+        "value": "React",
+        "language": "fr"
+      },
+      "description": "Bibliothèque JavaScript pour construire des interfaces utilisateur.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/50ce2da63bea6a618e7578fa50690040/id_target/esco:skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+          "prefLabel": {
+            "value": "web programming",
+            "language": "en"
+          }
+        },
+        "score": 2.5430427,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/50ce2da63bea6a618e7578fa50690040/id_target/esco:skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+            "prefLabel": {
+              "value": "JavaScript",
+              "language": "en"
+            }
+          },
+          "score": 2.5400562,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/50ce2da63bea6a618e7578fa50690040/id_target/esco:skill/9b9de2a4-d8af-4a7b-933a-a8334ae60067",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/9b9de2a4-d8af-4a7b-933a-a8334ae60067",
+            "prefLabel": {
+              "value": "JavaScript Framework",
+              "language": "en"
+            }
+          },
+          "score": 2.5279343,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/50ce2da63bea6a618e7578fa50690040/id_target/esco:skill/fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/fd33c66c-70c4-40e6-b87c-5495bd3bf26e",
+            "prefLabel": {
+              "value": "design user interface",
+              "language": "en"
+            }
+          },
+          "score": 2.5213284,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/50ce2da63bea6a618e7578fa50690040/id_target/esco:skill/b0096dc5-2e2d-4bc1-8172-05bf486c3968",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/b0096dc5-2e2d-4bc1-8172-05bf486c3968",
+            "prefLabel": {
+              "value": "design application interfaces",
+              "language": "en"
+            }
+          },
+          "score": 2.5017939,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/pensee-critique",
+      "prefLabel": {
+        "value": "Pensée critique",
+        "language": "fr"
+      },
+      "description": "Capacité à évaluer des problèmes complexes et à proposer des solutions.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/ac033f4cc223d610292e4775b6c0733a/id_target/esco:skill/b9f16465-56a9-426b-a047-0f9f1f95ec92",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/b9f16465-56a9-426b-a047-0f9f1f95ec92",
+          "prefLabel": {
+            "value": "address problems critically",
+            "language": "en"
+          }
+        },
+        "score": 2.874525,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/ac033f4cc223d610292e4775b6c0733a/id_target/esco:skill/a628d2d1-f40a-4c37-a357-2801726f2996",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/a628d2d1-f40a-4c37-a357-2801726f2996",
+            "prefLabel": {
+              "value": "identify problems",
+              "language": "en"
+            }
+          },
+          "score": 2.723034,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/ac033f4cc223d610292e4775b6c0733a/id_target/esco:skill/adc6dc11-3376-467b-96c5-9b0a21edc869",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/adc6dc11-3376-467b-96c5-9b0a21edc869",
+            "prefLabel": {
+              "value": "solve problems",
+              "language": "en"
+            }
+          },
+          "score": 2.6997771,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/ac033f4cc223d610292e4775b6c0733a/id_target/esco:skill/d4cc5022-7801-4885-bcff-166552788d35",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/d4cc5022-7801-4885-bcff-166552788d35",
+            "prefLabel": {
+              "value": "provide improvement strategies",
+              "language": "en"
+            }
+          },
+          "score": 2.6989384,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/ac033f4cc223d610292e4775b6c0733a/id_target/esco:skill/03b9b491-fc9b-4868-914a-bf7cd47b5041",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/03b9b491-fc9b-4868-914a-bf7cd47b5041",
+            "prefLabel": {
+              "value": "create solutions to problems",
+              "language": "en"
+            }
+          },
+          "score": 2.698281,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/collaboration",
+      "prefLabel": {
+        "value": "Collaboration",
+        "language": "fr"
+      },
+      "description": "Travail en équipe pour atteindre des objectifs communs.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/337e8f4aa741ef97ec3ed8fd7b1accb7/id_target/esco:skill/60c78287-22eb-4103-9c8c-28deaa460da0",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/60c78287-22eb-4103-9c8c-28deaa460da0",
+          "prefLabel": {
+            "value": "work in teams",
+            "language": "en"
+          }
+        },
+        "score": 2.8125453,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/337e8f4aa741ef97ec3ed8fd7b1accb7/id_target/esco:skill/082967d4-b94c-4305-aa13-35a6aa8c5c7c",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/082967d4-b94c-4305-aa13-35a6aa8c5c7c",
+            "prefLabel": {
+              "value": "cooperate with colleagues",
+              "language": "en"
+            }
+          },
+          "score": 2.805186,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/337e8f4aa741ef97ec3ed8fd7b1accb7/id_target/esco:skill/51826e07-64c9-4d2c-9964-88cfbf131ad2",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/51826e07-64c9-4d2c-9964-88cfbf131ad2",
+            "prefLabel": {
+              "value": "work as a team in a hazardous environment",
+              "language": "en"
+            }
+          },
+          "score": 2.772072,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/337e8f4aa741ef97ec3ed8fd7b1accb7/id_target/esco:skill/a5b0cd5c-e13a-4ab3-8d93-4d242adcfb01",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/a5b0cd5c-e13a-4ab3-8d93-4d242adcfb01",
+            "prefLabel": {
+              "value": "teamwork principles",
+              "language": "en"
+            }
+          },
+          "score": 2.7587788,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/337e8f4aa741ef97ec3ed8fd7b1accb7/id_target/esco:skill/9d5521f9-44d7-4db4-b7ac-0ba7d389f44d",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/9d5521f9-44d7-4db4-b7ac-0ba7d389f44d",
+            "prefLabel": {
+              "value": "liaise with colleagues",
+              "language": "en"
+            }
+          },
+          "score": 2.7554417,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/curiosite",
+      "prefLabel": {
+        "value": "Curiosité",
+        "language": "fr"
+      },
+      "description": "Capacité à chercher et découvrir de nouvelles solutions.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/6ca7c34258f66dad6ba4e1b7c449bb1a/id_target/esco:skill/429062f1-a958-43ea-83dd-4e1af078c156",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/429062f1-a958-43ea-83dd-4e1af078c156",
+          "prefLabel": {
+            "value": "demonstrate curiosity",
+            "language": "en"
+          }
+        },
+        "score": 2.774344,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/6ca7c34258f66dad6ba4e1b7c449bb1a/id_target/esco:skill/3c0574e1-3931-43a5-9c2c-21eced1f1a12",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/3c0574e1-3931-43a5-9c2c-21eced1f1a12",
+            "prefLabel": {
+              "value": "find new types of food and beverages",
+              "language": "en"
+            }
+          },
+          "score": 2.6385841,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/6ca7c34258f66dad6ba4e1b7c449bb1a/id_target/esco:skill/f975091a-e5a5-4472-ac17-11680e53e98f",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/f975091a-e5a5-4472-ac17-11680e53e98f",
+            "prefLabel": {
+              "value": "seek innovation in current practices",
+              "language": "en"
+            }
+          },
+          "score": 2.629962,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/6ca7c34258f66dad6ba4e1b7c449bb1a/id_target/esco:skill/fd89f784-88dc-4d35-abd7-86aa073cab12",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/fd89f784-88dc-4d35-abd7-86aa073cab12",
+            "prefLabel": {
+              "value": "keep an open mind",
+              "language": "en"
+            }
+          },
+          "score": 2.5764692,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/6ca7c34258f66dad6ba4e1b7c449bb1a/id_target/esco:skill/f08e2bd6-0366-4948-a670-1f03f130126f",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/f08e2bd6-0366-4948-a670-1f03f130126f",
+            "prefLabel": {
+              "value": "create new concepts",
+              "language": "en"
+            }
+          },
+          "score": 2.5474534,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/python",
+      "prefLabel": {
+        "value": "Python",
+        "language": "fr"
+      },
+      "description": "Langage de programmation populaire en IA.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/a7f5f35426b927411fc9231b56382173/id_target/esco:skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+          "prefLabel": {
+            "value": "Python (computer programming)",
+            "language": "en"
+          }
+        },
+        "score": 2.7569804,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/a7f5f35426b927411fc9231b56382173/id_target/esco:skill/58d7a289-dafd-4363-833f-d1dc4140885e",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/58d7a289-dafd-4363-833f-d1dc4140885e",
+            "prefLabel": {
+              "value": "APL",
+              "language": "en"
+            }
+          },
+          "score": 2.5603943,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/a7f5f35426b927411fc9231b56382173/id_target/esco:skill/5ef0c719-5bcb-49f8-b8eb-824388225333",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/5ef0c719-5bcb-49f8-b8eb-824388225333",
+            "prefLabel": {
+              "value": "use scripting programming",
+              "language": "en"
+            }
+          },
+          "score": 2.522431,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/a7f5f35426b927411fc9231b56382173/id_target/esco:skill/8b94aa1e-89c9-459d-b3b4-1dfab8dec2df",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/8b94aa1e-89c9-459d-b3b4-1dfab8dec2df",
+            "prefLabel": {
+              "value": "use software libraries",
+              "language": "en"
+            }
+          },
+          "score": 2.5161862,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/a7f5f35426b927411fc9231b56382173/id_target/esco:skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97",
+            "prefLabel": {
+              "value": "computer programming",
+              "language": "en"
+            }
+          },
+          "score": 2.5140152,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/tensorflow",
+      "prefLabel": {
+        "value": "TensorFlow",
+        "language": "fr"
+      },
+      "description": "Framework pour les modèles de machine learning.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/074dd699710da0ec1eb45f13b31788e3/id_target/esco:skill/8369c2d6-c100-4cf6-bd83-9668d8678433",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/8369c2d6-c100-4cf6-bd83-9668d8678433",
+          "prefLabel": {
+            "value": "utilise machine learning",
+            "language": "en"
+          }
+        },
+        "score": 2.6234026,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/074dd699710da0ec1eb45f13b31788e3/id_target/esco:skill/3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+            "prefLabel": {
+              "value": "machine learning",
+              "language": "en"
+            }
+          },
+          "score": 2.5909235,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/074dd699710da0ec1eb45f13b31788e3/id_target/esco:skill/ecc4552a-92c5-4222-b18d-faf5ac841080",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/ecc4552a-92c5-4222-b18d-faf5ac841080",
+            "prefLabel": {
+              "value": "deep learning",
+              "language": "en"
+            }
+          },
+          "score": 2.5583432,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/074dd699710da0ec1eb45f13b31788e3/id_target/esco:skill/a4d336a6-9ffd-402a-91cc-f359716ba4e0",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/a4d336a6-9ffd-402a-91cc-f359716ba4e0",
+            "prefLabel": {
+              "value": "ML (computer programming)",
+              "language": "en"
+            }
+          },
+          "score": 2.5535243,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/074dd699710da0ec1eb45f13b31788e3/id_target/esco:skill/32a2c63d-2d13-4784-abb8-678ef2cd8a46",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/32a2c63d-2d13-4784-abb8-678ef2cd8a46",
+            "prefLabel": {
+              "value": "machine translation",
+              "language": "en"
+            }
+          },
+          "score": 2.4772468,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/scikit-learn",
+      "prefLabel": {
+        "value": "scikit-learn",
+        "language": "fr"
+      },
+      "description": "Bibliothèque pour les algorithmes de machine learning.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/3483ff058deda3dad41fa7925fab2dac/id_target/esco:skill/8369c2d6-c100-4cf6-bd83-9668d8678433",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/8369c2d6-c100-4cf6-bd83-9668d8678433",
+          "prefLabel": {
+            "value": "utilise machine learning",
+            "language": "en"
+          }
+        },
+        "score": 2.7239194,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/3483ff058deda3dad41fa7925fab2dac/id_target/esco:skill/3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/3a2d5b45-56e4-4f5a-a55a-4a4a65afdc43",
+            "prefLabel": {
+              "value": "machine learning",
+              "language": "en"
+            }
+          },
+          "score": 2.6750116,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/3483ff058deda3dad41fa7925fab2dac/id_target/esco:skill/a4d336a6-9ffd-402a-91cc-f359716ba4e0",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/a4d336a6-9ffd-402a-91cc-f359716ba4e0",
+            "prefLabel": {
+              "value": "ML (computer programming)",
+              "language": "en"
+            }
+          },
+          "score": 2.6104248,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/3483ff058deda3dad41fa7925fab2dac/id_target/esco:skill/ecc4552a-92c5-4222-b18d-faf5ac841080",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/ecc4552a-92c5-4222-b18d-faf5ac841080",
+            "prefLabel": {
+              "value": "deep learning",
+              "language": "en"
+            }
+          },
+          "score": 2.5758169,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/3483ff058deda3dad41fa7925fab2dac/id_target/esco:skill/32a2c63d-2d13-4784-abb8-678ef2cd8a46",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/32a2c63d-2d13-4784-abb8-678ef2cd8a46",
+            "prefLabel": {
+              "value": "machine translation",
+              "language": "en"
+            }
+          },
+          "score": 2.504204,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/vigilance",
+      "prefLabel": {
+        "value": "Vigilance",
+        "language": "fr"
+      },
+      "description": "Capacité à détecter rapidement les menaces de sécurité.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/bfd583dfcfc9007d5900720e29e4499e/id_target/esco:skill/a4fd17bf-6309-47c5-b7fa-ae5560673acf",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/a4fd17bf-6309-47c5-b7fa-ae5560673acf",
+          "prefLabel": {
+            "value": "identify security threats",
+            "language": "en"
+          }
+        },
+        "score": 2.8179464,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/bfd583dfcfc9007d5900720e29e4499e/id_target/esco:skill/84295dbe-16b0-47e8-af9e-67ee1801673d",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/84295dbe-16b0-47e8-af9e-67ee1801673d",
+            "prefLabel": {
+              "value": "identify terrorism threats",
+              "language": "en"
+            }
+          },
+          "score": 2.717339,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/bfd583dfcfc9007d5900720e29e4499e/id_target/esco:skill/f6100198-9398-4c31-9003-d976c37d5022",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/f6100198-9398-4c31-9003-d976c37d5022",
+            "prefLabel": {
+              "value": "monitor security measures",
+              "language": "en"
+            }
+          },
+          "score": 2.6960053,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/bfd583dfcfc9007d5900720e29e4499e/id_target/esco:skill/94c24e4a-cc9a-4a49-b623-bc00bb5aa1a3",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/94c24e4a-cc9a-4a49-b623-bc00bb5aa1a3",
+            "prefLabel": {
+              "value": "identify airport safety hazards",
+              "language": "en"
+            }
+          },
+          "score": 2.6797547,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/bfd583dfcfc9007d5900720e29e4499e/id_target/esco:skill/beaf0ed4-a51d-4856-97ec-c5701a6b44a2",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/beaf0ed4-a51d-4856-97ec-c5701a6b44a2",
+            "prefLabel": {
+              "value": "respond to burglar alarm systems",
+              "language": "en"
+            }
+          },
+          "score": 2.6789458,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/analyse",
+      "prefLabel": {
+        "value": "Analyse",
+        "language": "fr"
+      },
+      "description": "Aptitude à étudier en détail les incidents de sécurité.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/31045a275b7698e5c48cf484ba762b25/id_target/esco:skill/1a63b1a7-2cac-4372-8760-7bb6afb36949",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/1a63b1a7-2cac-4372-8760-7bb6afb36949",
+          "prefLabel": {
+            "value": "investigate security issues",
+            "language": "en"
+          }
+        },
+        "score": 2.7586155,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/31045a275b7698e5c48cf484ba762b25/id_target/esco:skill/7f27f1ff-2e17-4b69-990e-c23334478313",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/7f27f1ff-2e17-4b69-990e-c23334478313",
+            "prefLabel": {
+              "value": "assessment of risks and threats",
+              "language": "en"
+            }
+          },
+          "score": 2.7379055,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/31045a275b7698e5c48cf484ba762b25/id_target/esco:skill/a4fd17bf-6309-47c5-b7fa-ae5560673acf",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/a4fd17bf-6309-47c5-b7fa-ae5560673acf",
+            "prefLabel": {
+              "value": "identify security threats",
+              "language": "en"
+            }
+          },
+          "score": 2.7157679,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/31045a275b7698e5c48cf484ba762b25/id_target/esco:skill/8e8a476a-d97b-4d12-83d0-d3fd92da5b2c",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/8e8a476a-d97b-4d12-83d0-d3fd92da5b2c",
+            "prefLabel": {
+              "value": "analyse reports provided by passengers",
+              "language": "en"
+            }
+          },
+          "score": 2.709792,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/31045a275b7698e5c48cf484ba762b25/id_target/esco:skill/876bb0fb-6b71-4617-9df6-ddabb9b7579f",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/876bb0fb-6b71-4617-9df6-ddabb9b7579f",
+            "prefLabel": {
+              "value": "report airport security incidents",
+              "language": "en"
+            }
+          },
+          "score": 2.705203,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/travail-d-equipe",
+      "prefLabel": {
+        "value": "Travail d'équipe",
+        "language": "fr"
+      },
+      "description": "Collaboration avec les équipes pour garantir la sécurité.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/abfb41c272789e93ff415fedb1197aa9/id_target/esco:skill/51826e07-64c9-4d2c-9964-88cfbf131ad2",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/51826e07-64c9-4d2c-9964-88cfbf131ad2",
+          "prefLabel": {
+            "value": "work as a team in a hazardous environment",
+            "language": "en"
+          }
+        },
+        "score": 2.7894683,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/abfb41c272789e93ff415fedb1197aa9/id_target/esco:skill/b216d9a2-7d4e-4312-8d05-e375f4ab44d8",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/b216d9a2-7d4e-4312-8d05-e375f4ab44d8",
+            "prefLabel": {
+              "value": "ensure cross-department cooperation",
+              "language": "en"
+            }
+          },
+          "score": 2.7068992,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/abfb41c272789e93ff415fedb1197aa9/id_target/esco:skill/524106a8-b343-45f6-b4ce-58e8d3cf1093",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/524106a8-b343-45f6-b4ce-58e8d3cf1093",
+            "prefLabel": {
+              "value": "work in an aviation team",
+              "language": "en"
+            }
+          },
+          "score": 2.7008924,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/abfb41c272789e93ff415fedb1197aa9/id_target/esco:skill/60c78287-22eb-4103-9c8c-28deaa460da0",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/60c78287-22eb-4103-9c8c-28deaa460da0",
+            "prefLabel": {
+              "value": "work in teams",
+              "language": "en"
+            }
+          },
+          "score": 2.6828852,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/abfb41c272789e93ff415fedb1197aa9/id_target/esco:skill/082967d4-b94c-4305-aa13-35a6aa8c5c7c",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/082967d4-b94c-4305-aa13-35a6aa8c5c7c",
+            "prefLabel": {
+              "value": "cooperate with colleagues",
+              "language": "en"
+            }
+          },
+          "score": 2.6812634,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/kali-linux",
+      "prefLabel": {
+        "value": "Kali Linux",
+        "language": "fr"
+      },
+      "description": "Distribution spécialisée pour les tests de sécurité.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/01fc2ba6768b02ea95f242781125f9f1/id_target/esco:skill/625b57ee-29d4-425b-bf99-9fd54dd021fe",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/625b57ee-29d4-425b-bf99-9fd54dd021fe",
+          "prefLabel": {
+            "value": "Kali Linux",
+            "language": "en"
+          }
+        },
+        "score": 2.8413577,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/01fc2ba6768b02ea95f242781125f9f1/id_target/esco:skill/8a30eb28-eca0-4ab6-8c05-32c47d3e0dd6",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/8a30eb28-eca0-4ab6-8c05-32c47d3e0dd6",
+            "prefLabel": {
+              "value": "BlackArch",
+              "language": "en"
+            }
+          },
+          "score": 2.6135921,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/01fc2ba6768b02ea95f242781125f9f1/id_target/esco:skill/f4a85869-1855-45d5-a43c-7ee8cd451996",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/f4a85869-1855-45d5-a43c-7ee8cd451996",
+            "prefLabel": {
+              "value": "perform ICT security testing",
+              "language": "en"
+            }
+          },
+          "score": 2.5539303,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/01fc2ba6768b02ea95f242781125f9f1/id_target/esco:skill/baf1fadb-975a-42be-9744-d8ba02304d09",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/baf1fadb-975a-42be-9744-d8ba02304d09",
+            "prefLabel": {
+              "value": "Samurai Web Testing Framework",
+              "language": "en"
+            }
+          },
+          "score": 2.5392957,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/01fc2ba6768b02ea95f242781125f9f1/id_target/esco:skill/52b38e90-3d05-4042-a9e2-d19dec8dd7c1",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/52b38e90-3d05-4042-a9e2-d19dec8dd7c1",
+            "prefLabel": {
+              "value": "test hardware",
+              "language": "en"
+            }
+          },
+          "score": 2.5391397,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/wireshark",
+      "prefLabel": {
+        "value": "Wireshark",
+        "language": "fr"
+      },
+      "description": "Outil d'analyse de trafic réseau.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/3be6a3fe5affd872c0eb18fbb28ac581/id_target/esco:skill/8fa510d0-a8a6-4932-a361-00f8442cfe23",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/8fa510d0-a8a6-4932-a361-00f8442cfe23",
+          "prefLabel": {
+            "value": "Wireshark",
+            "language": "en"
+          }
+        },
+        "score": 2.7093844,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/3be6a3fe5affd872c0eb18fbb28ac581/id_target/esco:skill/545c80e8-7ab2-42fe-af64-242211e94709",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/545c80e8-7ab2-42fe-af64-242211e94709",
+            "prefLabel": {
+              "value": "analyse network configuration and performance",
+              "language": "en"
+            }
+          },
+          "score": 2.6995087,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/3be6a3fe5affd872c0eb18fbb28ac581/id_target/esco:skill/95f4631e-fcde-467f-8277-01e824b40a06",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/95f4631e-fcde-467f-8277-01e824b40a06",
+            "prefLabel": {
+              "value": "analyse road traffic patterns",
+              "language": "en"
+            }
+          },
+          "score": 2.5745509,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/3be6a3fe5affd872c0eb18fbb28ac581/id_target/esco:skill/d22f2f23-9dd5-4854-bada-0514ff6c51a9",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/d22f2f23-9dd5-4854-bada-0514ff6c51a9",
+            "prefLabel": {
+              "value": "monitor traffic flow",
+              "language": "en"
+            }
+          },
+          "score": 2.5685363,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/3be6a3fe5affd872c0eb18fbb28ac581/id_target/esco:skill/3cd0ee1e-73b1-487e-b186-2e0c4fc3720f",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/3cd0ee1e-73b1-487e-b186-2e0c4fc3720f",
+            "prefLabel": {
+              "value": "assess telecommunication infrastructure issues",
+              "language": "en"
+            }
+          },
+          "score": 2.5557404,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    },
+    {
+      "id": "skill:provider/provider2/value/firewall",
+      "prefLabel": {
+        "value": "Firewall",
+        "language": "fr"
+      },
+      "description": "Configuration et gestion des pare-feu.",
+      "type": "soo:Skill",
+      "framework": "esco",
+      "provider": "provider2",
+      "match": {
+        "id": "match:suggestion/id_source/c5381dc540506dbb210e2d300554e4cd/id_target/esco:skill/e5b5053e-0ef6-4c4e-a3f2-42f955f4322c",
+        "type": "match:suggestion",
+        "target": {
+          "id": "esco:skill/e5b5053e-0ef6-4c4e-a3f2-42f955f4322c",
+          "prefLabel": {
+            "value": "implement a firewall",
+            "language": "en"
+          }
+        },
+        "score": 2.773156,
+        "validated": 0,
+        "framework": "esco",
+        "mappingType": "skos:exactMatch"
+      },
+      "suggestions": [
+        {
+          "id": "match:suggestion/id_source/c5381dc540506dbb210e2d300554e4cd/id_target/esco:skill/f33435ca-ec16-4bf1-8569-abf2ce8f04e3",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/f33435ca-ec16-4bf1-8569-abf2ce8f04e3",
+            "prefLabel": {
+              "value": "install firestops",
+              "language": "en"
+            }
+          },
+          "score": 2.752461,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/c5381dc540506dbb210e2d300554e4cd/id_target/esco:skill/054f26ab-cfdc-4077-883c-1c4c9e9b310a",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/054f26ab-cfdc-4077-883c-1c4c9e9b310a",
+            "prefLabel": {
+              "value": "define firewall rules",
+              "language": "en"
+            }
+          },
+          "score": 2.7095609,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/c5381dc540506dbb210e2d300554e4cd/id_target/esco:skill/5f08605b-aa03-45ed-bc49-395477783a38",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/5f08605b-aa03-45ed-bc49-395477783a38",
+            "prefLabel": {
+              "value": "prevent fire in a performance environment",
+              "language": "en"
+            }
+          },
+          "score": 2.6472082,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        },
+        {
+          "id": "match:suggestion/id_source/c5381dc540506dbb210e2d300554e4cd/id_target/esco:skill/ccde26f3-e822-4b6a-94a1-39af4ae41fed",
+          "type": "match:suggestion",
+          "target": {
+            "id": "esco:skill/ccde26f3-e822-4b6a-94a1-39af4ae41fed",
+            "prefLabel": {
+              "value": "fire-fighting systems",
+              "language": "en"
+            }
+          },
+          "score": 2.6237555,
+          "validated": 0,
+          "framework": "esco",
+          "mappingType": "skos:exactMatch"
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,169 @@
+{
+    "took": 7,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 3039,
+            "relation": "eq"
+        },
+        "max_score": 2.8110113,
+        "hits": [
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/35553663-deab-4d9a-bf22-15c1625d28e8",
+                "_score": 2.8110113,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": " artificial intelligence engineer ",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/35553663-deab-4d9a-bf22-15c1625d28e8"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/1c5a45b9-440e-4726-b565-16a952abd341",
+                "_score": 2.6845398,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "computer vision engineer",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/1c5a45b9-440e-4726-b565-16a952abd341"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/812c217d-32b7-4f6a-9faf-993d3577ac7f",
+                "_score": 2.6656535,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "knowledge engineer",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/812c217d-32b7-4f6a-9faf-993d3577ac7f"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/6ce5f7e3-a534-4aa2-ab23-255408ddb53a",
+                "_score": 2.5577247,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "IoT developer",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/6ce5f7e3-a534-4aa2-ab23-255408ddb53a"
+                }
+            },
+            {
+                "_index": "search-ariane-jobs-and-skills",
+                "_id": "esco:occupation/bb609566-3ab6-44dd-8f48-cf0b15b96827",
+                "_score": 2.5260823,
+                "_ignored": [
+                    "pref_label__value.float",
+                    "description__value.float",
+                    "pref_label__language.float",
+                    "alt_label__value.location",
+                    "alt_label__value.date",
+                    "pref_label__value.date",
+                    "alt_label__language.date",
+                    "description__value.location",
+                    "type.float",
+                    "type.location",
+                    "pref_label__language.date",
+                    "pref_label__value.location",
+                    "alt_label__language.float",
+                    "type.date",
+                    "description__value.date",
+                    "alt_label__value.float",
+                    "description__language.float",
+                    "description__language.date"
+                ],
+                "_source": {
+                    "pref_label__value": "automation engineer",
+                    "pref_label__language": "en",
+                    "id": "esco:occupation/bb609566-3ab6-44dd-8f48-cf0b15b96827"
+                }
+            }
+        ]
+    }
+}

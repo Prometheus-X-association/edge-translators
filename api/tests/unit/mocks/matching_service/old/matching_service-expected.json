@@ -1,0 +1,82 @@
+[
+    {
+        "id": "match:provider/test/framework/esco/label/931c0c6ce20d36bf2b70452db3d93910/slang/fr/tlang/fr",
+        "match": {
+            "id": "match:suggestion/id_source/931c0c6ce20d36bf2b70452db3d93910/id_target/esco:occupation/38a7f453-a7f0-45d2-a74d-5b92506e4a21",
+            "type": "match:suggestion",
+            "target": {
+                "id": "esco:occupation/38a7f453-a7f0-45d2-a74d-5b92506e4a21",
+                "prefLabel": {
+                    "value": "technicien de l’ingénierie informatique/technicienne de l’ingénierie informatique",
+                    "language": "fr"
+                }
+            },
+            "score": 2.6335511,
+            "validated": 0,
+            "framework": "esco",
+            "mappingType": "skos:exactMatch"
+        },
+        "suggestions": [
+            {
+                "id": "match:suggestion/id_source/931c0c6ce20d36bf2b70452db3d93910/id_target/esco:occupation/92bb3d8c-8a9f-4cd7-80ec-247bbf173004",
+                "type": "match:suggestion",
+                "target": {
+                    "id": "esco:occupation/92bb3d8c-8a9f-4cd7-80ec-247bbf173004",
+                    "prefLabel": {
+                        "value": "ingénieur en matériel informatique/ingénieure en matériel informatique",
+                        "language": "fr"
+                    }
+                },
+                "score": 2.6091418,
+                "validated": 0,
+                "framework": "esco",
+                "mappingType": "skos:exactMatch"
+            },
+            {
+                "id": "match:suggestion/id_source/931c0c6ce20d36bf2b70452db3d93910/id_target/esco:occupation/27811419-407f-4868-a388-2f7df7aafd91",
+                "type": "match:suggestion",
+                "target": {
+                    "id": "esco:occupation/27811419-407f-4868-a388-2f7df7aafd91",
+                    "prefLabel": {
+                        "value": "technicien électronicien/technicienne électronicienne",
+                        "language": "fr"
+                    }
+                },
+                "score": 2.5978985,
+                "validated": 0,
+                "framework": "esco",
+                "mappingType": "skos:exactMatch"
+            },
+            {
+                "id": "match:suggestion/id_source/931c0c6ce20d36bf2b70452db3d93910/id_target/esco:occupation/d849fd2a-5210-434b-a50b-2d92de3a4bac",
+                "type": "match:suggestion",
+                "target": {
+                    "id": "esco:occupation/d849fd2a-5210-434b-a50b-2d92de3a4bac",
+                    "prefLabel": {
+                        "value": "dessinateur en électronique/dessinatrice en électronique",
+                        "language": "fr"
+                    }
+                },
+                "score": 2.5558472,
+                "validated": 0,
+                "framework": "esco",
+                "mappingType": "skos:exactMatch"
+            },
+            {
+                "id": "match:suggestion/id_source/931c0c6ce20d36bf2b70452db3d93910/id_target/esco:occupation/e6800524-eec2-4c33-af0e-6f36d1d679bc",
+                "type": "match:suggestion",
+                "target": {
+                    "id": "esco:occupation/e6800524-eec2-4c33-af0e-6f36d1d679bc",
+                    "prefLabel": {
+                        "value": "ingénieur instrumentation/ingénieure instrumentation",
+                        "language": "fr"
+                    }
+                },
+                "score": 2.5532494,
+                "validated": 0,
+                "framework": "esco",
+                "mappingType": "skos:exactMatch"
+            }
+        ]
+    }
+]
