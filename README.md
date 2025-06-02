@@ -117,4 +117,43 @@ You'll need to deploy:
 - the **ui** using `runtime_prod` docker build target
 - the **esco-helper** using `runtime` docker build target
 
-Deploy the **api**, **ui**, **esco-helper**
+You'll also need to download and store the LLM model `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` [available here](https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2). You can use the `api/fetch_model.py` command or manually download it in the folder `api/src/.model/`.
+
+For exemple using GCP Cloud Run serverless service, you can store the model in Google Cloud Storage, and use volume mount to make it available for the API _(will work the same in AWS using ECS and S3)_.
+
+## ❓ FAQ
+
+### What is the EDGE AI Translator ?
+
+> The **EDGE AI Translator** is a tool to help achieve **Frictionless Data Interoperability in data transactions.** 
+> Check the [Design Document](docs/DESIGN_DOCUMENT.md)
+
+### What are the possible usecases for the EDGE AI Translator ?
+
+> Every data providers that have non standard Skills & Jobs related data who want to enhance their data and match with standard Frameworks like ESCO, ROME,..
+
+### Is the EDGE AI Translator opensource ?
+
+> Yes, the EDGE AI Translator is fully opensource, feel free to install your own EDGE AI Translator.
+
+### Do we send data to any AI API like OpenAI & co
+
+> No, we only use a multilingual LLM opensource model from HugginFace called `paraphrase-multilingual-mpnet-base-v2`. This model set in directly in the service, and dont send any data to any external AI API.
+
+### What are the requirements to install the EDGE AI Translator ?
+
+> You can easily set up the EDGE AI Translator on your infrastructure, even on your computer, see the set up document in this README.md
+
+---
+
+## 🆘 Need Help?
+
+* Read our documentation
+    * [README.md](README.md)
+    * [Design Document](docs/DESIGN_DOCUMENT.md)
+    * [How to use the AI Translator](docs/HOW_TO_USE.md)
+    * [Rules specifications](docs/RULES_SPECIFICATIONS.md)
+    * [Tests documentation](docs/TESTS.md)
+* Found a bug ? You want to propose some changes ? Need some access for the cloud version ? Don't hesitate to [open a issue](https://github.com/Prometheus-X-association/edge-translators/issues/new) nor [create a pull request](https://github.com/Prometheus-X-association/edge-translators/compare)
+
+---
