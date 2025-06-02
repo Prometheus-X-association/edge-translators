@@ -3,7 +3,7 @@ set -e
 
 if [ "$1" = 'python' ] || [ "$1" = 'uv' ] || [ "$1" = 'uvicorn' ]; then
     
-    echo "Application starting.."
+    echo "AI Translator API initializing.."
     echo "Environment : ${APP_ENV}"
     echo "User : $(whoami)"
 
@@ -16,7 +16,10 @@ if [ "$1" = 'python' ] || [ "$1" = 'uv' ] || [ "$1" = 'uvicorn' ]; then
         echo "Dependencies already installed."
     fi
     
+    echo "Start model fetching step..."
     python fetch_model.py
+    echo "End model fetching step."
+    echo "AI Translator API initialized."
 fi
 
 exec "$@"
