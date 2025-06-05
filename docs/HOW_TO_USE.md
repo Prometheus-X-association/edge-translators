@@ -168,8 +168,8 @@ curl -X 'POST' \
 ```
 
 Replace the empty array `"document": [...fill_it_with_your_data...]` with your data
-- [Here the example we used](docs/data-examples/faketestprovider/data_full_3_profiles.json) in this guide
-- Other data examples [available here](docs/data-examples/)
+- [Here the example we used](data-examples/faketestprovider/data_full_3_profiles.json) in this guide
+- Other data examples [available here](data-examples/)
 
 For on-premise deployments, replace `https://ai-translator-api-934098617065.europe-west1.run.app` by your Translator API url.
 
