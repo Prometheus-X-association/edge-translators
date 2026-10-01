@@ -13,7 +13,7 @@ dependencies = [
     "pydantic<2.0.0",
     "jsonpath-ng>=1.6.1",
     "requests>=2.32.2",
-    "sentence-transformers>=3.0.0",
+    "sentence-transformers>=5.6.0",
     "sentencepiece>=0.2.0",
     "torch>=2.12.1",
     "protobuf>=5.27.0",
@@ -27,6 +27,7 @@ dependencies = [
     "python-multipart>=0.0.20",
     "python-slugify>=8.0.4",
     "pytest-mock>=3.14.0",
+    "urllib3>=2.8.0",
 ]
 
 [dependency-groups]
