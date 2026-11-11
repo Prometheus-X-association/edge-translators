@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 from typing import List
 from ..utils.tools import get_path_depth, get_path_array
@@ -19,10 +19,7 @@ class Rule(BaseModel):
     relationName: str = ""
     relationNameInverse: str = ""
 
-    class Config:
-        populate_by_name = True
-        arbitrary_types_allowed = True
-        anystr_strip_whitespace = True
+    model_config = ConfigDict(populate_by_name=True, arbitrary_types_allowed=True, str_strip_whitespace=True)
 
     def __str__(self):
         return f"""

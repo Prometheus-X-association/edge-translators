@@ -24,7 +24,7 @@ def parseField(item, field, stringPath=""):
 def parseFile():
     try:
         st.session_state.data = json.load(st.session_state.raw_data)
-    except:
+    except ValueError:
         st.error("File error")
         st.session_state.already_redirected_after_upload = False
         del st.session_state.raw_data

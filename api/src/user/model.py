@@ -29,7 +29,7 @@ class User(SQLModel, table=True):
         return self.username
 
 class UserResponse(BaseModel):
-    id: Optional[int]
+    id: Optional[int] = None
     username: str
     email: str
     status: StatusEnum
@@ -38,7 +38,7 @@ class UserResponse(BaseModel):
     failed_login_attempts: int
     created_at: datetime
     updated_at: datetime
-    deleted_at: Optional[datetime]
+    deleted_at: Optional[datetime] = None
 
 class UserCreate(BaseModel):
     username: str

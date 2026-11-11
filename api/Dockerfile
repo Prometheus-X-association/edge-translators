@@ -84,7 +84,8 @@ RUN addgroup \
     --group appuser \
     && chown -R appuser:appuser /app
 
-COPY --link . .
+COPY --link src src
+COPY --link fetch_model.py .
 COPY --link --chmod=775 docker/entrypoint.sh /usr/local/bin/docker-entrypoint
 
 ENTRYPOINT ["docker-entrypoint"]

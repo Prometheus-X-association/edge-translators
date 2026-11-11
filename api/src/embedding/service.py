@@ -36,7 +36,7 @@ class EmbeddingService:
             # Average the embeddings
             avg_embedding = sum(chunk_embeddings) / len(chunk_embeddings)
             return avg_embedding.tolist()
-        except:
+        except ZeroDivisionError:
             return [0] * 1024
 
     def get_vector(self, text: str|list[str]) -> dict:

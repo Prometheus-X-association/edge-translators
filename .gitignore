@@ -21,3 +21,8 @@ ui/data/model
 iac/*terraform*
 iac/*tfstate*
 
+# Sonnarqube
+.scannerword/
+
+# Linux
+.bash_history

@@ -3,6 +3,7 @@ from enum import auto
 from functools import lru_cache
 from fastapi_utils.enums import StrEnum
 from fastapi_utils.api_settings import APISettings
+from pydantic_settings import SettingsConfigDict
 
 
 class Environment(StrEnum):
@@ -18,8 +19,7 @@ class Settings(APISettings):
     secret_key: str
     algorithm: str
     access_token_expire_minutes: str
-    class Config(APISettings.Config):
-        env_file = ".env"
+    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
 @lru_cache()
 def get_api_settings() -> Settings:
@@ -35,12 +35,10 @@ openapi_settings["title"] = "Onto-Terminology AI Translator API"
 openapi_settings["version"] = "1.0.0"
 openapi_settings["docs_url"] = "/docs"
 openapi_settings["debug"] = True
-openapi_settings["openapi_prefix"] = ""
 openapi_settings["openapi_url"] = "/openapi.json"
 openapi_settings["redoc_url"] = "/redoc"
 openapi_settings["summary"] = "Onto-Terminology AI Translator API"
 openapi_settings["description"] = ""
-openapi_settings["disable_docs"] = False
 openapi_settings["openapi_tags"] = [
     {
         "name": "rules",
