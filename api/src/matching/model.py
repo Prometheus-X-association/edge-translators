@@ -22,5 +22,5 @@ class Matching(BaseModel):
     type: str = Field(..., description="")
     framework: str = Field(..., description="")
     provider: str = Field(..., description="")
-    match: Suggestion | None
+    match: Suggestion | None = None
     suggestions: List[Suggestion]

@@ -27,7 +27,9 @@ ENV APP_ENV=dev \
 COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile --non-interactive --dev
 
-COPY . .
+COPY index.html vite.config.ts tsconfig.json tsconfig.app.json tsconfig.node.json ./
+COPY public public
+COPY src src
 EXPOSE 8502
 
 COPY --chmod=775 docker/entrypoint.sh /usr/local/bin/docker-entrypoint
